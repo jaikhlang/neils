@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
-                    {{-- <div class="text-danger py-5 text-center h4">Registration opening soon!!</div> --}}
+                    <div class="text-danger py-5 text-center h4">Registration opening soon!!</div>
                     <form method="POST" class="" action="{{ route('register') }}">
                         @csrf
 
