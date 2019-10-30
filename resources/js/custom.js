@@ -4,7 +4,6 @@ $(function() {
     var header = $(".fixed-top");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-
         if (scroll >= 100) {
           console.log(scroll + 'triggered');
             header.removeClass('native-navbar bg-transparent').addClass("bg-white border-bottom border-light");
@@ -14,7 +13,19 @@ $(function() {
     });
 });
 
+function displayWindowSize(){
+  var header = $(".navbar");
+  var breakpoint = document.documentElement.clientWidth;
+  // var breakpoint = document.getElementById("result").innerHTML = "Width: " + w;
+  window.addEventListener("resize", displayWindowSize);
+  if(breakpoint < 568){
+    header.removeClass('native-navbar bg-transparent fixed-top').addClass("bg-white border-bottom border-light");
+  }else{
 
+  }
+}
+
+displayWindowSize();
 
 $('.map-container')
 	.click(function(){

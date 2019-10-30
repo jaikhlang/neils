@@ -49536,6 +49536,19 @@ $(function () {
     }
   });
 });
+
+function displayWindowSize() {
+  var header = $(".navbar");
+  var breakpoint = document.documentElement.clientWidth; // var breakpoint = document.getElementById("result").innerHTML = "Width: " + w;
+
+  window.addEventListener("resize", displayWindowSize);
+
+  if (breakpoint < 568) {
+    header.removeClass('native-navbar bg-transparent fixed-top').addClass("bg-white border-bottom border-light");
+  } else {}
+}
+
+displayWindowSize();
 $('.map-container').click(function () {
   $(this).find('iframe').addClass('clicked');
 }).mouseleave(function () {

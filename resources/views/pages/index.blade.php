@@ -65,11 +65,11 @@
 
     <div class="d-block py-5 border-bottom">
       <div class="container">
-        <div class="d-flex justify-content-center">
-          <a href="{{ route('register') }}" class="d-inline-block btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
-          <a href="{{ route('register') }}" class="d-inline-block btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a>
-          <a href="{{ route('pages.neils') }}#status" class="d-inline-block btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">Paper Status</a>
-          <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
+        <div class="d-md-flex justify-content-center">
+          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
+          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a>
+          <a href="{{ route('pages.neils') }}#status" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">Paper Status</a>
+          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
         </div>
       </div>
     </div>

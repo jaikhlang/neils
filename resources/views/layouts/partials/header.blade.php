@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light {{ Request::is('/') ? 'bg-transparent native-navbar fixed-top' : 'bg-white' }}">
+<nav class="navbar navbar-expand-md navbar-light {{ Request::is('/') ? 'bg-transparent bg-xs-white native-navbar fixed-top' : 'bg-white' }}">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <span class="d-none d-lg-block d-xl-block">{{ config('app.name', 'Laravel') }}</span><span class="d-block d-lg-none d-xl-none">NEILS</span>
