@@ -5,9 +5,11 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laratrust\Traits\LaratrustUserTrait;
 
 class User extends Authenticatable
 {
+    use LaratrustUserTrait;
     use Notifiable;
 
     /**
@@ -16,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'regno', 'firstname', 'lastname', 'email', 'phone', 'address', 'gender', 'country', 'passport_number', 'affiliation','category_id','participation_category','paper_title', 'remarks', 'image_url', 'document_url', 'subscription', 'password',
     ];
 
     /**

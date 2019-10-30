@@ -21,6 +21,6 @@ Route::get('/paper', 'PageController@paper')->name('pages.paper');
 Route::get('/about', 'PageController@about')->name('pages.about');
 Route::get('/contact', 'PageController@contact')->name('pages.contact');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
