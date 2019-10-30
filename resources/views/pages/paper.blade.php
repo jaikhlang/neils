@@ -56,7 +56,7 @@
     </div>
   </section>
 
-  <section id="" class="bg-light py-5">
+  <section id="" class="bg-light py-5 border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
