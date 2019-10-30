@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <div class="text-danger py-5 text-center h4">Registration opening soon!!</div>
-                    <form method="POST" class="" action="{{ route('register') }}">
+                    <form method="POST" class="d-none" action="{{ route('register') }}">
                         @csrf
 
                         <div class="form-group row">

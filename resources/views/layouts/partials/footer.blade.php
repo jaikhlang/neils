@@ -9,16 +9,15 @@
       </div>
 
       <div class="mr-md-5">
-        <span class="d-block">Imprtant Links</span>
         <a href="{{ url('http://sealang.net/neils/') }}" class="d-block text-black-50 text-decoration-none">sealang/NEILS</a>
         <a href="{{ url('https://www.gauhati.ac.in/') }}" class="d-block text-black-50 text-decoration-none">Gauhati University</a>
         <a href="{{ url('https://www.latrobe.edu.au//') }}" class="d-block text-black-50 text-decoration-none">La Trobe University</a>
         <a href="{{ url('https://www.uoregon.edu/') }}" class="d-block text-black-50 text-decoration-none">University of Oregon</a>
       </div>
 
-      <div class="align-self-end">
-        <span class="d-block mr-4">&copy; 2019 NEILS</span>
-        <span class="d-block">Design & Developed By <a href="{{ url('//4btechnologies.in') }}" class="text-decoration-none text-dark-50">4B IT Solutions</a></span>
+      <div class="align-self-end text-black-50">
+        <span class="d-block mr-4">&copy; 2019 NEILS, All rights reserved.</span>
+        <span class="d-block">Design & Developed By <a href="{{ url('//4btechnologies.in') }}" class="text-decoration-none text-black-50">4B IT Solutions</a></span>
       </div>
     </div>
 
