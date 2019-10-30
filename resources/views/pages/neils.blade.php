@@ -225,7 +225,7 @@
         <div class="col-md-6">
           <h4 class="">Important Dates</h4>
           <div class="py-2 mb-4">
-            <div class="rounded-lg border bg-white shadow">
+            <div class="rounded-lg border bg-white shadow" id="status">
               <table class="table table-hover rounded-lg my-0">
                 <tbody>
                   <tr class="cursor-pointer">
