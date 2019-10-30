@@ -469,7 +469,7 @@
     </div>
   </div>
 
-  <section id="compactgallery" class="gallery-block compact-gallery">
+  <section id="compactgallery" class="gallery-block compact-gallery border-bottom">
       <div class="container">
           <div class="mb-4">
               <h4>Previous Linguistics Events at CIT Kokrajhar</h4>
