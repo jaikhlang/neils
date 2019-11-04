@@ -35,11 +35,31 @@ const app = new Vue({
       daythree: false,
       activelist1: 'active',
       activelist2: '',
-      activelist3: ''
+      activelist3: '',
+
+      documentRequired: false,
+      category: 'null',
+      acceptTermsNcondition: false,
+      participationCategory: 'null'
     },
 
     mounted() {
       this.showSchedule('one');
+    },
+
+    watch: {
+      category: function(){
+        console.log(this.category)
+        if(this.category === '2'){
+          this.documentRequired = true
+        }else{
+          this.documentRequired = false
+        }
+      },
+
+      disclaimerStatus: function(){
+        console.log(this.disclaimerStatus)
+      }
     },
 
     methods: {

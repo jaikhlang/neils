@@ -22,18 +22,19 @@ class CreateUsersTable extends Migration
             $table->string('gender')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->boolean('subscription')->nullable();
+            $table->boolean('subscription')->default('off');
             $table->string('password');
             $table->string('phone')->unique()->nullable();;
             $table->string('country')->nullable();
             $table->string('passport_number')->nullable();
             $table->string('affiliation')->nullable();
-            $table->integer('category_id')->unsigned()->nullable();
+            $table->integer('category_id')->unsigned();
             $table->string('participation_category')->nullable();
             $table->string('paper_title')->nullable();
             $table->string('image_url')->nullable();
             $table->string('document_url')->nullable();
             $table->string('remarks')->nullable();
+            $table->string('status')->nullable();
 
             $table->rememberToken();
             $table->timestamps();

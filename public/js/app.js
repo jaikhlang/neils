@@ -49364,10 +49364,28 @@ var app = new Vue({
     daythree: false,
     activelist1: 'active',
     activelist2: '',
-    activelist3: ''
+    activelist3: '',
+    documentRequired: false,
+    category: 'null',
+    acceptTermsNcondition: false,
+    participationCategory: 'null'
   },
   mounted: function mounted() {
     this.showSchedule('one');
+  },
+  watch: {
+    category: function category() {
+      console.log(this.category);
+
+      if (this.category === '2') {
+        this.documentRequired = true;
+      } else {
+        this.documentRequired = false;
+      }
+    },
+    disclaimerStatus: function disclaimerStatus() {
+      console.log(this.disclaimerStatus);
+    }
   },
   methods: {
     showSchedule: function showSchedule(day) {
