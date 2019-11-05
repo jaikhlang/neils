@@ -173,7 +173,8 @@ class ParticipantController extends Controller
     //Generate Application PDF
     public function generatepdf($id) {
         $user = User::find($id);
-        $pdf = PDF::loadView('pdf', compact('user'));
-        return $pdf->download('application.pdf');
+        return view('pdf')->withUser($user);
+        // $pdf = PDF::loadView('pdf', compact('user'));
+        // return $pdf->download('application.pdf');
     }
 }
