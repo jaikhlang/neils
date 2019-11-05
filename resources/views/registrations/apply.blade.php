@@ -13,10 +13,10 @@
             <div class="px-3 py-3 bg-white rounded border border-dark-50">
               <ul class="list-unstyled mb-0">
                 <li>1. Register for username and password.</li>
-                <li>2. Verify your email.</li>
-                <li>3. Login & Proceed Registration.</li>
+                <li>2. Verify your account through the link sent to your email.</li>
+                <li>3. Login / proceed to registration.</li>
                 <li>4. Fill the registration form.</li>
-                <li>5. Preview application & submit.</li>
+                <li>5. Preview/edit application & submit.</li>
                 <li>6. Payment.</li>
                 <li>7. Registration Status.</li>
               </ul>
@@ -35,10 +35,7 @@
                               {{ session('status') }}
                           </div>
                       @endif
-
-
                       <form class="" action="{{ route('participant.store', Auth::user()) }}" method="POST" enctype="multipart/form-data">
-
                         {{ csrf_field() }}
                         {{ method_field('PUT') }}
                         <div class="mb-4">
@@ -131,7 +128,7 @@
 
                         <div class="mb-4">
                           <label for="code_no">Participant Category</label>
-                          <select class="form-control @error('code_no') is-invalid @enderror" name="code_no" v-model="category" required>
+                          <select id="category" class="form-control @error('code_no') is-invalid @enderror" name="code_no" v-model="category" required>
                             <option value="null" selected disabled>Select Participant Category</option>
                             @foreach ($categories as $key => $category)
                               <option value="{{ $category->code_no }}">{{ $category->name }}</option>
@@ -156,7 +153,7 @@
 
                         <div class="mb-4">
                           <label for="participation_category">Participation Category</label>
-                          <select class="form-control @error('participation_category') is-invalid @enderror" name="participation_category" v-model="participationCategory">
+                          <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category" v-model="participationCategory">
                             <option value="null" selected disabled>Participation Type</option>
                             <option value="presenter">Presenter or co-presenter.</option>
                             <option value="nonpresenter">Non-presenter.</option>

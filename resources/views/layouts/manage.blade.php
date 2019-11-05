@@ -10,21 +10,21 @@
     <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/manage.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/manage.css') }}" rel="stylesheet">
     <!-- Custom Styles -->
     @yield('stylesheets')
 </head>
 <body>
-    <div id="app" class="relative">
+    <div id="app" class="">
 
-        @include('layouts.partials.header')
+        @include('layouts.partials.manages.header')
 
-        <main class="">
+        <main class="" style="margin-top: 52px;">
             @yield('content')
         </main>
     </div>

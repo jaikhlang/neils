@@ -26,7 +26,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+const code_no = $('#category option:selected').val();
+const partcat = $('#participation_category option:selected').val();
 const app = new Vue({
     el: '#app',
     data: {
@@ -38,9 +39,10 @@ const app = new Vue({
       activelist3: '',
 
       documentRequired: false,
-      category: 'null',
+      category: code_no,
+      disclaimer: true,
       acceptTermsNcondition: false,
-      participationCategory: 'null'
+      participationCategory: partcat,
     },
 
     mounted() {
@@ -50,7 +52,7 @@ const app = new Vue({
     watch: {
       category: function(){
         console.log(this.category)
-        if(this.category === '2'){
+        if(this.category === '1'){
           this.documentRequired = true
         }else{
           this.documentRequired = false
@@ -62,7 +64,13 @@ const app = new Vue({
       }
     },
 
+
     methods: {
+      categoryChange(event){
+        console.log(event.target.value)
+        this.category = event.target.value
+      },
+
       showSchedule(day){
         if(day == 'one'){
           this.dayone = true

@@ -18,7 +18,8 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'regno', 'firstname', 'lastname', 'email', 'phone', 'address', 'gender', 'country', 'passport_number', 'affiliation','category_id','participation_category','paper_title', 'remarks', 'image_url', 'document_url', 'subscription', 'password',
+        'regno', 'firstname', 'lastname', 'email', 'phone', 'address', 'gender', 'country', 'passport_number', 'affiliation','category_id','participation_category','paper_title', 'remarks', 'image_url', 'document_url', 'subscription',
+        'status','payment_id', 'password',
     ];
 
     /**
@@ -42,5 +43,27 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function category(){
       return $this->belongsTo('App\Category');
+    }
+    public function calculateFee(){
+      switch ($this->category->code_no) {
+        case '1':
+          $fee = 700;
+          break;
+        case '2':
+          $fee = 1800;
+          break;
+        case '3':
+          $fee = 2500;
+          break;
+        case '4':
+          $fee = 4500;
+          break;
+      }
+      return $fee;
+    }
+
+
+    public function payment(){
+      return $this->belongsTo('App\Payment');
     }
 }

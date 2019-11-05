@@ -9,65 +9,72 @@
       <div class="row justify-content-between">
           <div class="col-md-4 py-5">
             <div class="pt-lg-5 mb-2">
-              <span class="d-block font-weight-bold">REGISTRATION STEPS</span>
+              <a href="{{ route('application.show') }}" class="btn btn-outline-success  mb-2" target="_blank">View Application</a>
+              <span class="d-block font-weight-bold">REGISTRATION FEES</span>
             </div>
-            <div class="px-3 py-3 bg-white rounded border border-dark-50">
-              <ul class="list-unstyled mb-0">
-                <li>1. Register for username and password.</li>
-                <li>2. Verify your email.</li>
-                <li>3. Login & Proceed Registration.</li>
-                <li>4. Fill the registration form.</li>
-                <li>5. Preview application & submit.</li>
-                <li>6. Payment.</li>
-                <li>7. Registration Status.</li>
-              </ul>
+            <div class="bg-white ">
+              <table class="table border text-danger">
+                <tbody>
+                  <tr class="">
+                    <td class="px-4 py-1 text-nowrap">Rs. 700</td>
+                    <td class="px-4 py-1 border-left">SAARC student without financial support.</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 py-1 text-nowrap">Rs. 1800</td>
+                    <td class="px-4 py-1 border-left">SAARC student with financial support</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 py-1 text-nowrap">Rs. 2500</td>
+                    <td class="px-4 py-1 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 py-1 text-nowrap">Rs. 4500</td>
+                    <td class="px-4 py-1 border-left">International non-student</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="">
+              <span class="d-block text-black-50 h6">*Note: For any difficulties regarding payments, mail us at <a href="mailto:b.brahma@cit.ac.in" class="text-decoration-none text-black-50">b.brahma@cit.ac.in</a></span>
             </div>
           </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
               <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
             </div>
-              <div class="card">
-
-
+              <div class="card mb-2">
                   <div class="card-body">
-                      @if (session('status'))
+                      @if (session('message'))
                           <div class="alert alert-success" role="alert">
-                              {{ session('status') }}
+                              {{ session('message') }}
                           </div>
                       @endif
 
-
-                      <form class="" action="" method="POST">
-
+                      <form class="" action="{{ route('payment.pay') }}" method="POST">
                         {{ csrf_field() }}
                         {{ method_field('POST') }}
-                        <div class="mb-4">
-                          <label for="name">Full Name</label>
+                        <div class="mb-2">
+                          <label for="name">Participant/Presenter/Co-presenter</label>
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
 
-
-
-                        <div class="mb-4 custom-control custom-checkbox">
-                          <input type="checkbox" name="subscription" class="custom-control-input" id="subscription">
-                          <label class="custom-control-label" for="subscription">Would you like to add your email to NEILS mailing list</label>
+                        <div class="mb-2">
+                          <label for="name">Participant Category</label>
+                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->category->name }}" readonly>
                         </div>
 
-                        <div class="mb-4 custom-control custom-checkbox">
-                          <input type="checkbox" name="disclaimer" v-model="acceptTermsNcondition" class="custom-control-input" id="disclaimer">
-                          <label class="custom-control-label" for="disclaimer">“I hereby confirm that I expect to participate in the conference. If for any
-                            currently unforeseeable reason, it turns out that I will not be able to
-                            participate, I will immediately let the organizers know.”
-                          </label>
+                        <div class="mb-3">
+                          <label for="name">Registration Fee</label>
+                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
                         </div>
-
-                        <div class="mb-4">
-                          <button type="button" v-if="!acceptTermsNcondition" class="btn btn-outline-secondary btn-lg cursor-pointer" disabled>Save & Continue</button>
-                          <input type="submit" name="" v-if="acceptTermsNcondition" class="btn btn-outline-success btn-lg" value="Save & Continue">
+                        <div class="">
+                          <input type="submit" name="" class="btn btn-success btn-lg" value="Proceed Payment">
                         </div>
                       </form>
                   </div>
+              </div>
+              <div class="">
+                <span class="d-block h6 text-black-50">Payments will be processed in Indian Rupees only. Although we do not support payments in alternate currencies, we do support payments from cards issued outside India. Participants outside India will see the amoint in INR.</span>
               </div>
           </div>
       </div>

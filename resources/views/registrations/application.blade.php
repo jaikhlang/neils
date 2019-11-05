@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Application')
 @section('stylesheets')
 
 @endsection
@@ -6,25 +7,43 @@
 <section id="apply" class="border-top">
   <div class="container">
       <div class="row justify-content-between">
-          <div class="col-md-4 py-5">
-            <div class="pt-lg-5 mb-2">
-              <span class="d-block font-weight-bold">REGISTRATION STEPS</span>
-            </div>
-            <div class="px-3 py-3 bg-white rounded border border-dark-50">
-              <ul class="list-unstyled mb-0">
-                <li>1. Register for username and password.</li>
-                <li>2. Verify your account through the link sent to your email.</li>
-                <li>3. Login / proceed to registration.</li>
-                <li>4. Fill the registration form.</li>
-                <li>5. Preview/edit application & submit.</li>
-                <li>6. Payment.</li>
-                <li>7. Registration Status.</li>
-              </ul>
+          <div class="col-md-4 py-5 mt-lg-3">
+            <div class="px-3 py-3 mt-lg-5 mb-2 bg-white rounded border border-dark-50">
+              <div class="text-center">
+                <a href="#!" class="btn btn-primary">Print Application</a>
+                @if(Auth::user()->status == 'UNPAID')
+                  <a href="{{ route('participant.billing') }}" class="btn btn-outline-primary">Proceed Payment</a>
+                @endif
+
+                @if(Auth::user()->status == 'PAID')
+                  <a href="#!" class="btn btn-outline-primary">Payment Invoice</a>
+                  <div class="d-block mt-4">
+                    <span class="d-block">PAYMENT DETAILS</span>
+                    <table class="table mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="text-right">Reference Id:</td>
+                          <td class="text-left">{{ $user->payment->paymentId }}</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right">Amount:</td>
+                          <td class="text-left">{{ $user->payment->amount }} INR</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right">Amount Paid:</td>
+                          <td class="text-left">{{ $user->created_at->diffForHumans() }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                @endif
+              </div>
             </div>
           </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
+              <span class="font-weight-bold h4 d-block">NEILS CONFERENCE 2020</span>
+              <span class="h6 d-block">APPLICATION</span>
             </div>
               <div class="card">
 
@@ -104,34 +123,14 @@
                           <input type="text" name="" class="form-control" value="{{ $user->participation_category == 'presenter' ? 'Presenter or Co-presenter' : 'Participant' }}" readonly>
                         </div>
 
-
-
                         <div class="mb-4">
                           <label for="papertitle">Title of the paper (For presenter &amp Co-presenter)</label>
                           <input type="text" name="papertitle" class="form-control" value="{{ $user->papertitle }}" readonly>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="">
                           <label for="remarks">Comments</label>
                           <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80" readonly>{{ $user->remarks }}</textarea>
-                        </div>
-
-                        <div class="mb-4 custom-control custom-checkbox">
-                          <input type="checkbox" name="subscription" {{ $user->subscription == true ? 'checked' : '' }} class="custom-control-input" id="subscription" readonly>
-                          <label class="custom-control-label" for="subscription">Would you like to add your email to NEILS mailing list</label>
-                        </div>
-
-                        <div class="mb-4 custom-control custom-checkbox">
-                          <input type="checkbox" name="disclaimer" checked class="custom-control-input" id="disclaimer">
-                          <label class="custom-control-label" for="disclaimer">“I hereby confirm that I expect to participate in the conference. If for any
-                            currently unforeseeable reason, it turns out that I will not be able to
-                            participate, I will immediately let the organizers know.”
-                          </label>
-                        </div>
-
-                        <div class="mb-4">
-                          <a href="{{ route('participant.edit', $user) }}" class="btn btn-outline-primary btn-lg">Modify Application</a>
-                          <input type="submit" name="" class="btn btn-success btn-lg" value="Confirm & Submit">
                         </div>
                       </form>
                   </div>
