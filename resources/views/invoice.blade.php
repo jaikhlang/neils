@@ -63,15 +63,15 @@
             </tr>
             <tr>
               <td class="border-red-500 border-dashed border-b px-4 py-2">Registration Fee:</td>
-              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->calculateFee() }} INR (Registration Fee)</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->calculateFee() }} INR</td>
             </tr>
             <tr>
               <td class="border-red-500 border-dashed border-b px-4 py-2">Convinience Fee:</td>
-              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->fees }} INR (Registration Fee)</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->fees }} INR</td>
             </tr>
             <tr>
               <td class="border-red-500 border-dashed border-b px-4 py-2">Paid Amount:</td>
-              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->amount }} INR (Registration Fee)</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->amount }} INR</td>
             </tr>
             <tr>
               <td class="border-red-500 border-dashed border-b px-4 py-2">Reference Id:</td>
