@@ -12,11 +12,11 @@
               <div class="text-center">
                 <a href="{{ route('generate.application', Auth::user()->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
                 @if(Auth::user()->status == 'UNPAID')
-                  <a href="{{ route('participant.billing') }}" class="btn btn-outline-primary">Proceed Payment</a>
+                  <a href="{{ route('participant.billing') }}" class="btn btn-outline-danger">Proceed Payment</a>
                 @endif
 
                 @if(Auth::user()->status == 'PAID')
-                  <a href="{{ route('generate.invoice', Auth::user()->id) }}" class="btn btn-outline-primary">Payment Invoice</a>
+                  <a href="{{ route('generate.invoice', Auth::user()->id) }}" class="btn btn-outline-primary" target="_blank">Payment Invoice</a>
                   <div class="d-block mt-4">
                     <span class="d-block">PAYMENT DETAILS</span>
                     <table class="table mb-0">

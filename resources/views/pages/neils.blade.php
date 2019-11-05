@@ -261,8 +261,8 @@
           </div>
 
           <div class="mb-4">
-            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg">Register for NEILS11</a>
-            <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg">Call for Paper</a>
+            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2">Register for NEILS11</a>
+            <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg mb-2">Call for Paper</a>
           </div>
 
           <div class="mb-4">

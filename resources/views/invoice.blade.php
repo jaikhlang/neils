@@ -79,7 +79,8 @@
             </tr>
           </tbody>
         </table>
-        <div class="text-center py-2">
+        <div class="text-center py-2 mt-2">
+          <span class="d-block text-sm">The Organizers, NEILS11</span>
           <span class="block text-sm">Computer generated receipt doesn't require any signature.</span>
         </div>
       </div>
