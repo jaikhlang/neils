@@ -39,6 +39,8 @@ Route::group(['middleware' => ['auth','verified', 'role:participant']], function
   Route::get('payment/failure', 'PaymentController@failure')->name('payment.failure');
 });
 
+Route::any('webhook', 'PaymentController@webhook')->name('payment.webhook');
+
 
 Route::get('/admin', function(){
   return redirect()->route('manages.index');

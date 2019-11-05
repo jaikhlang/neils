@@ -25,7 +25,8 @@ class PaymentController extends Controller
             'send_email' => true,
             'email' => Auth::user()->email,
             'phone' => Auth::user()->phone,
-            'redirect_url' => 'http://localhost:3000/payment/response'
+            'redirect_url' => route('payment.success'),
+            'webhook' => route('payment.webhook')
           ]);
 
           header('Location: '.$response['longurl']);
@@ -73,6 +74,11 @@ class PaymentController extends Controller
 
     Session::flash('message', 'Payment successful.');
     return redirect()->route('payment.success');
+  }
+
+
+  public function webhook(){
+    //
   }
 
 
