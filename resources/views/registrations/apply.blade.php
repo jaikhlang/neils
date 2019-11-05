@@ -97,7 +97,7 @@
                           </div>
                           <div class="col-md-6">
                             <label for="passportnumber">Passport Number (For foreign participants)</label>
-                            <input type="text" name="passportnumber" class="form-control @error('passportnumber') is-invalid @enderror" value="{{ old('passportnumber') }}" required>
+                            <input type="text" name="passportnumber" class="form-control @error('passportnumber') is-invalid @enderror" value="{{ old('passportnumber') }}">
                             @error('passportnumber')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
