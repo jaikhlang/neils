@@ -87,7 +87,7 @@
             </tr>
             <tr>
               <td class="border-r px-4 py-2">Registration Fee</td>
-              <td class="px-4 py-2" colspan="2">{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->formate('d-m-Y') }}</td>
+              <td class="px-4 py-2" colspan="2">{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}</td>
             </tr>
           </tbody>
         </table>
