@@ -42,6 +42,10 @@
               <td class="border-red-500 border-dashed border-b border-t px-4 py-2">{{ $user->regno }}</td>
             </tr>
             <tr class="">
+              <td class="border-red-500 border-dashed border-b px-4 py-2">Date:</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->created_at->format('d-m-Y') }}</td>
+            </tr>
+            <tr class="">
               <td class="border-red-500 border-dashed border-b px-4 py-2">Name:</td>
               <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->firstname.' '.$user->lastname }}</td>
             </tr>
@@ -58,17 +62,25 @@
               <td class="border-red-500 border-dashed border-b px-4 py-2">Registration for NEILS Conference 2020.</td>
             </tr>
             <tr>
-              <td class="border-red-500 border-dashed border-b px-4 py-2">Amount:</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">Registration Fee:</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->calculateFee() }} INR (Registration Fee)</td>
+            </tr>
+            <tr>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">Convinience Fee:</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->fees }} INR (Registration Fee)</td>
+            </tr>
+            <tr>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">Paid Amount:</td>
               <td class="border-red-500 border-dashed border-b px-4 py-2">{{ $user->payment->amount }} INR (Registration Fee)</td>
             </tr>
             <tr>
-              <td class="border-red-500 border-dashed border-b px-4 py-2">Reference:</td>
+              <td class="border-red-500 border-dashed border-b px-4 py-2">Reference Id:</td>
               <td class="border-red-500 border-dashed border-b px-4 py-2" >{{ $user->payment->paymentId }}</td>
             </tr>
           </tbody>
         </table>
         <div class="text-center py-2">
-          <span class="block">Computer generated receipt doesn't require any signature.</span>
+          <span class="block text-sm">Computer generated receipt doesn't require any signature.</span>
         </div>
       </div>
     </div>
