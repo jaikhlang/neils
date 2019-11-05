@@ -40,7 +40,8 @@ Route::group(['middleware' => ['auth','verified', 'role:participant']], function
 });
 
 Route::any('webhook', 'PaymentController@webhook')->name('payment.webhook');
-Route::get('/generate/application/{id}','ParticipantController@generatepdf')->name('generate.application');
+Route::get('/generate/application/{id}','ParticipantController@generatePdf')->name('generate.application');
+Route::get('/generate/{id}/invoice','ParticipantController@generateInvoice')->name('generate.invoice');
 
 Route::get('/print-pdf', function(){
   return view('pdf');

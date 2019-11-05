@@ -59,7 +59,7 @@
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Passport Number</td>
-              <td class="border-b px-4 py-2" colspan="2">{{ $user->passport_number }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ !empty($user->passport_number) ? $user->passport_number : 'N/A' }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Address</td>

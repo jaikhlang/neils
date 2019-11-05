@@ -16,7 +16,7 @@
                 @endif
 
                 @if(Auth::user()->status == 'PAID')
-                  <a href="#!" class="btn btn-outline-primary">Payment Invoice</a>
+                  <a href="{{ route('generate.invoice') }}" class="btn btn-outline-primary">Payment Invoice</a>
                   <div class="d-block mt-4">
                     <span class="d-block">PAYMENT DETAILS</span>
                     <table class="table mb-0">
