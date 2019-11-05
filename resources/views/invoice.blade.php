@@ -16,10 +16,9 @@
   </head>
   <body class="">
     <div class="mx-auto">
-      <div id="main" class="bg-white border border-gray-200 rounded">
-        <div class="px-4 py-4 flex items-center border-b">
-          <img src="{{ asset('images/logo.png') }}" class="w-42" alt="">
-          <div class="flex-1 ml-2">
+      <div id="main" class="bg-white">
+        <div class="px-4 py-4 text-center border-b border-dashed border-red-500">
+          <div class="">
             <h4 class="font-semibold text-gray-800">11th International Conference of the</h4>
             <h2 class="font-semibold uppercase text-blue-900">North East Indian Linguistics Society (NEILS)</h2>
             <div class="text-sm">
@@ -34,18 +33,18 @@
           <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">http://neils.co.in</a>
         </div>
         <div class="text-center">
-          <span class="block">INVOICE</span>
+          <span class="block py-2 font-semibold">INVOICE</span>
         </div>
 
         <table class="table-auto border-none w-full mb-0">
           <tbody>
             <tr>
-              <td class="border-b border-t border-r px-4 py-2">Invoice Id:</td>
-              <td class="border-b border-t px-4 py-2">{{ $user->regno }}</td>
+              <td class="border-dashed border-b border-t border-r px-4 py-2">Invoice Id:</td>
+              <td class="border-dashed border-b border-t px-4 py-2">{{ $user->regno }}</td>
             </tr>
             <tr class="bg-gray-100">
-              <td class="border-b border-r px-4 py-2">Name:</td>
-              <td class="border-b px-4 py-2">{{ $user->firstname.' '.$user->lastname }}</td>
+              <td class="border-dashed border-b border-r px-4 py-2">Name:</td>
+              <td class="border-dashed border-b px-4 py-2">{{ $user->firstname.' '.$user->lastname }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Email:</td>
