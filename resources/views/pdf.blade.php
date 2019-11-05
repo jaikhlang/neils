@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html">
     <title>NEILS 2020 Application</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-    <style media="screen,print">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" media="print, screen">
+    <style media="screen, print">
       html, body{
         margin: 0px;
         padding: 0px;
@@ -14,8 +15,8 @@
     </style>
   </head>
   <body class="">
-    <div class="container mx-auto">
-      <div id="main" class="bg-white my-4 border border-gray-200 rounded">
+    <div class="mx-auto">
+      <div id="main" class="bg-white border border-gray-200 rounded">
         <div class="px-4 py-4 flex items-center border-b">
           <img src="{{ asset('images/logo.png') }}" class="w-42" alt="">
           <div class="flex-1 ml-2">
