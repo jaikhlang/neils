@@ -9,6 +9,7 @@ use Auth;
 use Session;
 use Storage;
 use Image;
+use PDF;
 
 class ParticipantController extends Controller
 {
@@ -166,6 +167,13 @@ class ParticipantController extends Controller
         Session::flash('message', 'Something wrong!!');
         return redirect()->back();
       }
+    }
 
+
+    //Generate Application PDF
+    public function generatepdf($id) {
+        $user = User::find($id);
+        $pdf = PDF::loadView('pdf', compact('user'));
+        return $pdf->download('application.pdf');
     }
 }

@@ -40,7 +40,7 @@ Route::group(['middleware' => ['auth','verified', 'role:participant']], function
 });
 
 Route::any('webhook', 'PaymentController@webhook')->name('payment.webhook');
-
+Route::get('/generate/application/{id}','ParticipantController@generatepdf')->name('generate.application');
 
 Route::get('/admin', function(){
   return redirect()->route('manages.index');
