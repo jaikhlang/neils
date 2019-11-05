@@ -25,8 +25,8 @@ class PaymentController extends Controller
             'send_email' => true,
             'email' => Auth::user()->email,
             'phone' => Auth::user()->phone,
-            'redirect_url' => route('payment.success'),
-            // 'webhook' => route('payment.webhook')
+            'redirect_url' => route('payment.response'),
+            'webhook' => route('payment.webhook')
           ]);
 
           header('Location: '.$response['longurl']);
