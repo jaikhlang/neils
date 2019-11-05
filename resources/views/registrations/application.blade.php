@@ -10,7 +10,7 @@
           <div class="col-md-4 py-5 mt-lg-3">
             <div class="px-3 py-3 mt-lg-5 mb-2 bg-white rounded border border-dark-50">
               <div class="text-center">
-                <a href="{{ route('generate.application', Auth::user()->id) }}" class="btn btn-primary">Print Application</a>
+                <a href="{{ route('generate.application', Auth::user()->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
                 @if(Auth::user()->status == 'UNPAID')
                   <a href="{{ route('participant.billing') }}" class="btn btn-outline-primary">Proceed Payment</a>
                 @endif
