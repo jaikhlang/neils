@@ -74,8 +74,8 @@
                             </div>
                           </div>
                           <div class="col-md-6 d-none">
-                            <label for="photo">Photo (200x200) pixels</label>
-                            <img src="{{ url($user->image_url) }}" class="w-50 border d-block" alt="">
+                            {{-- <label for="photo">Photo (200x200) pixels</label> --}}
+                            {{-- <img src="{{ url($user->image_url) }}" class="w-50 border d-block" alt=""> --}}
                           </div>
                         </div>
 
