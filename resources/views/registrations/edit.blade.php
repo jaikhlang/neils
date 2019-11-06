@@ -79,27 +79,6 @@
                                   </span>
                               @enderror
                             </div>
-
-                            <div class="mb-2">
-                              <label for="country">Country</label>
-                              <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->country }}" required>
-                              @error('country')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
-                            </div>
-
-                            <div class="mb-2">
-                              <label for="passportnumber">Passport Number (For foreign participants)</label>
-                              <input type="text" name="passportnumber" class="form-control @error('passportnumber') is-invalid @enderror" value="{{ $user->passport_number }}">
-                              @error('passportnumber')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
-                            </div>
-
                           </div>
                           <div class="col-md-6 d-none">
                             {{-- <label for="photo" class="d-block">Photo (200x200) pixels</label>
@@ -110,6 +89,32 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror --}}
+                          </div>
+                        </div>
+
+                        <div class="mb-4 row">
+                          <div class="col-md-6">
+                            <div class="mb-2">
+                              <label for="country">Country</label>
+                              <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->country }}" required>
+                              @error('country')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+
+                            <div class="mb-2">
+                              <label for="passportnumber">Passport Number (For foreign participants)</label>
+                              <input type="text" name="passportnumber" class="form-control @error('passportnumber') is-invalid @enderror" value="{{ $user->passport_number }}">
+                              @error('passportnumber')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                            </div>
                           </div>
                         </div>
 
