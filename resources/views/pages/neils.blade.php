@@ -551,7 +551,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image13.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image13.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -560,7 +560,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image6.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image6.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -569,7 +569,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image5.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image5.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
