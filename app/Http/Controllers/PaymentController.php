@@ -13,11 +13,21 @@ class PaymentController extends Controller
 {
 
     public function pay(Request $request){
+      if(config('app.payment_status') == 'TEST'){
+        //Still Testing
         $api = new \Instamojo\Instamojo(
-          config('services.instamojo.api_key'),
-          config('services.instamojo.auth_token'),
-          config('services.instamojo.url')
+            config('services.testinstamojo.api_key'),
+            config('services.testinstamojo.auth_token'),
+            config('services.testinstamojo.url')
         );
+      }else{
+        //Live
+        $api = new \Instamojo\Instamojo(
+            config('services.instamojo.api_key'),
+            config('services.instamojo.auth_token'),
+            config('services.instamojo.url')
+        );
+      }
 
         try {
           $response = $api->paymentRequestCreate([
@@ -42,7 +52,7 @@ class PaymentController extends Controller
     public function response(Request $request){
      try {
 
-       if(config('app.payment_status') === 'TEST'){
+       if(config('app.payment_status') == 'TEST'){
          //Still Testing
          $api = new \Instamojo\Instamojo(
              config('services.testinstamojo.api_key'),
