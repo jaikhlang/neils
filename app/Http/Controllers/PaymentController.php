@@ -91,7 +91,7 @@ class PaymentController extends Controller
     else{
          uksort($data, 'strcasecmp');
     }
-.
+    
     $mac_calculated = hash_hmac("sha1", implode("|", $data), config('services.instamojo.salt_key'));
                                //Jaikhlang Instamojo P.Salt: 239335bb79de4d818029c796b9808d3e
     if($mac_provided == $mac_calculated){
