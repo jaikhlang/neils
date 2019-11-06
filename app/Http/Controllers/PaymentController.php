@@ -20,7 +20,7 @@ class PaymentController extends Controller
 
         try {
           $response = $api->paymentRequestCreate([
-            'purpose' => 'NEILS Conference 2020',
+            'purpose' => 'NEILS Conference 2020 Test',
             'amount' => Auth::user()->calculateFee(),
             'buyer_name' => Auth::user()->firstname .' '. Auth::user()->lastname,
             'send_email' => true,
