@@ -93,9 +93,11 @@ class PaymentController extends Controller
          uksort($data, 'strcasecmp');
     }
 
-    $mac_calculated = hash_hmac("sha1", implode("|", $data), config('services.instamojo.salt_key'));
-                               //Jaikhlang Instamojo P.Salt: 239335bb79de4d818029c796b9808d3e
+    $mac_calculated = hash_hmac("sha1", implode("|", $data), "239335bb79de4d818029c796b9808d3e");
+                               //Jaikhlang Instamojo P.Salt:
+
     if($mac_provided == $mac_calculated){
+      echo "MAC is fine";
         // Do something here
         if($data['status'] == "Credit"){
            // Payment was successful, mark it as completed in your database
