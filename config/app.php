@@ -17,6 +17,8 @@ return [
 
     'deploy_secret' => env('APP_DEPLOY_SECRET'),
 
+    'payment_status' => env('IM_TEST_STATUS'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

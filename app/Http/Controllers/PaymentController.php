@@ -41,11 +41,23 @@ class PaymentController extends Controller
 
     public function response(Request $request){
      try {
-        $api = new \Instamojo\Instamojo(
-            config('services.instamojo.api_key'),
-            config('services.instamojo.auth_token'),
-            config('services.instamojo.url')
-        );
+
+       if(config('app.payment_status') == true){
+         //Still Testing
+         $api = new \Instamojo\Instamojo(
+             config('services.testinstamojo.api_key'),
+             config('services.testinstamojo.auth_token'),
+             config('services.testinstamojo.url')
+         );
+       }else{
+         //Live
+         $api = new \Instamojo\Instamojo(
+             config('services.instamojo.api_key'),
+             config('services.instamojo.auth_token'),
+             config('services.instamojo.url')
+         );
+       }
+
 
         $response = $api->paymentRequestStatus(request('payment_request_id'));
 
