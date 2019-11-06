@@ -75,9 +75,9 @@
                                 </span>
                             @enderror
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-6 d-none">
                             <label for="photo">Photo (200x200) pixels</label>
-                            <input type="file" name="photo" class="form-control-file @error('photo') is-invalid @enderror" value="{{ old('photo') }}" required>
+                            <input type="file" name="photo" class="form-control-file @error('photo') is-invalid @enderror" value="{{ old('photo') }}">
                             @error('photo')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

@@ -101,7 +101,7 @@
                             </div>
 
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-6 d-none">
                             <label for="photo" class="d-block">Photo (200x200) pixels</label>
                             <img src="{{ url($user->image_url) }}" class="w-50 mb-2" alt="">
                             <input type="file" name="photo" class="form-control-file @error('photo') is-invalid @enderror" value="{{ old('photo') }}">

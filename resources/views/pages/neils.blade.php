@@ -41,8 +41,8 @@
           <div class="">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
               <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences & </a>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
+                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences</a><br>
+                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">and Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
               </span>
             </h6>
           </div>
@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-md-6">
           <h4 class="">Programme Schedule</h4>
-          <div class="py-2">
+          <div class="py-2 mb-4">
             <div class="rounded-lg border bg-white shadow">
               <div class="">
                 <ul class="d-flex list-unstyled align-items-center text-decoration-none bg-danger rounded-top my-0">
@@ -71,6 +71,11 @@
               </div>
               <table v-if="dayone" class="table table-hover rounded-lg my-0">
                 <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
                   <tr class="cursor-pointer">
                     <td>08:30-09:30</td>
                     <td>Registration</td>
@@ -127,11 +132,16 @@
                     <td>05:00-06:00</td>
                     <td>Documentary screening</td>
                   </tr>
-                </tbody>
+                </tbody> --}}
               </table>
 
               <table v-if="daytwo" class="table table-hover rounded-lg my-0">
                 <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
                   <tr class="cursor-pointer">
                     <td>09:00-09.30</td>
                     <td class="">Session 3 (30 minutes)</td>
@@ -176,11 +186,16 @@
                     <td>03:30-05:00</td>
                     <td>Session 6 (4x20 minutes)</td>
                   </tr>
-                </tbody>
+                </tbody> --}}
               </table>
 
               <table v-if="daythree" class="table table-hover rounded-lg my-0">
                 <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
                   <tr class="cursor-pointer">
                     <td>09:00-09.30</td>
                     <td class="">Session 7 (30 minutes)</td>
@@ -217,9 +232,43 @@
                     <td>03:30-05:00</td>
                     <td>Workshop 2 (1.5 hours)</td>
                   </tr>
+                </tbody> --}}
+              </table>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="">Registration Fees</h4>
+            <div class="bg-white">
+              <table class="table border text-danger">
+                <tbody>
+                  <tr class="">
+                    <td class="px-4 text-nowrap">Rs. 700</td>
+                    <td class="px-4 border-left">SAARC student without financial support (please provide evidence such as a letter from the Head of the Department)</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 text-nowrap">Rs. 1800</td>
+                    <td class="px-4 border-left">SAARC student with financial support</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 text-nowrap">Rs. 2500</td>
+                    <td class="px-4 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
+                  </tr>
+                  <tr class="border-top">
+                    <td class="px-4 text-nowrap">Rs. 4500</td>
+                    <td class="px-4 border-left">International non-student</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+
+
+
+          </div>
+
+          <div class="mb-4">
+            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2">Register for NEILS11</a>
+            <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg mb-2">Call for Paper</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -230,7 +279,7 @@
                 <tbody>
                   <tr class="cursor-pointer">
                     <td>September 1, 2019</td>
-                    <td class="text-danger">(Extended till September 10, 2019): Abstract submission deadline.</td>
+                    <td class="text-danger">Abstract submission is closed.</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>Early October</td>
@@ -254,37 +303,6 @@
                   <tr class="cursor-pointer">
                     <td>January 16, 2020</td>
                     <td>Last day to cancel registration.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2">Register for NEILS11</a>
-            <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg mb-2">Call for Paper</a>
-          </div>
-
-          <div class="mb-4">
-            <h4 class="">Registration Fees</h4>
-            <div class="bg-white">
-              <table class="table border text-danger">
-                <tbody>
-                  <tr class="">
-                    <td class="px-4 text-nowrap">Rs. 700</td>
-                    <td class="px-4 border-left">SAARC student without financial support (please provide evidence such as a letter from the Head of the Department)</td>
-                  </tr>
-                  <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 1800</td>
-                    <td class="px-4 border-left">SAARC student with financial support</td>
-                  </tr>
-                  <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 2500</td>
-                    <td class="px-4 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
-                  </tr>
-                  <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 4500</td>
-                    <td class="px-4 border-left">International non-student</td>
                   </tr>
                 </tbody>
               </table>
@@ -472,14 +490,14 @@
   <section id="compactgallery" class="gallery-block compact-gallery border-bottom">
       <div class="container">
           <div class="mb-4">
-              <h4>Previous Linguistics Events at CIT Kokrajhar</h4>
+              <h4>Previous NEILS Conferences</h4>
           </div>
           <div class="row no-gutters">
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image7.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image7.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -488,7 +506,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image8.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image8.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -497,7 +515,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image9.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image9.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -506,7 +524,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image10.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image10.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                       </a>
@@ -515,7 +533,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image11.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image11.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
@@ -524,7 +542,7 @@
                   <a class="lightbox" href="{{ asset('images/conferences/image12.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image12.jpg') }}">
                       <span class="description">
-                          <span class="description-heading">Previous NEILS Linguistics Events</span>
+                          <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>

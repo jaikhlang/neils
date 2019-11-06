@@ -38,58 +38,59 @@
           <tbody>
             <tr>
               <td class="border-b border-t border-r px-4 py-2">Name</td>
-              <td class="border-b border-t px-4 py-2">{{ $user->firstname.' '.$user->lastname }}</td>
+              <td class="border-b border-t px-4 py-2" colspan="2">{{ $user->firstname.' '.$user->lastname }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Email</td>
-              <td class="border-b px-4 py-2">{{ $user->email }}</td>
+              <td class="border-b px-4 py-2" colspan="1">{{ $user->email }}</td>
+              <td class="text-right border-l w-40" rowspan="5" colspan="1"><img src="{{ asset($user->image_url)}}" class="w-40 text-right" alt=""></td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Phone</td>
-              <td class="border-b px-4 py-2">{{ $user->phone }}</td>
+              <td class="border-b px-4 py-2" colspan="1">{{ $user->phone }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Gender</td>
-              <td class="border-b px-4 py-2 capitalize">{{ $user->gender }}</td>
+              <td class="border-b px-4 py-2 capitalize" colspan="1">{{ $user->gender }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Country</td>
-              <td class="border-b px-4 py-2 capitalize">{{ $user->country }}</td>
+              <td class="border-b px-4 py-2 capitalize" colspan="1">{{ $user->country }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Passport Number</td>
-              <td class="border-b px-4 py-2">{{ !empty($user->passport_number) ? $user->passport_number : 'N/A' }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ !empty($user->passport_number) ? $user->passport_number : 'N/A' }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Address</td>
-              <td class="border-b px-4 py-2">{{ $user->address }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->address }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Affiliation</td>
-              <td class="border-b px-4 py-2">{{ $user->affiliation }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->affiliation }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Participant Category</td>
-              <td class="border-b px-4 py-2">{{ $user->category->name }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->category->name }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Participation Category</td>
-              <td class="border-b px-4 py-2">{{ $user->participation_category == 'presenter' ? 'Presenter/Co-Presenter' : 'Participant' }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->participation_category == 'presenter' ? 'Presenter/Co-Presenter' : 'Participant' }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Paper Title</td>
-              <td class="border-b px-4 py-2">{{ $user->papertitle }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->papertitle }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Comments</td>
-              <td class="border-b px-4 py-2">{{ $user->remarks }}</td>
+              <td class="border-b px-4 py-2" colspan="2">{{ $user->remarks }}</td>
             </tr>
             <tr>
               <td class="border-r px-4 py-2">Registration Fee</td>
               @if(!empty($user->payment->amount))
-              <td class="px-4 py-2">{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}</td>
+              <td class="px-4 py-2" colspan="2">{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}</td>
               @else
-              <td class="px-4 py-2 text-red-500">Payment Not Done!!</td>
+              <td class="px-4 py-2 text-red-500" colspan="2">Payment Not Done!!</td>
               @endif
             </tr>
           </tbody>

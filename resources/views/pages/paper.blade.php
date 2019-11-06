@@ -42,8 +42,8 @@
           <div class="">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
               <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences & </a>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
+                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences</a><br>
+                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">and Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
               </span>
             </h6>
           </div>
@@ -152,7 +152,7 @@
 
             <div class="mb-4">
               <span class="d-block text-dark-50 font-weight-bold mb-2">Important Dates</span>
-        
+
               <table class="table w-100 border mb-2">
                 <tbody>
                   <tr class="">
