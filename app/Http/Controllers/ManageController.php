@@ -31,6 +31,11 @@ class ManageController extends Controller
       return view('manages.participants')->withParticipants($participants);
     }
 
+    public function registered(){
+      $participants = User::where('status','!=', 'PAID')->where('status','!=', null)->orderBy('id', 'desc')->paginate(200);
+      return view('manages.registered')->withParticipants($participants);
+    }
+
 
 
     public function payments(){

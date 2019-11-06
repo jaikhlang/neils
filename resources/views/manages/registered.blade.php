@@ -1,5 +1,5 @@
 @extends('layouts.manage')
-@section('title', 'Participants Paid')
+@section('title', 'Participants Registered')
 
 @section('content')
 <section class="overflow-hidden d-block">
@@ -23,8 +23,8 @@
                 <td class="py-1 px-1 text-center">{{ $key + 1 }}</td>
                 <td class="py-1 px-1">{{ $participant->firstname .' '.$participant->lastname }}</td>
                 <td class="py-1 px-1">{{ $participant->participation_category == 'presenter' ? 'Presenter' : 'Participant' }}</td>
-                <td class="py-1 px-1">{{ $participant->payment->paymentId }}</td>
-                <td class="py-1 px-1 text-right">{{ $participant->payment->amount }}</td>
+                <td class="py-1 px-1">Unpaid</td>
+                <td class="py-1 px-1 text-right">{{ $participant->calculateFee() }}</td>
               </tr>
             @endforeach
           </tbody>
