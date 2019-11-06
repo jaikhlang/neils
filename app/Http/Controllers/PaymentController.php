@@ -93,40 +93,11 @@ class PaymentController extends Controller
          uksort($data, 'strcasecmp');
     }
 
-    $mac_calculated = hash_hmac("sha1", implode("|", $data), "239335bb79de4d818029c796b9808d3e");
+    $mac_calculated = hash_hmac("sha1", implode("|", $data), config('services.instamojo.salt_key'));
                                //Jaikhlang Instamojo P.Salt:
 
     if($mac_provided == $mac_calculated){
-      echo "MAC is fine";
-        // Do something here
-        if($data['status'] == "Credit"){
-           // Payment was successful, mark it as completed in your database
-           $user = User::where('email', $data['buyer'])->first();
-           $check = Payment::where('paymentId', $data['payment_id'])->exists();
-           if($check){
-             //Already data is recorded.
-           }else{
-             //Record not updated due to some error.
-             //Record now.
-             $payment = Payment::firstOrCreate([
-               'paymentId' => $data['payment_id'],
-               'amount' => $data['amount'],
-               'buyer_name' => $data['buyer_name'],
-               'buyer_phone' => $data['buyer_phone'],
-               'fees' => $data['fees'],
-               'paymentRequestId' => $data['buyer_phone']
-             ]);
-
-             $user->regno = 1000 + $payment->id;
-             $user->status = 'PAID';
-             $user->payment_id = $payment->id;
-             $user->save();
-           }
-        }
-        else{
-           //Payment was unsuccessful, mark it as failed in your database
-           //Do nothing
-        }
+        //wait
     }
     else{
         //echo "Invalid MAC passed";
