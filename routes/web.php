@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth','verified', 'role:participant']], function
   Route::get('payment/failure', 'PaymentController@failure')->name('payment.failure');
 });
 
-Route::get('webhook', 'PaymentController@webhook')->name('payment.webhook');
+Route::any('webhook', 'PaymentController@webhook')->name('payment.webhook');
 Route::get('/generate/application/{id}','ParticipantController@generatePdf')->name('generate.application');
 Route::get('/generate/{id}/invoice','ParticipantController@generateInvoice')->name('generate.invoice');
 

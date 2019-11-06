@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Payment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Auth;
 use App\User;
 use Session;
@@ -20,7 +21,7 @@ class PaymentController extends Controller
 
         try {
           $response = $api->paymentRequestCreate([
-            'purpose' => 'NEILS Conference 2020 Test',
+            'purpose' => 'NEILS Conference 2020',
             'amount' => Auth::user()->calculateFee(),
             'buyer_name' => Auth::user()->firstname .' '. Auth::user()->lastname,
             'send_email' => true,
@@ -97,7 +98,35 @@ class PaymentController extends Controller
                                //Jaikhlang Instamojo P.Salt:
 
     if($mac_provided == $mac_calculated){
-        //wait
+      // Do something here
+      if($data['status'] == "Credit"){
+         // Payment was successful, mark it as completed in your database
+         $user = User::where('email', $data['buyer'])->first();
+         $check = Payment::where('paymentId', $data['payment_id'])->exists();
+         if($check){
+           //Already data is recorded.
+         }else{
+           //Record not updated due to some error.
+           //Record now.
+           $payment = Payment::firstOrCreate([
+             'paymentId' => $data['payment_id'],
+             'amount' => $data['amount'],
+             'buyer_name' => $data['buyer_name'],
+             'buyer_phone' => $data['buyer_phone'],
+             'fees' => $data['fees'],
+             'paymentRequestId' => $data['buyer_phone']
+           ]);
+
+           $user->regno = 1000 + $payment->id;
+           $user->status = 'PAID';
+           $user->payment_id = $payment->id;
+           $user->save();
+         }
+      }
+      else{
+         //Payment was unsuccessful, mark it as failed in your database
+         //Do nothing
+      }
     }
     else{
         //echo "Invalid MAC passed";
