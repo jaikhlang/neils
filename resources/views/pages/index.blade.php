@@ -25,27 +25,30 @@
           <div class="carousel-item active">
             <img src="{{ url('https://dummyimage.com/1300x400/66630b/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <div class="mb-5 pb-4">
+              <div class="mb-5 pb-5">
                 <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4">11th International Conference of the North East Indian Linguistics Society</p>
+                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
+                <span class="d-block pb-2"><a href="{{ route('register') }}" class="btn btn-danger">Register Now</a></span>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{{ url('https://dummyimage.com/1300x400/66630b/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
+            <img src="{{ url('https://dummyimage.com/1300x400/b51d1d/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <div class="mb-5 pb-4">
+              <div class="mb-5 pb-5">
                 <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4">11th International Conference of the North East Indian Linguistics Society</p>
+                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
+                <span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{{ url('https://dummyimage.com/1300x400/66630b/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
+            <img src="{{ url('https://dummyimage.com/1300x400/071c4a/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <div class="mb-5 pb-4">
+              <div class="mb-5 pb-5">
                 <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4">11th International Conference of the North East Indian Linguistics Society</p>
+                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
+                <span class="d-block pb-2">From 7th to 9th February 2020 | CIT Kokrajhar BTAD Assam</span>
               </div>
             </div>
           </div>
@@ -66,10 +69,10 @@
     <div class="d-block py-5 border-bottom">
       <div class="container">
         <div class="d-md-flex justify-content-center">
-          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
-          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a>
+          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
+          {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a> --}}
           <a href="{{ route('pages.neils') }}#status" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">Paper Status</a>
-          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
+          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
         </div>
       </div>
     </div>
@@ -102,22 +105,22 @@
 
         <div id="photos" class="d-block">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image1.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image2.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image3.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image4.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image5.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image6.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
           </div>

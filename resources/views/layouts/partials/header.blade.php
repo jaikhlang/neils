@@ -19,6 +19,9 @@
               <li class="nav-item {{ Request::is('paper') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages.paper') }}">CALL FOR PAPER</a>
               </li>
+              <li class="nav-item {{ Request::is('register') ? 'active' : '' }}">
+                <a class="nav-link text-danger" href="{{ route('register') }}">REGISTER</a>
+              </li>
               <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages.about') }}">ABOUT</a>
               </li>
@@ -35,18 +38,18 @@
                         <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                     </li>
                     @if (Route::has('register'))
-                        <li class="nav-item">
+                        <!-- li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
-                        </li>
+                        </li -->
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->firstname }} <span class="caret"></span>
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="dropdown-item text-uppercase" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}

@@ -51,11 +51,11 @@
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Gender</td>
-              <td class="border-b px-4 py-2" colspan="1">{{ $user->gender }}</td>
+              <td class="border-b px-4 py-2 text-capitalize" colspan="1">{{ $user->gender }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Country</td>
-              <td class="border-b px-4 py-2" colspan="1">{{ $user->country }}</td>
+              <td class="border-b px-4 py-2 text-capitalize" colspan="1">{{ $user->country }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Passport Number</td>
