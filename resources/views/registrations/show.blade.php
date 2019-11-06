@@ -138,8 +138,8 @@
                         </div>
 
                         <div class="mb-4">
-                          <a href="{{ route('participant.edit', $user) }}" class="btn btn-outline-primary btn-lg">Modify Application</a>
-                          <input type="submit" name="" class="btn btn-success btn-lg" value="Confirm & Submit">
+                          <a href="{{ route('participant.edit', $user) }}" class="btn btn-outline-primary btn-lg mb-2">Modify Application</a>
+                          <input type="submit" name="" class="btn btn-success btn-lg mb-2" value="Confirm & Submit">
                         </div>
                       </form>
                   </div>

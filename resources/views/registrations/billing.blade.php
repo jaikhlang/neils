@@ -68,7 +68,9 @@
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
                         </div>
                         <div class="">
-                          <input type="submit" name="" class="btn btn-success btn-lg" value="Proceed Payment">
+                          <span class="text-danger d-block">Please login later to proceed with payment.</span>
+                          <button type="button" disabled class="btn btn-success btn-lg" name="button">Proceed Payment</button>
+                          {{-- <input type="submit" name="" class="btn btn-success btn-lg" value="Proceed Payment"> --}}
                         </div>
                       </form>
                   </div>
