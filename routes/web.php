@@ -55,5 +55,6 @@ Route::get('/admin', function(){
 Route::group(['prefix' => 'manages', 'middleware' => ['role:admin|superadmin']], function(){
   Route::get('/', 'ManageController@index')->name('manages.index');
   Route::get('/participants', 'ManageController@participants')->name('manages.participants');
+  Route::get('/registered', 'ManageController@registered')->name('manages.registered');
   Route::get('/payments', 'ManageController@payments')->name('manages.payments');
 });
