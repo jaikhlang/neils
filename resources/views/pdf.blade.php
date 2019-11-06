@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html">
-    <title>NEILS 2020 Application</title>
+    <title>Application | NEILS 2020</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" media="print, screen">
     <style media="screen, print">
       html, body{
@@ -51,11 +51,11 @@
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Gender</td>
-              <td class="border-b px-4 py-2 text-capitalize" colspan="1">{{ $user->gender }}</td>
+              <td class="border-b px-4 py-2 capitalize" colspan="1">{{ $user->gender }}</td>
             </tr>
             <tr>
               <td class="border-b border-r px-4 py-2">Country</td>
-              <td class="border-b px-4 py-2 text-capitalize" colspan="1">{{ $user->country }}</td>
+              <td class="border-b px-4 py-2 capitalize" colspan="1">{{ $user->country }}</td>
             </tr>
             <tr class="bg-gray-100">
               <td class="border-b border-r px-4 py-2">Passport Number</td>

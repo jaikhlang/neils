@@ -25,8 +25,8 @@ class PaymentController extends Controller
             'send_email' => true,
             'email' => Auth::user()->email,
             'phone' => Auth::user()->phone,
-            'redirect_url' => route('payment.response'),
-            // 'webhook' => route('payment.webhook')
+            'redirect_url' => route('payment.success'),
+            'webhook' => route('payment.webhook')
           ]);
 
           header('Location: '.$response['longurl']);
@@ -78,7 +78,56 @@ class PaymentController extends Controller
 
 
   public function webhook(){
-    //
+    $data = $_POST;
+    $mac_provided = $data['mac'];  // Get the MAC from the POST data
+    unset($data['mac']);  // Remove the MAC key from the data.
+
+    $ver = explode('.', phpversion());
+    $major = (int) $ver[0];
+    $minor = (int) $ver[1];
+    if($major >= 5 and $minor >= 4){
+         ksort($data, SORT_STRING | SORT_FLAG_CASE);
+    }
+    else{
+         uksort($data, 'strcasecmp');
+    }
+.
+    $mac_calculated = hash_hmac("sha1", implode("|", $data), config('services.instamojo.salt_key'));
+                               //Jaikhlang Instamojo P.Salt: 239335bb79de4d818029c796b9808d3e
+    if($mac_provided == $mac_calculated){
+        // Do something here
+        if($data['status'] == "Credit"){
+           // Payment was successful, mark it as completed in your database
+           $user = User::where('email', $data['buyer'])->first();
+           $check = Payment::where('paymentId', $data['payment_id'])->exists();
+           if($check){
+             //Already data is recorded.
+           }else{
+             //Record not updated due to some error.
+             //Record now.
+             $payment = Payment::firstOrCreate([
+               'paymentId' => $data['payment_id'],
+               'amount' => $data['amount'],
+               'buyer_name' => $data['buyer_name'],
+               'buyer_phone' => $data['buyer_phone'],
+               'fees' => $data['fees'],
+               'paymentRequestId' => $data['buyer_phone']
+             ]);
+
+             $user->regno = 1000 + $payment->id;
+             $user->status = 'PAID';
+             $user->payment_id = $payment->id;
+             $user->save();
+           }
+        }
+        else{
+           //Payment was unsuccessful, mark it as failed in your database
+           //Do nothing
+        }
+    }
+    else{
+        //echo "Invalid MAC passed";
+    }
   }
 
 

@@ -31,7 +31,7 @@
           <h6 class="font-semibold text-sm text-gray-800">Hosted by Department of Humanities & Social Sciences <br>& Center for Linguistics and Cultural Studies, CIT Kokrajhar</h6>
           <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">http://neils.co.in</a>
         </div>
-        <div class="text-center">
+        <div class="text-center border-t border-dashed border-red-500 bg-red-200">
           <span class="block py-2 font-semibold">INVOICE</span>
         </div>
 
@@ -79,9 +79,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="text-center py-2 mt-2">
+        <div class="text-right py-2 mt-4">
           <span class="d-block text-sm">The Organizers, NEILS11</span>
-          <span class="block text-sm">Computer generated receipt doesn't require any signature.</span>
+          <span class="block text-sm text-gray-700">Computer generated receipt doesn't require any signature.</span>
         </div>
       </div>
     </div>

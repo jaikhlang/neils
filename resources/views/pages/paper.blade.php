@@ -152,9 +152,7 @@
 
             <div class="mb-4">
               <span class="d-block text-dark-50 font-weight-bold mb-2">Important Dates</span>
-              <span class="d-block text-justify mb-2">
-                The fee schedule for NEILS is as follows, and includes lunch and tea/snacks on each day of the conference:
-              </span>
+        
               <table class="table w-100 border mb-2">
                 <tbody>
                   <tr class="">

@@ -33,6 +33,7 @@ return [
     'instamojo' => [
       'api_key' => env('IM_API_KEY'),
       'auth_token' => env('IM_AUTH_TOKEN'),
+      'salt_key' => env('IM_SALT_KEY'),
       'url' => env('IM_URL'),
     ]
 
