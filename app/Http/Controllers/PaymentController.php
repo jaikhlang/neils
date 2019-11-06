@@ -42,7 +42,7 @@ class PaymentController extends Controller
     public function response(Request $request){
      try {
 
-       if(config('app.payment_status')){
+       if(config('app.payment_status') === 'TEST'){
          //Still Testing
          $api = new \Instamojo\Instamojo(
              config('services.testinstamojo.api_key'),
