@@ -31,7 +31,7 @@ class PaymentController extends Controller
 
         try {
           $response = $api->paymentRequestCreate([
-            'purpose' => 'NEILS Conference 2020',
+            'purpose' => config('app.payment_status') == 'TEST' ? 'Test Account' : 'NEILS Conference 2020',
             'amount' => Auth::user()->calculateFee(),
             'buyer_name' => Auth::user()->firstname .' '. Auth::user()->lastname,
             'send_email' => true,
