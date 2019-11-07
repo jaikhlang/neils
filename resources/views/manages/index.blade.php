@@ -11,7 +11,7 @@
           <span class="d-block text-dark">Applied (Unpaid)</span>
         </a>
 
-        <a href="" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
+        <a href="{{ route('manages.participants') }}" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
           <span class="d-block text-dark h4">{{ $paid }} <span class="">Total Participants</span></span>
           <span class="d-block text-dark">Registered (Paid)</span>
         </a>

@@ -11,14 +11,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
   <link rel="stylesheet" href="{{ asset('css/compact-gallery.css')}}">
-  <style media="screen">
-    /* #showcase{
-      background-image: url('{{ asset('svg/hero-area.svg') }}');
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    } */
-  </style>
 @endsection
 
 <!-- Contents -->
@@ -377,7 +369,7 @@
             <img src="{{ asset('images/peoples/hss-jdh.jpg') }}" class="w-25" alt="CIT Director">
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Co-Convenor</span>
-              <span class="d-block h6 font-weight-bold">J.D.H. Basumatary</span>
+              <span class="d-block h6 font-weight-bold">Dr. J.D.H. Basumatary</span>
               <span class="d-block h6 font-normal mb-0">Assistant Professor,</span>
               <span class="d-block h6 font-normal">Department of Humanities & Social Sciences, CIT Kokrajhar</span>
             </div>
@@ -480,6 +472,26 @@
               <span class="d-block h6 font-italic mb-0">Member</span>
               <span class="d-block h6 font-weight-bold">Dr. Anuck Islary</span>
               <span class="d-block h6 font-weight-normal mb-0">Assistant Professor<br>Dept. of Food Engineering and Technology, CIT Kokrajhar</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-between align-items-center w-100 mb-4">
+            <img class="w-25" src="{{ asset('images/peoples/ie-borat.jpg') }}" alt="Director CIT Kokrajhar">
+            <div class="flex-fill ml-4">
+              <span class="d-block h6 font-italic mb-0">Member</span>
+              <span class="d-block h6 font-weight-bold">Borat Basumatary</span>
+              <span class="d-block h6 font-weight-normal mb-0">Assistant Professor<br>Dept. of Instrumentation Engineering, CIT Kokrajhar</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-between align-items-center w-100 mb-4">
+            <img class="w-25" src="{{ asset('images/peoples/phy-mahananda.jpg') }}" alt="Director CIT Kokrajhar">
+            <div class="flex-fill ml-4">
+              <span class="d-block h6 font-italic mb-0">Member</span>
+              <span class="d-block h6 font-weight-bold">Mahananda Brahma</span>
+              <span class="d-block h6 font-weight-normal mb-0">Assistant Professor<br>Dept. of Physics, CIT Kokrajhar</span>
             </div>
           </div>
         </div>
