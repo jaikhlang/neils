@@ -41,4 +41,10 @@ class ManageController extends Controller
     public function payments(){
       return view('manages.payments');
     }
+
+
+    public function showUser($id){
+      $user = User::find($id);
+      return view('manages.view')->withUser($user);
+    }
 }

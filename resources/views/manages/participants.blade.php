@@ -15,6 +15,7 @@
               <th class="py-1 px-1">Type</th>
               <th class="py-1 px-1">PaymentID</th>
               <th class="py-1 px-1 text-right">Amount</th>
+              <th class="py-1 px-1 text-center">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -25,6 +26,7 @@
                 <td class="py-1 px-1">{{ $participant->participation_category == 'presenter' ? 'Presenter' : 'Participant' }}</td>
                 <td class="py-1 px-1">{{ $participant->payment->paymentId }}</td>
                 <td class="py-1 px-1 text-right">{{ $participant->payment->amount }}</td>
+                <td class="py-1 px-1 text-center"> <a href="{{ route('manages.participants.view') }}" class="">View</a> </td>
               </tr>
             @endforeach
           </tbody>
