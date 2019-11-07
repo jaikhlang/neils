@@ -26,7 +26,7 @@
                 <td class="py-1 px-1">{{ $participant->participation_category == 'presenter' ? 'Presenter' : 'Participant' }}</td>
                 <td class="py-1 px-1">Unpaid</td>
                 <td class="py-1 px-1 text-right">{{ $participant->calculateFee() }}</td>
-                <td class="py-1 px-1 text-center"> <a href="{{ route('manages.participants.view') }}" class="">View</a> </td>
+                <td class="py-1 px-1 text-center"> <a href="{{ route('manages.participants.view', $user->id) }}" class="">View</a> </td>
               </tr>
             @endforeach
           </tbody>
