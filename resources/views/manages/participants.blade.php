@@ -6,7 +6,7 @@
   <div class="container">
     <div class="py-5">
       <div class="mb-2">
-        <a href="{{ route('users.export') }}" class="btn btn-outline-primary"> <i class="fa fa-file-excel-o"></i>  Export All</a>
+        <a href="{{ route('users.export') }}" class="btn btn-outline-primary"> <i class="fa fa-file-excel-o"></i>  Export Participants</a>
       </div>
       <div class="card">
         <div class="card-header h6">NEILS 2020 PARTICIPANTS</div>

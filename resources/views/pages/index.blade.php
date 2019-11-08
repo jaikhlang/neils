@@ -23,12 +23,12 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ url('https://dummyimage.com/1300x400/66630b/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('images/abc.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <div class="mb-5 pb-5">
-                <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
-                <span class="d-block pb-2"><a href="{{ route('register') }}" class="btn btn-danger">Register Now</a></span>
+                <h5 class="mb-0 font-weight-bold h2"><!--img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span--></h5>
+                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
+                <span class="d-block pb-2"><a href="{{ route('register') }}" class="btn btn-danger">Register Now</a></span-->
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="d-block py-5 border-bottom">
+    <div class="d-block py-5 border-bottom border-top">
       <div class="container">
         <div class="d-md-flex justify-content-center">
           <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
