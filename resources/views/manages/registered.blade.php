@@ -5,7 +5,7 @@
 <section class="overflow-hidden d-block">
   <div class="container">
     <div class="py-5">
-      <span class="d-block h6">Participants of NEILS 2020</span>
+      <span class="d-block h6">Participants with payment process pending.</span>
       <div class="bg-white rounded border-right border-left">
         <table class="table rounded mb-0">
           <thead>

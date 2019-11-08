@@ -14,10 +14,13 @@
                 <a class="nav-link" href="{{ route('manages.index') }}">Dashboard</a>
               </li>
               <li class="nav-item {{ Request::is('participants') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('manages.participants') }}">Participants</a>
+                <a class="nav-link" href="{{ route('manages.participants') }}" class="text-danger">Participants</a>
               </li>
               <li class="nav-item {{ Request::is('payments') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('manages.payments') }}">Payments</a>
+                <a class="nav-link" href="{{ route('manages.payments') }}" class="">Payments</a>
+              </li>
+              <li class="nav-item {{ Request::is('registered') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('manages.registered') }}" class="">(Unpaid)Registered</a>
               </li>
             </ul>
 

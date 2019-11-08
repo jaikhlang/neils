@@ -31,19 +31,19 @@ class ManageController extends Controller
 
     //Registered and PAID participants list.
     public function participants(){
-      $participants = User::where('status', 'PAID')->orderBy('id', 'desc')->paginate(200);
+      $participants = User::where('status', 'PAID')->orderBy('id', 'desc')->get();
       return view('manages.participants')->withParticipants($participants);
     }
 
     //Registered but not PAID participants list.
     public function registered(){
-      $participants = User::where('status','!=', 'PAID')->where('status','!=', null)->orderBy('id', 'desc')->paginate(200);
+      $participants = User::where('status','!=', 'PAID')->where('status','!=', null)->orderBy('id', 'desc')->get();
       return view('manages.registered')->withParticipants($participants);
     }
 
     //Payment Lists.
     public function payments(){
-      $payments = Payment::orderBy('id', 'desc')->paginate(250);
+      $payments = Payment::orderBy('id', 'desc')->get();
       return view('manages.payments')->withPayments($payments);
     }
 
