@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Exports\UsersExport;
+use App\Exports\PaymentExport;
 use Excel;
 use App\User;
 use App\Role;
@@ -62,5 +63,10 @@ class ManageController extends Controller
     //Exports Users.
     public function export(){
       return Excel::download(new UsersExport, 'neils.xlsx');
+    }
+
+    //Exports Payment.
+    public function exportPayment(){
+      return Excel::download(new PaymentExport, 'neilspayments.xlsx');
     }
 }

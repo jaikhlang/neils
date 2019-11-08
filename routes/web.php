@@ -59,4 +59,5 @@ Route::group(['prefix' => 'manages', 'middleware' => ['role:admin|superadmin']],
   Route::get('/payments', 'ManageController@payments')->name('manages.payments');
   Route::get('/participants/{id}', 'ManageController@showUser')->name('manages.participants.view');
   Route::get('/export','ManageController@export')->name('users.export');
+  Route::get('/export/payment','ManageController@exportPayment')->name('users.exportPayment');
 });
