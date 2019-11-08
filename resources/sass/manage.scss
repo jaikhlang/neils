@@ -1,8 +1,24 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.cursor-ponter{
+  cursor: pointer;
+}
+
+
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+*{
+  box-sizing: border-box;
+}

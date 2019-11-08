@@ -87,7 +87,7 @@
                           <input type="text" name="papertitle" class="form-control" value="{{ $user->papertitle }}" readonly>
                         </div>
 
-                        <div class="">
+                        <div class="mb-4">
                           <label for="remarks">Comments</label>
                           <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80" readonly>{{ $user->remarks }}</textarea>
                         </div>
@@ -95,9 +95,9 @@
                         <div class="">
                           <label for="">Registration Fees</label>
                           @if(!empty($user->payment->amount))
-                          <input type="text" name="" value="{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}">
+                          <input type="text" name="" class="form-control" value="{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}">
                           @else
-                            <input type="text" name="" value="Not Paid">
+                            <input type="text" name="" class="form-control" value="Not Paid">
                           @endif
                         </div>
                       </form>

@@ -13,6 +13,7 @@
               <th class="py-1 px-1 text-center">#</th>
               <th class="py-1 px-1">Name</th>
               <th class="py-1 px-1">Type</th>
+              <th class="py-1 px-1">Country</th>
               <th class="py-1 px-1">PaymentID</th>
               <th class="py-1 px-1 text-right">Amount</th>
               <th class="py-1 px-1 text-center">Actions</th>
@@ -24,6 +25,7 @@
                 <td class="py-1 px-1 text-center">{{ $key + 1 }}</td>
                 <td class="py-1 px-1">{{ $participant->firstname .' '.$participant->lastname }}</td>
                 <td class="py-1 px-1">{{ $participant->participation_category == 'presenter' ? 'Presenter' : 'Participant' }}</td>
+                <td class="py-1 px-1">{{ $participant->country }}</td>
                 <td class="py-1 px-1">Unpaid</td>
                 <td class="py-1 px-1 text-right">{{ $participant->calculateFee() }}</td>
                 <td class="py-1 px-1 text-center"> <a href="{{ route('manages.participants.view', $participant->id) }}" class="">View</a> </td>
