@@ -12,7 +12,7 @@ class UsersExport implements FromCollection
     */
     public function collection()
     {
-        $users = User::where('status', 'UNPAID')->exclude(['image_url', 'regno', 'address', 'subscription'])->get();
+        $users = User::where('status', 'UNPAID')->get();
         foreach($users as $key => $user){
           $user->cat = $user->category->name;
           // $user->amount = $user->payment->amount;
