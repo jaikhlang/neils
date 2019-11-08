@@ -38,7 +38,8 @@ class UsersExport implements FromCollection, WithHeadings
 
     public function collection()
     {
-        $users = User::where('status', 'PAID')->get();
+        //$users = User::where('status', 'PAID')->get();
+        $users = Role::where('name', 'participant')->first()->users()->where('status', 'UNPAID')->get();
         foreach($users as $key => $user){
           $user->cat = $user->category->name;
           // $user->amount = $user->payment->amount;
