@@ -27,9 +27,9 @@ class UsersExport implements FromCollection, WithHeadings
             'Affiliation',
             'Type',
             'Paper',
+            '#',
             'Comments',
             'Status',
-            'Paper',
             'Created',
             'Updated',
             'Category'
