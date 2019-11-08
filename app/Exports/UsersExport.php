@@ -3,6 +3,7 @@
 namespace App\Exports;
 
 use App\User;
+use App\Role;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 
