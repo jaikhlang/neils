@@ -2,7 +2,8 @@
 @section('title', 'Contact Us')
 <!-- Meta Tags  -->
 @section('metatags')
-
+<meta name="keywords" content="contact, neils, contact neils, organizers address">
+<meta name="description" content="NEILS2020 Address: CIT Kokrajhar BTAD Assam India 783370. Contact Person: Bihung Brahma. Email: b.brahma@cit.ac.in">
 @endsection
 
 <!-- Custom Styles -->

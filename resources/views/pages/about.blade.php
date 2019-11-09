@@ -2,7 +2,8 @@
 @section('title', 'About the Society')
 <!-- Meta Tags  -->
 @section('metatags')
-
+  <meta name="description" content="NEILS was set up in 2005 by Prof. Jyotiprakash Tamuli (Gauhati University), Dr. Stephen Morey (La Trobe University, Australia) and Dr. Mark Post (now The University of Sydney) to provide a forum for those who are working on the languages of the North East India. From the very beginning, a key aim of NEILS has been cooperation between local and foreign scholars, with an emphasis on high quality work, on capacity building leading to excellent linguistic research.">
+  <meta name="keywords" content="about neils, 'neils2020', neils11, NEILS, NEILS11, 'North East Indian Linguistics Society', 'Linguistics', 'CIT Kokrajhar', 'Conference 2020'">
 @endsection
 
 <!-- Custom Styles -->

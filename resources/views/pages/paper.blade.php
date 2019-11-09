@@ -2,7 +2,8 @@
 @section('title', 'Call for Paper')
 <!-- Meta Tags  -->
 @section('metatags')
-
+<meta name="keywords" content="call for paper, paper, abstract submission, presentation, poster, neils conference">
+<meta name="description" content="We are pleased to announce the Call for Papers for the 11th International Conference of the North East Indian Linguistics Society (NEILS). NEILS11 will take place from February 7-9, 2020, in Kokrajhar, Assam, India and will be hosted by the Department of Humanities and Social Sciences and Centre for Linguistics and Cultural Studies, Central Institute of Technology Kokrajhar.">
 @endsection
 
 <!-- Custom Styles -->

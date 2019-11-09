@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Login')
+@section('metatags')
+  <meta name="keywords" content="login, conference registration, NEILS registration">
+  <meta name="description" content="Login if you are already registered for NEILS Conference 2020. Registration is open from first week of November 2019.">
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

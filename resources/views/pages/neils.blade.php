@@ -1,8 +1,9 @@
 @extends('layouts.app')
-@section('title', 'NEILS11 Conference 2020')
+@section('title', 'NEILS 2020')
 <!-- Meta Tags  -->
 @section('metatags')
-
+<meta name="keywords" content="neils 2020, conference, linguistic conference, neils at cit kokrajhar, north east indian linguistics society, center for linguistics, february conference cit kokrajhar">
+<meta name="description" content="NEILS 2020 conference will be held in CIT Kokrajhar BTAD Assam India 783370 in the month of February 2020. The conference will be hosted by Dept. of Humanities and Social Sciences and Center for Linguistics and Cultural Studies, CIT Kokrajhar.">
 @endsection
 
 <!-- Custom Styles -->

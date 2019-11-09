@@ -2,9 +2,9 @@
 @section('title', 'Home')
 <!-- Meta Tags  -->
 @section('metatags')
-
+  <meta name="description" content="11th International Conference of the North East Indian Linguistics Society will be held in CIT Kokrajhar BTAD Assam India 783370 from 7th to 9th February 2020. The conference is hosted by the Department of Humanities & Social Sciences and Center for Linguistics and Cultural Studies, CIT Kokrajhar.">
+  <meta name="keywords" content="NEILS, NEILS11, 'North East Indian Linguistics', 'Linguistics', 'CIT Kokrajhar', 'Conference 2020', 'Gauhati University Conference'">
 @endsection
-
 <!-- Custom Styles -->
 @section('stylesheets')
   <!-- Icons -->
