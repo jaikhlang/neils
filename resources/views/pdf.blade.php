@@ -31,7 +31,7 @@
 
         <div class="text-center">
           <h6 class="font-semibold text-sm text-gray-800">Hosted by Department of Humanities & Social Sciences <br>& Center for Linguistics and Cultural Studies, CIT Kokrajhar</h6>
-          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">http://neils.co.in</a>
+          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">https://neils.co.in</a>
         </div>
 
         <table class="table-auto border-none w-full">

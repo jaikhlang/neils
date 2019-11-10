@@ -29,7 +29,7 @@
 
         <div class="text-center py-2">
           <h6 class="font-semibold text-sm text-gray-800">Hosted by Department of Humanities & Social Sciences <br>& Center for Linguistics and Cultural Studies, CIT Kokrajhar</h6>
-          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">http://neils.co.in</a>
+          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">https://neils.co.in</a>
         </div>
         <div class="text-center border-t border-dashed border-red-500 bg-red-200">
           <span class="block py-2 font-semibold">INVOICE</span>
