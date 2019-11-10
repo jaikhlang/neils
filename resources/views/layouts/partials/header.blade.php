@@ -49,6 +49,11 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            @role('admin|superadmin')
+                            <a class="dropdown-item" href="{{ route('manages.index') }}">
+                                {{ __('MANAGES') }}
+                            </a>
+                            @endrole
                             <a class="dropdown-item text-uppercase" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

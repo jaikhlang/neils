@@ -6,7 +6,7 @@
   <div class="container">
     <div class="py-5">
       <div class="mb-4 d-md-flex justify-content-between">
-        <a href="" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
+        <a href="{{ route('manages.registered') }}" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
           <span class="d-block text-dark h4">{{ $unpaid }} <span class="">Participant</span></span>
           <span class="d-block text-dark">Applied (Unpaid)</span>
         </a>
