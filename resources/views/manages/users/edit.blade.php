@@ -106,12 +106,6 @@
           </div>
           <div class="col-md-4 py-5">
             <a href="{{ route('generate.application', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
-
-            @role('superadmin')
-            <div class="">
-              <a href="{{ route('users.editUser', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
-            </div>
-            @endrole
           </div>
       </div>
   </div>

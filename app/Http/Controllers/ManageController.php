@@ -69,4 +69,11 @@ class ManageController extends Controller
     public function exportPayment(){
       return Excel::download(new PaymentExport, 'neilspayments.xlsx');
     }
+
+    //Edit User
+    public function editUser($id){
+      $user = User::find($id);
+      $categories = Category::all();
+      return view('manages.users.edit')->withCategories($categories)->withUser($user);
+    }
 }
