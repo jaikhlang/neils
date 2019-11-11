@@ -76,4 +76,9 @@ class ManageController extends Controller
       $categories = Category::all();
       return view('manages.users.edit')->withCategories($categories)->withUser($user);
     }
+
+    //Update User
+    public function updateUser(Request $request){
+      dd($request);
+    }
 }

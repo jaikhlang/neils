@@ -63,4 +63,5 @@ Route::group(['prefix' => 'manages', 'middleware' => ['role:admin|superadmin']],
 
 
   Route::get('/users/{id}/edit', 'ManageController@editUser')->name('users.editUser');
+  Route::post('/users/update', 'ManageController@updateUser')->name('users.updateUser');
 });

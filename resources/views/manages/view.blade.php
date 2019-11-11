@@ -105,11 +105,12 @@
               </div>
           </div>
           <div class="col-md-4 py-5">
-            <a href="{{ route('generate.application', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
-
+            <div class="mb-4">
+              <a href="{{ route('generate.application', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
+            </div>
             @role('superadmin')
             <div class="">
-              <a href="{{ route('users.editUser', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
+              <a href="{{ route('users.editUser', $user->id) }}" class="btn btn-primary" target="_blank">Edit Application</a>
             </div>
             @endrole
           </div>
