@@ -60,12 +60,12 @@
 
                         {{ csrf_field() }}
                         {{ method_field('POST') }}
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="name">Full Name</label>
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
@@ -76,7 +76,7 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <div class="mb-2">
                               <label for="gender">Gender</label>
@@ -91,7 +91,7 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <div class="mb-2">
                               <label for="country">Country</label>
@@ -106,17 +106,17 @@
                           </div>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="address">Address</label>
                           <textarea name="address" class="form-control @error('address') is-invalid @enderror" rows="3" cols="80"  readonly>{{ $user->address }}</textarea>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="affiliation">Affiliation</label>
                           <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ $user->affiliation }}" readonly>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="code_no">Participant Category</label>
                           <input type="text" name="" class="form-control" value="{{ $user->category->name }}" readonly>
                         </div>
@@ -127,12 +127,12 @@
                         </div>
                         @endif
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="participation_category">Participation Category</label>
                           <input type="text" name="" class="form-control" value="{{ $user->participation_category == 'presenter' ? 'Presenter or Co-presenter' : 'Participant' }}" readonly>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="papertitle">Title of the paper (For presenter &amp Co-presenter)</label>
                           <input type="text" name="papertitle" class="form-control" value="{{ $user->papertitle }}" readonly>
                         </div>
