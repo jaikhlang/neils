@@ -42,19 +42,19 @@
 
                         {{ csrf_field() }}
                         {{ method_field('POST') }}
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="name">Full Name</label>
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
                           </div>
                           <div class="col-md-6">
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="10" autofocus>
+                            <label for="phone">Phone <span class="text-danger">*</span></label>
+                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="15" autofocus>
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -63,10 +63,10 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <div class="mb-2">
-                              <label for="gender">Gender</label>
+                              <label for="gender">Gender <span class="text-danger">*</span></label>
                               <select class="form-control @error('gender') is-invalid @enderror" name="gender" required>
                                 <option value="" disabled>Select Gender</option>
                                 <option value="male" {{ $user->gender == 'male' ? 'selected' : '' }}>Male</option>
@@ -92,10 +92,10 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <div class="mb-2">
-                              <label for="country">Country</label>
+                              <label for="country">Country of citizenship <span class="text-danger">*</span></label>
                               <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->country }}" required>
                               @error('country')
                                   <span class="invalid-feedback" role="alert">
@@ -118,8 +118,8 @@
                           </div>
                         </div>
 
-                        <div class="mb-4">
-                          <label for="address">Address</label>
+                        <div class="mb-2">
+                          <label for="address">Address <span class="text-danger">*</span></label>
                           <textarea name="address" class="form-control @error('address') is-invalid @enderror" rows="3" cols="80" required>{{ $user->address }}</textarea>
                           @error('address')
                               <span class="invalid-feedback" role="alert">
@@ -128,8 +128,8 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="affiliation">Affiliation</label>
+                        <div class="mb-2">
+                          <label for="affiliation">Affiliation <span class="text-danger">*</span></label>
                           <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ $user->affiliation }}">
                             @error('affiliation')
                                 <span class="invalid-feedback" role="alert">
@@ -138,8 +138,8 @@
                             @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="code_no">Participant Category</label>
+                        <div class="mb-2">
+                          <label for="code_no">Participant Category <span class="text-danger">*</span></label>
                           <select id="category" class="form-control @error('code_no') is-invalid @enderror" name="code_no" v-on:change="categoryChange($event)" required>
                             <option value="null" disabled>Select Participant Category</option>
                             @foreach ($categories as $key => $category)
@@ -152,8 +152,8 @@
                               </span>
                           @enderror
                         </div>
-                        <div class="mb-4" v-if="category == 1">
-                          <label for="document_url" class="d-block">Please provide evidence such as a letter from the Head of the Department.</label>
+                        <div class="mb-2" v-if="category == 1">
+                          <label for="document_url" class="d-block">Please provide evidence such as a letter from the Head of the Department. <span class="text-danger">*</span></label>
                           <div class="d-md-flex align-items-center">
                             <a href="{{ asset(!empty($user->document_url) ? $user->document_url : null) }}" class="btn btn-outline-primary mr-2 mb-2">Attachment</a>
                             <input type="file" name="document_url" class="form-control-file mb-2 @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
@@ -165,8 +165,8 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="participation_category">Participation Category</label>
+                        <div class="mb-2">
+                          <label for="participation_category">Participation Category <span class="text-danger">*</span></label>
                           <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category" v-model="participationCategory">
                             <option value="null" disabled>Participation Type</option>
                             <option value="presenter" {{ $user->participation_category == 'presenter' ? 'selected' : '' }}>Presenter or co-presenter.</option>
@@ -181,8 +181,8 @@
 
 
 
-                        <div class="mb-4" v-if="participationCategory === 'presenter'">
-                          <label for="papertitle">Title of the paper (For presenter &amp Co-presenter)</label>
+                        <div class="mb-2" v-if="participationCategory === 'presenter'">
+                          <label for="papertitle">Title of the paper (For presenter &amp Co-presenter) <span class="text-danger">*</span></label>
                           <input type="text" name="papertitle" class="form-control @error('papertitle') is-invalid @enderror" value="{{ $user->papertitle }}">
                           @error('papertitle')
                             <span class="invalid-feedback" role="alert">
@@ -191,7 +191,7 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="remarks">Comments</label>
                           <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80">{{ $user->remarks }}</textarea>
                             @error('remarks')
@@ -201,12 +201,16 @@
                             @enderror
                         </div>
 
-                        <div class="mb-4 custom-control custom-checkbox">
+                        <div class="mb-2">
+                          <span class="d-block text-red h6">All the fields marked with * are mandatory.</span>
+                        </div>
+
+                        <div class="mb-2 custom-control custom-checkbox">
                           <input type="checkbox" name="subscription" class="custom-control-input" id="subscription" {{ $user->subscription == true ? 'checked' : null }}>
                           <label class="custom-control-label" for="subscription">Would you like to add your email to NEILS mailing list</label>
                         </div>
 
-                        <div class="mb-4 custom-control custom-checkbox">
+                        <div class="mb-2 custom-control custom-checkbox">
                           <input type="checkbox" name="disclaimer" checked v-model="disclaimer" class="custom-control-input" id="disclaimer">
                           <label class="custom-control-label" for="disclaimer">“I hereby confirm that I expect to participate in the conference. If for any
                             currently unforeseeable reason, it turns out that I will not be able to
@@ -214,7 +218,7 @@
                           </label>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <input type="submit" name="" v-if="disclaimer" class="btn btn-outline-success btn-lg cursor-pointer" value="Update & Continue">
                           <button type="button" v-if="!disclaimer" class="btn btn-outline-secondary btn-lg cursor-pointer" disabled>Update & Continue</button>
                         </div>

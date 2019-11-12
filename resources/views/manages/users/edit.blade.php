@@ -7,39 +7,82 @@
 <section id="apply" class="border-top">
   <div class="container">
       <div class="row justify-content-between">
+          <div class="col-md-4 py-5">
+            <div class="pt-lg-5 mb-2">
+              <span class="d-block font-weight-bold">REGISTRATION STEPS</span>
+            </div>
+            <div class="px-3 py-3 bg-white rounded border border-dark-50">
+              <ul class="list-unstyled mb-0">
+                <li>1. Register for username and password.</li>
+                <li>2. Verify your account through the link sent to your email.</li>
+                <li>3. Login / proceed to registration.</li>
+                <li>4. Fill the registration form.</li>
+                <li>5. Preview/edit application & submit.</li>
+                <li>6. Payment.</li>
+                <li>7. Registration Status.</li>
+              </ul>
+            </div>
+          </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4 d-block">NEILS CONFERENCE 2020</span>
-              <span class="h6 d-block">APPLICATION</span>
+              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
+              <span class="h6 d-block">EDIT APPLICATION</span>
             </div>
               <div class="card">
+
+
                   <div class="card-body">
-                      <form class="" action="{{ route('users.updateUser') }}" method="POST">
-                        {{ method_field('POST') }}
+                      @if (session('status'))
+                          <div class="alert alert-success" role="alert">
+                              {{ session('status') }}
+                          </div>
+                      @endif
+
+
+                      <form class="" action="{{ route('users.updateUser', $user->id) }}" method="POST">
+
                         {{ csrf_field() }}
+                        {{ method_field('POST') }}
                         <div class="mb-2">
                           <label for="name">Full Name</label>
-                          <input type="text" name="name" class="form-control" value="{{ $user->firstname }} {{ $user->lastname }}" >
+                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
+
                         <div class="mb-2 row">
                           <div class="col-md-6">
                             <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control" value="{{ $user->email }}" >
+                            <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
                           </div>
                           <div class="col-md-6">
                             <label for="phone">Phone</label>
-                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="10" >
+                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="10" autofocus>
+                            @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                           </div>
                         </div>
+
                         <div class="mb-2 row">
                           <div class="col-md-6">
                             <div class="mb-2">
                               <label for="gender">Gender</label>
-                              <input type="text" name="" class="form-control" style="text-transform: capitalize;" value="{{ $user->gender }}" >
+                              <select class="form-control @error('gender') is-invalid @enderror" name="gender" required>
+                                <option value="" disabled>Select Gender</option>
+                                <option value="male" {{ $user->gender == 'male' ? 'selected' : '' }}>Male</option>
+                                <option value="female" {{ $user->gender == 'female' ? 'selected' : '' }}>Female</option>
+                                <option value="other" {{ $user->gender == 'other' ? 'selected' : '' }}>Other</option>
+                              </select>
+                              @error('gender')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <!-- Image -->
+                          <div class="col-md-6 d-none">
+
                           </div>
                         </div>
 
@@ -47,73 +90,111 @@
                           <div class="col-md-6">
                             <div class="mb-2">
                               <label for="country">Country</label>
-                              <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->country }}"  >
+                              <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->country }}" required>
+                              @error('country')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="">
-                              <label for="country">Passport Number</label>
-                              <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ $user->passport_number }}"  >
+
+                            <div class="mb-2">
+                              <label for="passportnumber">Passport Number (For foreign participants)</label>
+                              <input type="text" name="passportnumber" class="form-control @error('passportnumber') is-invalid @enderror" value="{{ $user->passport_number }}">
+                              @error('passportnumber')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
                             </div>
                           </div>
                         </div>
 
                         <div class="mb-2">
                           <label for="address">Address</label>
-                          <textarea name="address" class="form-control @error('address') is-invalid @enderror"   >{{ $user->address }}</textarea>
+                          <textarea name="address" class="form-control @error('address') is-invalid @enderror" rows="3" cols="80" required>{{ $user->address }}</textarea>
+                          @error('address')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
                         </div>
 
                         <div class="mb-2">
                           <label for="affiliation">Affiliation</label>
-                          <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ $user->affiliation }}" >
+                          <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ $user->affiliation }}">
+                            @error('affiliation')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
 
                         <div class="mb-2">
                           <label for="code_no">Participant Category</label>
-                          <input type="text" name="" class="form-control" value="{{ $user->category->name }}" >
+                          <select id="category" class="form-control @error('code_no') is-invalid @enderror" name="code_no">
+                            <option value="null" disabled>Select Participant Category</option>
+                            @foreach ($categories as $key => $category)
+                              <option value="{{ $category->code_no }}" {{ $user->category->code_no == $category->code_no ? 'selected' : '' }}>{{ $category->name }}</option>
+                            @endforeach
+                          </select>
+                          @error('code_no')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
                         </div>
-                        @if($user->category->code_no == 1)
-                        <div class="mb-2">
-                          <label for="document_url" class="d-block">Evidence (Letter from the Head of the Department)</label>
-                          <a href="{{ asset($user->document_url) }}" class="btn btn-outline-primary">Attachment</a>
-                        </div>
-                        @endif
 
                         <div class="mb-2">
                           <label for="participation_category">Participation Category</label>
-                          <input type="text" name="" class="form-control" value="{{ $user->participation_category == 'presenter' ? 'Presenter or Co-presenter' : 'Participant' }}" >
+                          <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category">
+                            <option value="null" disabled>Participation Type</option>
+                            <option value="presenter" {{ $user->participation_category == 'presenter' ? 'selected' : '' }}>Presenter or co-presenter.</option>
+                            <option value="nonpresenter" {{ $user->participation_category == 'nonpresenter' ? 'selected' : '' }}>Non-presenter.</option>
+                          </select>
+                          @error('participation_category')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
                         </div>
 
                         <div class="mb-2">
                           <label for="papertitle">Title of the paper (For presenter &amp Co-presenter)</label>
-                          <input type="text" name="papertitle" class="form-control" value="{{ $user->papertitle }}" >
+                          <input type="text" name="papertitle" class="form-control @error('papertitle') is-invalid @enderror" value="{{ $user->papertitle }}">
+                          @error('papertitle')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                          @enderror
                         </div>
 
                         <div class="mb-2">
                           <label for="remarks">Comments</label>
-                          <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" >{{ $user->remarks }}</textarea>
+                          <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80">{{ $user->remarks }}</textarea>
+                            @error('remarks')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                            @enderror
                         </div>
 
                         <div class="mb-2">
-                          <label for="">Registration Fees</label>
-                          @if(!empty($user->payment->amount))
-                          <input type="text" name="" class="form-control" value="{{ $user->payment->amount }} INR ({{ $user->payment->paymentId }}) {{ $user->payment->created_at->format('d-m-Y') }}" >
-                          @else
-                            <input type="text" name="" class="form-control" value="Not Paid" >
-                          @endif
-                        </div>
-
-                        <div class="">
-                          <input type="submit" name="" class="btn btn-outline-primary" value="Update Application">
+                          <input type="submit" class="btn btn-outline-success btn-lg cursor-pointer" value="Update Application">
                         </div>
                       </form>
                   </div>
               </div>
           </div>
-          <div class="col-md-4 py-5">
-            <a href="{{ route('generate.application', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
-          </div>
       </div>
   </div>
 </section>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+
+</script>
 @endsection

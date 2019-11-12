@@ -39,19 +39,19 @@
                       <form class="" action="{{ route('participant.store', Auth::user()) }}" method="POST" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         {{ method_field('PUT') }}
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="name">Full Name</label>
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
                           </div>
                           <div class="col-md-6">
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" maxlength="10" required autofocus>
+                            <label for="phone">Phone <span class="text-danger">*</span></label>
+                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" maxlength="15" required autofocus>
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -60,9 +60,9 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
-                            <label for="gender">Gender</label>
+                            <label for="gender">Gender <span class="text-danger">*</span></label>
                             <select class="form-control @error('gender') is-invalid @enderror" name="gender" required>
                               <option value="" selected disabled>Select Gender</option>
                               <option value="male">Male</option>
@@ -86,9 +86,9 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row">
+                        <div class="mb-2 row">
                           <div class="col-md-6">
-                            <label for="country">Country</label>
+                            <label for="country">Country of citizenship <span class="text-danger">*</span></label>
                             <input type="text" name="country" class="form-control @error('country') is-invalid @enderror" value="{{ old('country') }}" required>
                             @error('country')
                                 <span class="invalid-feedback" role="alert">
@@ -107,8 +107,8 @@
                           </div>
                         </div>
 
-                        <div class="mb-4">
-                          <label for="address">Address</label>
+                        <div class="mb-2">
+                          <label for="address">Address <span class="text-danger">*</span></label>
                           <textarea name="address" class="form-control @error('address') is-invalid @enderror" rows="3" cols="80" required>{{ old('address') }}</textarea>
                           @error('address')
                               <span class="invalid-feedback" role="alert">
@@ -117,9 +117,9 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="affiliation">Affiliation</label>
-                          <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ old('affiliation') }}">
+                        <div class="mb-2">
+                          <label for="affiliation">Affiliation <span class="text-danger">*</span></label>
+                          <input type="text" name="affiliation" class="form-control @error('affiliation') is-invalid @enderror" value="{{ old('affiliation') }}" required>
                             @error('affiliation')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -127,8 +127,8 @@
                             @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="code_no">Participant Category</label>
+                        <div class="mb-2">
+                          <label for="code_no">Participant Category <span class="text-danger">*</span></label>
                           <select id="category" class="form-control @error('code_no') is-invalid @enderror" name="code_no" v-model="category" required>
                             <option value="null" selected disabled>Select Participant Category</option>
                             @foreach ($categories as $key => $category)
@@ -142,8 +142,8 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4 pb-2 px-2 rounded" v-if="documentRequired" style="border: 1px dashed red;">
-                          <label for="document_url">Please provide evidence such as a letter from the Head of the Department.</label>
+                        <div class="mb-2 pb-2 px-2 rounded" v-if="documentRequired" style="border: 1px dashed red;">
+                          <label for="document_url">Please provide evidence such as a letter from the Head of the Department. <span class="text-danger">*</span></label>
                           <input type="file" name="document_url" class="form-control-file @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
                           @error('document_url')
                               <span class="invalid-feedback" role="alert">
@@ -152,8 +152,8 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
-                          <label for="participation_category">Participation Category</label>
+                        <div class="mb-2">
+                          <label for="participation_category">Participation <Category>*</Category> span.text-danger</label>
                           <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category" v-model="participationCategory">
                             <option value="null" selected disabled>Participation Type</option>
                             <option value="presenter">Presenter or co-presenter.</option>
@@ -168,8 +168,8 @@
 
 
 
-                        <div class="mb-4" v-if="participationCategory === 'presenter'">
-                          <label for="papertitle">Title of the paper (For presenter &amp Co-presenter)</label>
+                        <div class="mb-2" v-if="participationCategory === 'presenter'">
+                          <label for="papertitle">Title of the paper (For presenter &amp Co-presenter) <span class="text-danger">*</span></label>
                           <input type="text" name="papertitle" class="form-control @error('papertitle') is-invalid @enderror" value="{{ old('papertitle') }}">
                           @error('papertitle')
                             <span class="invalid-feedback" role="alert">
@@ -178,7 +178,7 @@
                           @enderror
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <label for="remarks">Comments</label>
                           <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80">{{ old('remarks') }}</textarea>
                             @error('remarks')
@@ -187,13 +187,16 @@
                               </span>
                             @enderror
                         </div>
+                        <div class="mb-2">
+                          <span class="d-block text-red h6">All the fields marked with * are mandatory.</span>
+                        </div>
 
-                        <div class="mb-4 custom-control custom-checkbox">
+                        <div class="mb-2 custom-control custom-checkbox">
                           <input type="checkbox" name="subscription" class="custom-control-input" id="subscription">
                           <label class="custom-control-label" for="subscription">Would you like to add your email to NEILS mailing list</label>
                         </div>
 
-                        <div class="mb-4 custom-control custom-checkbox">
+                        <div class="mb-2 custom-control custom-checkbox">
                           <input type="checkbox" name="disclaimer" v-model="acceptTermsNcondition" class="custom-control-input" id="disclaimer">
                           <label class="custom-control-label" for="disclaimer">“I hereby confirm that I expect to participate in the conference. If for any
                             currently unforeseeable reason, it turns out that I will not be able to
@@ -201,7 +204,7 @@
                           </label>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-2">
                           <button type="button" v-if="!acceptTermsNcondition" class="btn btn-outline-secondary btn-lg cursor-pointer" disabled>Save & Continue</button>
                           <input type="submit" name="" v-if="acceptTermsNcondition" class="btn btn-outline-success btn-lg" value="Save & Continue">
                         </div>
