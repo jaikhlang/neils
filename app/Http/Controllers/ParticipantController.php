@@ -39,7 +39,7 @@ class ParticipantController extends Controller
         'country' => 'required',
         'passportnumber' => 'nullable',
         'address' => 'required',
-        'affiliation' => 'nullable',
+        'affiliation' => 'required',
         'code_no' => 'required',
         'participation_category' => 'required',
         'papertitle' => 'nullable',

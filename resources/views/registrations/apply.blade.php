@@ -142,7 +142,7 @@
                           @enderror
                         </div>
 
-                        <div class="mb-2 pb-2 px-2 rounded" v-if="documentRequired" style="border: 1px dashed red;">
+                        <div class="mb-2 pb-2" v-if="documentRequired">
                           <label for="document_url">Please provide evidence such as a letter from the Head of the Department. <span class="text-danger">*</span></label>
                           <input type="file" name="document_url" class="form-control-file @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
                           @error('document_url')
@@ -153,7 +153,7 @@
                         </div>
 
                         <div class="mb-2">
-                          <label for="participation_category">Participation <Category>*</Category> span.text-danger</label>
+                          <label for="participation_category">Participation Category <span class="text-danger">*</span></label>
                           <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category" v-model="participationCategory">
                             <option value="null" selected disabled>Participation Type</option>
                             <option value="presenter">Presenter or co-presenter.</option>
@@ -188,7 +188,7 @@
                             @enderror
                         </div>
                         <div class="mb-2">
-                          <span class="d-block text-red h6">All the fields marked with * are mandatory.</span>
+                          <span class="d-block text-danger">Note: All the fields marked with * are mandatory.</span>
                         </div>
 
                         <div class="mb-2 custom-control custom-checkbox">

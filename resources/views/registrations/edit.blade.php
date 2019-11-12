@@ -202,7 +202,7 @@
                         </div>
 
                         <div class="mb-2">
-                          <span class="d-block text-red h6">All the fields marked with * are mandatory.</span>
+                          <span class="d-block text-danger">Note: All the fields marked with * are mandatory.</span>
                         </div>
 
                         <div class="mb-2 custom-control custom-checkbox">
