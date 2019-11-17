@@ -16,7 +16,8 @@ class ManageController extends Controller
     //Dashboard.
     public function index(){
       $users = Role::where('name', 'participant')->first()->users;
-      $unpaid = $users->where('status', 'UNPAID')->count();
+      // $unpaid = $users->where('status', 'UNPAID')->count();
+      $unpaid = $users->where('status','!=', 'PAID')->where('status','!=', null)->count();
       $paid = $users->where('status', 'PAID')->count();
       $presenter = $users->where('status', 'PAID')->where('participation_category', 'presenter')->count();
       $participant = $users->where('status', 'PAID')->where('participation_category', 'nonpresenter')->count();
