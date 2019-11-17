@@ -32,7 +32,7 @@ class ManageController extends Controller
 
     //Registered and PAID participants list.
     public function participants(){
-      $participants = User::where('status', 'PAID')->orderBy('id', 'desc')->get();
+      $participants = User::where('status', 'PAID')->orderBy('payment_id', 'desc')->get();
       return view('manages.participants')->withParticipants($participants);
     }
 
