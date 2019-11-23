@@ -12,7 +12,7 @@ class DefaultSeeder extends Seeder
     public function run()
     {
         $category1 = new App\Category;
-        $category1->name = 'SAARC student with out financial support.';
+        $category1->name = 'SAARC student without financial support.';
         $category1->remark = null;
         $category1->code_no = '1';
         $category1->save();

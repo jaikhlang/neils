@@ -338,7 +338,7 @@
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Academic Adviser</span>
               <span class="d-block h6 font-weight-bold">Dr. Tanushree Nayak</span>
-              <span class="d-block h6 font-normal mb-0">Assistant Professor,</span>
+              <span class="d-block h6 font-normal mb-0">Assistant Professor, HoD</span>
               <span class="d-block h6 font-normal">Dept. of Humanities & Social Sciences, CIT Kokrajhar</span>
             </div>
           </div>
@@ -349,7 +349,7 @@
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Technical Adviser</span>
               <span class="d-block h6 font-weight-bold">Dr. Sandeep Kumar Srivastava</span>
-              <span class="d-block h6 font-normal mb-0">Associate Professor,</span>
+              <span class="d-block h6 font-normal mb-0">Associate Professor, Dean R&D</span>
               <span class="d-block h6 font-normal">Department of Physics, CIT Kokrajhar</span>
             </div>
           </div>
@@ -370,7 +370,7 @@
             <img src="{{ asset('images/peoples/hss-jdh.jpg') }}" class="w-25" alt="CIT Director">
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Co-Convenor</span>
-              <span class="d-block h6 font-weight-bold">Dr. J.D.H. Basumatary</span>
+              <span class="d-block h6 font-weight-bold">J.D.H. Basumatary</span>
               <span class="d-block h6 font-normal mb-0">Assistant Professor,</span>
               <span class="d-block h6 font-normal">Department of Humanities & Social Sciences, CIT Kokrajhar</span>
             </div>
@@ -391,7 +391,7 @@
             <img class="w-25" src="{{ asset('images/peoples/hss-gunajit.jpg') }}" alt="Director CIT Kokrajhar">
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Member</span>
-              <span class="d-block h6 font-weight-bold">Gunajit Sarma</span>
+              <span class="d-block h6 font-weight-bold">Dr. Gunajit Sarma</span>
               <span class="d-block h6 font-weight-normal mb-0">Assistant Professor<br>Department of Humanities & Social Sciences, CIT Kokrajhar</span>
             </div>
           </div>
@@ -401,7 +401,7 @@
             <img class="w-25" src="{{ asset('images/peoples/hss-kaushik.jpg') }}" alt="Director CIT Kokrajhar">
             <div class="flex-fill ml-4">
               <span class="d-block h6 font-italic mb-0">Member</span>
-              <span class="d-block h6 font-weight-bold">Kaushik Barman</span>
+              <span class="d-block h6 font-weight-bold">Dr. Kaushik Barman</span>
               <span class="d-block h6 font-weight-normal mb-0">Assistant Professor<br>Department of Humanities & Social Sciences, CIT Kokrajhar</span>
             </div>
           </div>
