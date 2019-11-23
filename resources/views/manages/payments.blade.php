@@ -31,7 +31,13 @@
                 <td class="py-1 px-1 text-right">{{ $payment->fees }}</td>
                 <td class="py-1 px-1">{{ $payment->buyer_name }}</td>
                 <td class="py-1 px-1 text-right">{{ $payment->buyer_email }}</td>
-                <td class="py-1 px-1 text-center"> <a href="{{ route('manages.participants.view', $payment->user->id) }}" class="" target="_blank">View</a> </td>
+                <td class="py-1 px-1 text-center">
+                  @if(!empty($payment->user->id))
+                  <a href="{{ route('manages.participants.view', $payment->user->id) }}" class="" target="_blank">View</a>
+                  @else
+                    <span class="text-danger">Redundant</span>
+                  @endif
+                </td>
               </tr>
             @endforeach
             <tr class="cursor-ponter">
