@@ -110,7 +110,7 @@
             </div>
             @role('superadmin')
             <div class="">
-              <a href="{{ route('users.editUser', $user->id) }}" class="btn btn-primary" target="_blank">Edit Application</a>
+              <a href="{{ route('users.editUser', $user) }}" class="btn btn-primary" target="_blank">Edit Application</a>
             </div>
             @endrole
           </div>

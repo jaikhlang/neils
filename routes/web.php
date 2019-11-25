@@ -62,6 +62,6 @@ Route::group(['prefix' => 'manages', 'middleware' => ['role:admin|superadmin']],
   Route::get('/export/payment','ManageController@exportPayment')->name('users.exportPayment');
 
 
-  Route::get('/users/{id}/edit', 'ManageController@editUser')->name('users.editUser');
-  Route::post('/users/update', 'ManageController@updateUser')->name('users.updateUser');
+  Route::get('/users/{user}/edit', 'ManageController@editUser')->name('users.editUser');
+  Route::put('/users/update/{user}', 'ManageController@updateUser')->name('users.updateUser');
 });

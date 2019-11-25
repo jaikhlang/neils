@@ -79,7 +79,41 @@ class ManageController extends Controller
     }
 
     //Update User
-    public function updateUser(Request $request){
-      dd($request);
+    public function updateUser(Request $request, User $user){
+
+      $this->validate($request,[
+        'phone' => 'required',
+        'gender' => 'required',
+        'country' => 'required',
+        'passportnumber' => 'nullable',
+        'address' => 'required',
+        'affiliation' => 'nullable',
+        'code_no' => 'required',
+        'participation_category' => 'required',
+        'papertitle' => 'nullable',
+        'remarks' => 'nullable'
+      ]);
+      $user->firstname = $request->firstname;
+      $user->lastname = $request->lastname;
+      $user->phone = $request->phone;
+      $user->gender = $request->gender;
+      $user->country = $request->country;
+      $user->passport_number = $request->passportnumber;
+      $user->address = $request->address;
+      $user->affiliation = $request->affiliation;
+      $user->category_id = Category::where('code_no', $request->code_no)->first()->id;
+      $user->participation_category = $request->participation_category;
+      $user->papertitle = $request->papertitle;
+      $user->subscription = $request->subscription == 'on' ? true : false;
+      $user->remarks = $request->remarks;
+      if($request->hasFile('document_url')){
+        $file = $request->file('document_url');
+        $filename = strtolower(preg_replace('/\s+/','',trim($user->firstname))) .time() . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('uploads/'), $filename);
+        $user->document_url = 'uploads/' . $filename;
+      }
+      //Status requires no updates.
+      $user->save();
+      return redirect()->back();
     }
 }

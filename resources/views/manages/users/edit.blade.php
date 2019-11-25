@@ -1,32 +1,20 @@
 @extends('layouts.manage')
 @section('title', 'View')
 @section('stylesheets')
-
+<style media="screen">
+  #apply{
+    font-family: sans-serif;
+  }
+</style>
 @endsection
 @section('content')
 <section id="apply" class="border-top">
   <div class="container">
-      <div class="row justify-content-between">
-          <div class="col-md-4 py-5">
-            <div class="pt-lg-5 mb-2">
-              <span class="d-block font-weight-bold">REGISTRATION STEPS</span>
-            </div>
-            <div class="px-3 py-3 bg-white rounded border border-dark-50">
-              <ul class="list-unstyled mb-0">
-                <li>1. Register for username and password.</li>
-                <li>2. Verify your account through the link sent to your email.</li>
-                <li>3. Login / proceed to registration.</li>
-                <li>4. Fill the registration form.</li>
-                <li>5. Preview/edit application & submit.</li>
-                <li>6. Payment.</li>
-                <li>7. Registration Status.</li>
-              </ul>
-            </div>
-          </div>
+      <div class="row justify-content-center">
           <div class="col-md-8 py-5">
-            <div class="mb-3">
-              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
-              <span class="h6 d-block">EDIT APPLICATION</span>
+            <div class="mb-3 text-center">
+              <span class="font-weight-bold h4">NEILS CONFERENCE 2020</span>
+              <span class="h6 d-block font-weight-bold">EDIT APPLICATION</span>
             </div>
               <div class="card">
 
@@ -39,19 +27,25 @@
                       @endif
 
 
-                      <form class="" action="{{ route('users.updateUser', $user->id) }}" method="POST">
+                      <form class="" action="{{ route('users.updateUser', $user) }}" method="POST" enctype="multipart/form-data">
 
                         {{ csrf_field() }}
-                        {{ method_field('POST') }}
-                        <div class="mb-2">
-                          <label for="name">Full Name</label>
-                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
+                        {{ method_field('PUT') }}
+                        <div class="mb-2 row">
+                          <div class="col-md-6">
+                            <label for="name">First Name</label>
+                            <input type="text" name="firstname" class="form-control" value="{{ $user->firstname }}">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="name">Last Name</label>
+                            <input type="text" name="lastname" class="form-control" value="{{ $user->lastname }}">
+                          </div>
                         </div>
 
                         <div class="mb-2 row">
                           <div class="col-md-6">
                             <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
+                            <input type="email" name="email" class="form-control" value="{{ $user->email }}">
                           </div>
                           <div class="col-md-6">
                             <label for="phone">Phone</label>
@@ -148,6 +142,19 @@
                         </div>
 
                         <div class="mb-2">
+                          <label for="document_url" class="d-block">Please provide evidence such as a letter from the Head of the Department. <span class="text-danger">*</span></label>
+                          <div class="d-md-flex align-items-center">
+                            <a href="{{ asset(!empty($user->document_url) ? $user->document_url : null) }}" class="btn btn-outline-primary mr-2 mb-2">Attachment</a>
+                            <input type="file" name="document_url" class="form-control-file mb-2 @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
+                          </div>
+                          @error('document_url')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                        </div>
+
+                        <div class="mb-2">
                           <label for="participation_category">Participation Category</label>
                           <select id="participation_category" class="form-control @error('participation_category') is-invalid @enderror" name="participation_category">
                             <option value="null" disabled>Participation Type</option>
@@ -171,7 +178,7 @@
                           @enderror
                         </div>
 
-                        <div class="mb-2">
+                        <div class="mb-4">
                           <label for="remarks">Comments</label>
                           <textarea name="remarks" class="form-control @error('remarks') is-invalid @enderror" rows="3" cols="80">{{ $user->remarks }}</textarea>
                             @error('remarks')
@@ -181,8 +188,8 @@
                             @enderror
                         </div>
 
-                        <div class="mb-2">
-                          <input type="submit" class="btn btn-outline-success btn-lg cursor-pointer" value="Update Application">
+                        <div class=" text-right">
+                          <input type="submit" class="btn btn-success btn-lg cursor-pointer" value="Update Application">
                         </div>
                       </form>
                   </div>
