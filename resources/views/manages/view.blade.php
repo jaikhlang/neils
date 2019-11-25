@@ -1,16 +1,35 @@
 @extends('layouts.manage')
 @section('title', 'View')
 @section('stylesheets')
-
+<style media="screen">
+  #apply{
+    font-family: sans-serif;
+  }
+</style>
 @endsection
 @section('content')
 <section id="apply" class="border-top">
   <div class="container">
-      <div class="row justify-content-between">
+      <div class="row justify-content-center">
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4 d-block">NEILS CONFERENCE 2020</span>
-              <span class="h6 d-block">APPLICATION</span>
+              <span class="font-weight-bold h4 d-block text-body">NEILS CONFERENCE 2020</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h6 d-block font-weight-bold text-dark">APPLICATION</span>
+                <div class="d-flex">
+                  <div class="align-items-center">
+                    <a href="{{ route('generate.application', $user->id) }}" class="btn btn-outline-secondary btn-sm mr-2" target="_blank">Print</a>
+                  </div>
+                  @role('superadmin')
+                  <div class="">
+                    <a href="{{ route('users.editUser', $user) }}" class="btn btn-outline-secondary btn-sm mr-2">Edit</a>
+                  </div>
+                  {{-- <div class="">
+                    <a href="{{ route('users.editUser', $user) }}" class="btn btn-outline-secondary btn-sm">Card</a>
+                  </div> --}}
+                  @endrole
+                </div>
+              </div>
             </div>
               <div class="card">
                   <div class="card-body">
@@ -103,16 +122,6 @@
                       </form>
                   </div>
               </div>
-          </div>
-          <div class="col-md-4 py-5">
-            <div class="mb-4">
-              <a href="{{ route('generate.application', $user->id) }}" class="btn btn-primary" target="_blank">Print Application</a>
-            </div>
-            @role('superadmin')
-            <div class="">
-              <a href="{{ route('users.editUser', $user) }}" class="btn btn-primary" target="_blank">Edit Application</a>
-            </div>
-            @endrole
           </div>
       </div>
   </div>

@@ -144,7 +144,7 @@
                         <div class="mb-2">
                           <label for="document_url" class="d-block">Please provide evidence such as a letter from the Head of the Department. <span class="text-danger">*</span></label>
                           <div class="d-md-flex align-items-center">
-                            <a href="{{ asset(!empty($user->document_url) ? $user->document_url : null) }}" class="btn btn-outline-primary mr-2 mb-2">Attachment</a>
+                            <a href="{{ !empty($user->document_url) ? asset(e($user->document_url)) : url('#!') }}" class="btn btn-outline-primary mr-2 mb-2">Attachment</a>
                             <input type="file" name="document_url" class="form-control-file mb-2 @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
                           </div>
                           @error('document_url')
