@@ -20,7 +20,7 @@
                   <div class="align-items-center">
                     <a href="{{ route('generate.application', $user->id) }}" class="btn btn-outline-secondary btn-sm mr-2" target="_blank">Print</a>
                   </div>
-                  @role('superadmin')
+                  @role('superadmin|admin')
                   <div class="">
                     <a href="{{ route('users.editUser', $user) }}" class="btn btn-outline-secondary btn-sm mr-2">Edit</a>
                   </div>
