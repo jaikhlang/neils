@@ -68,11 +68,14 @@
 
     <div class="d-block py-5 border-bottom border-top">
       <div class="container">
-        <div class="d-md-flex justify-content-center">
+        <div class="d-md-flex justify-content-center mb-4">
           <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
           {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a> --}}
           <a href="{{ route('pages.neils') }}#status" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">Paper Status</a>
           <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
+        </div>
+        <div class="text-center">
+          <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" class="text-decoration-none text-dark">HIMALAYAN LANGUAGES SYMPOSIUM (HLS26) CALL FOR PAPER</a>
         </div>
       </div>
     </div>

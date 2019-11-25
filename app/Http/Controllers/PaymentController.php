@@ -13,6 +13,7 @@ class PaymentController extends Controller
 {
 
     public function pay(Request $request){
+      // dd(Auth::user()->phone);
       if(config('app.payment_status') == 'TEST'){
         //Still Testing
         $api = new \Instamojo\Instamojo(
@@ -35,6 +36,7 @@ class PaymentController extends Controller
             'amount' => Auth::user()->calculateFee(),
             'buyer_name' => Auth::user()->firstname .' '. Auth::user()->lastname,
             'send_email' => true,
+            'send_sms' => false,
             'email' => Auth::user()->email,
             'phone' => Auth::user()->phone,
             'redirect_url' => route('payment.response'),
