@@ -49,7 +49,7 @@
                           </div>
                           <div class="col-md-6">
                             <label for="phone">Phone</label>
-                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="10" autofocus>
+                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $user->phone }}" maxlength="15" autofocus>
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
