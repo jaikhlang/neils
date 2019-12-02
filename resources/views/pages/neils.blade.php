@@ -277,17 +277,16 @@
                   <tr class="cursor-pointer">
                     <td>Early October</td>
                     <td>
-                      <span class="d-block text-danger">Notification of abstract acceptance.</span>
-                      <span class="d-block blinkme text-success">Notification of abstract acceptance has been sent to your email. Please check.</span>
+                      <span class="d-block text-danger">Notification of abstract acceptance has been sent to your email. Please check.</span>
                     </td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>November 1, 2019</td>
-                    <td>Registration opens (For presenters and non-presenters).</td>
+                    <td class="text-danger">Registration opens (For presenters and non-presenters).</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>December 1, 2019</td>
-                    <td>Registration closes for presenters.</td>
+                    <td class="blinkme">Registration deadline extended till 8th December 2019 for presenters.</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>January 15, 2020</td>
