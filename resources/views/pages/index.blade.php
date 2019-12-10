@@ -68,7 +68,7 @@
 
     <div class="bg-danger text-white">
       <div class="container">
-        <marquee class="mb-0 py-2 align-middle"><span class="h6 mb-0 d-inline-block mr-4">⚫ NEILS2020 REGISTRATION DEADLINE FOR PRESENTERS IS EXTENDED TILL 8TH DECEMBER 2019</span> <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" class="d-inline-block text-decoration-none text-white mb-0">⚫ HIMALAYAN LANGUAGES SYMPOSIUM (HLS26)-CALL FOR PAPER</a></marquee>
+        <marquee class="mb-0 py-2 align-middle"><a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" style="font-size: 12px;" class="d-inline-block text-decoration-none blinkme text-white mr-4 mb-0" target="_blank">⚫ ACCOMMODATION FOR NEILS2020</a> <span class="h6 mb-0 d-inline-block mr-4" style="font-size: 12px;">⚫ NEILS2020 REGISTRATION DEADLINE FOR PRESENTERS IS EXTENDED TILL 8TH DECEMBER 2019</span> <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" style="font-size: 12px;" class="d-inline-block text-decoration-none text-white mb-0">⚫ HIMALAYAN LANGUAGES SYMPOSIUM (HLS26)-CALL FOR PAPER</a></marquee>
       </div>
     </div>
 
@@ -76,9 +76,9 @@
       <div class="container">
         <div class="d-md-flex justify-content-center mb-4">
           <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
-          {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">Accomodation</a> --}}
+          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a>
           <a href="{{ route('pages.neils') }}#status" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">Paper Status</a>
-          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a>
+          {{-- <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a> --}}
         </div>
         {{-- <div class="text-center">
           <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" class="text-decoration-none text-dark">HIMALAYAN LANGUAGES SYMPOSIUM (HLS26) CALL FOR PAPER</a>
