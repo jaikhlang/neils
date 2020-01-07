@@ -11,6 +11,7 @@
   <!-- Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  {{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> --}}
   <link rel="stylesheet" href="{{ asset('css/compact-gallery.css')}}">
 @endsection
 
@@ -305,6 +306,67 @@
     </div>
   </div>
 
+  <section id="reach" class="reach py-5 bg-white border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="px-4 py-5 text-white" style="background-image: url('{{ asset('images/tea-gardens-assam.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="pt-4">How to reach Kokrajhar?</h4>
+            <div class="pb-5">
+              <span class="d-block mb-5">Distance: About 225 K.M. from Guwahati.</span>
+            </div>
+
+            <div class="mb-4 cursor-pointer">
+              <span class="d-block font-weight-bold">Route direction from Jalukbari (Guwahati) to CIT Kokrajhar:</span>
+              <span class="d-block font-italic">First cross Saraighat Bridge then head to Rangia ⇒ Nalbari ⇒ Barama ⇒  Pathsala ⇒ Barpeta Road ⇒ Bijni ⇒ Bongaigaon (IOCL not main town) ⇒ Kajalgaon (Chirang) ⇒ Karigaon (Final destination on High Way).</span>
+              <span class="d-block font-italic">Then look towards left - you will find a tall statue of legendary hero Jwhwlao Dwimalu. From this point turn left (J.D. road begins) to Kokrajhar town. Drive another 15 K.M. to reach CIT Kokrajhar. </span>
+            </div>
+
+            <div class=" cursor-pointer">
+              <strong>Roadways:</strong> <br>
+              <div class="font-italic">
+                a. Via Rangia-Barpeta Road (Buses are available from ISBT Guwahati).<br>
+                b. Via Goalpara (No direct buses are available.  People coming from Tura or Goalpara may use this route)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="mt-5 px-4 py-4 shadow rounded border border-light cursor-pointer">
+            <span class="d-block"><strong class="text-danger">Travel by Bus:</strong> Morning 5 A.M. from ISBT Guwahati and 12 P.M. from ISBT</span>
+              <div class="text-justify">
+                <span class="d-block">
+                  <strong class="text-danger">Travel by Railway:</strong> Many expresses including Rajdhani has stoppage at Kokrajhar. New Bongaigaon (junction) station is also not far from Kokrajhar. CIT Kokrajhar is 8 K.M. away from Kokrajhar Train Station and about 40 K.M. from New Bongaigaon.
+                </span>
+              </div>
+              <div class="ml-4 text-justify">
+                <span class="font-weight-bold d-block">Daily convenient trains from Guwahati:</span>
+                Rajdhani Express: 6:58 A.M.,
+                Kamrup Express: 7.43 A.M.,
+                North East Express(From Kamakhya Station): 10.02 A.M.,
+                Brahmaputra Mail : 12.48 P.M.
+              </div>
+              <div class="ml-4 mb-4 text-justify">
+                <span class="font-weight-bold d-block">Local trains:  </span>
+                Sifung Passenger 2.20 P.M.,
+                Intercity express (Kamakhya-Alipur Duar) 4.00 PM<br>
+                (Nearer Station from Gauhati University is Kamakhya Station at Maligaon)<br>
+              </div>
+              <div class="">
+                <span class="d-block font-weight-bold text-danger">Common transportation facility from NEILS 11 host:</span>
+                <div class="ml-4 text-justify">
+                  1. Two buses from CITK will be sent to Linguistics Department of Gauhati University on 6th of February to pick up the participants. So, participants may come by these buses at around 1 P.M. from Guwahati to Kokrajhar.<br>
+                  2. Participants from various places reaching to Guwahati may head straight away to Linguistics Department of G.U. Volunteers will be there to guide the participants.<br>
+                  3.  If they miss the buses they may catch local trains which are available from Kamakhya Station (Maligaon) to New Bongaigaon or Kokrajhar. Volunteers will be there to receive the guests at Kokrajhar stations.
+                </div>
+                For any problem of transportation feel free to contact: +91-84720-14223 (WhatsApp also available)
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div id="organizer" class="py-5 bg-white border-bottom">
     <div class="container">
       <div class="mb-4">
@@ -498,6 +560,7 @@
       </div>
     </div>
   </div>
+
 
   <section id="compactgallery" class="gallery-block compact-gallery border-bottom">
       <div class="container">
