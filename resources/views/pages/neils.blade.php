@@ -310,19 +310,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="px-4 py-5 text-white" style="background-image: url('{{ asset('images/tea-gardens-assam.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
+          <div class="px-4 py-5" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('{{ asset('images/tea-garden.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
             <h4 class="pt-4">How to reach Kokrajhar?</h4>
             <div class="pb-5">
               <span class="d-block mb-5">Distance: About 225 K.M. from Guwahati.</span>
             </div>
 
-            <div class="mb-4 cursor-pointer">
+            <div class="mb-4 cursor-pointer text-white">
               <span class="d-block font-weight-bold">Route direction from Jalukbari (Guwahati) to CIT Kokrajhar:</span>
               <span class="d-block font-italic">First cross Saraighat Bridge then head to Rangia ⇒ Nalbari ⇒ Barama ⇒  Pathsala ⇒ Barpeta Road ⇒ Bijni ⇒ Bongaigaon (IOCL not main town) ⇒ Kajalgaon (Chirang) ⇒ Karigaon (Final destination on High Way).</span>
               <span class="d-block font-italic">Then look towards left - you will find a tall statue of legendary hero Jwhwlao Dwimalu. From this point turn left (J.D. road begins) to Kokrajhar town. Drive another 15 K.M. to reach CIT Kokrajhar. </span>
             </div>
 
-            <div class=" cursor-pointer">
+            <div class="text-white cursor-pointer">
               <strong>Roadways:</strong> <br>
               <div class="font-italic">
                 a. Via Rangia-Barpeta Road (Buses are available from ISBT Guwahati).<br>
@@ -332,7 +332,7 @@
           </div>
         </div>
         <div class="col-md-12">
-          <div class="mt-5 px-4 py-4 shadow rounded border border-light cursor-pointer">
+          <div class="px-4 py-4 shadow cursor-pointer" style="border-top: 4px solid #e6524e; border-bottom: 4px solid #e6524e;">
             <span class="d-block"><strong class="text-danger">Travel by Bus:</strong> Morning 5 A.M. from ISBT Guwahati and 12 P.M. from ISBT</span>
               <div class="text-justify">
                 <span class="d-block">
