@@ -244,6 +244,19 @@
             <a href="{{ url('https://easychair.org/conferences/?conf=neils11') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">Abstract Submission Link</a>
             <a href="{{ asset('uploads/instructions.pdf') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">EasyChair Instructions</a>
           </div>
+
+          <div class="py-4 text-danger" id="posterpresenter">
+            <span class="d-block font-weight-bold">Instructions for the Poster Presenters:</span>
+              a. Poster Size:  5 feet height and 4 feet width (5x4).<br>
+              b. Poster should be flex printing.<br>
+              c. Printing can be made by the host if the presenters send the poster file in advance (Printing cost will be charged from presenters).<br>
+              d. For any query mail or call Bihung Brahma
+
+              <div class="">
+                Email:b.brahma@cit.ac.in<br>
+                Mobile: 8472014223
+              </div>
+          </div>
         </div>
       </div>
     </div>
