@@ -66,12 +66,12 @@
       </div>
     </div>
 
-    <div class="" style="background-color: #FFBB00; color: #FF4343;">
+    <div class="" style="background-color: #FFBB00; color: #1A3365;">
       <div class="container">
         <marquee class="mb-0 py-2 align-middle">
-          <a href="{{ route('pages.paper') }}#posterpresenter" style="font-size: 12px; color: #FF4343;" class="d-inline-block text-decoration-none mr-4 mb-0 text-uppercase" target="_blank">⚫ Instructons for poster presenters. (Poster Size)</a>
-          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" style="font-size: 12px; color: #FF4343;" class="d-inline-block text-decoration-none mr-4 mb-0" target="_blank">⚫ ACCOMMODATION FOR NEILS2020</a>
-          <span class="h6 mb-0 d-inline-block mr-4" style="font-size: 12px; color: #FF4343;">⚫ NEILS2020 REGISTRATION DEADLINE FOR PRESENTERS IS EXTENDED TILL 8TH DECEMBER 2019</span> <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" style="font-size: 12px; color: #FF4343;" class="d-inline-block text-decoration-none mb-0">⚫ HIMALAYAN LANGUAGES SYMPOSIUM (HLS26)-CALL FOR PAPER</a></marquee>
+          <a href="{{ route('pages.paper') }}#posterpresenter" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mr-4 mb-0 text-uppercase" target="_blank">⚫ Instructons for poster presenters. (Poster Size)</a>
+          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mr-4 mb-0" target="_blank">⚫ ACCOMMODATION FOR NEILS2020</a>
+          <span class="h6 mb-0 d-inline-block mr-4" style="font-size: 12px; color: #1A3365;">⚫ NEILS2020 REGISTRATION DEADLINE FOR PRESENTERS IS EXTENDED TILL 8TH DECEMBER 2019</span> <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mb-0">⚫ HIMALAYAN LANGUAGES SYMPOSIUM (HLS26)-CALL FOR PAPER</a></marquee>
       </div>
     </div>
 
