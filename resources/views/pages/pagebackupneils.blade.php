@@ -55,8 +55,180 @@
         <div class="col-md-6">
           <h4 class="">Programme Schedule</h4>
           <div class="py-2 mb-4">
-            <a href="{{ asset('uploads/programme-schedule.pdf') }}" class="d-inline-block btn btn-danger btn-lg mb-2" target="_blank">Preliminary Schedule of NEILS 11</a>
-            <span class="d-block small">Note: Preliminary Schedule of NEILS 11 subject to change.</span>
+            <div class="rounded-lg border bg-white shadow">
+              <div class="">
+                <ul class="d-flex list-unstyled align-items-center text-decoration-none bg-danger rounded-top my-0">
+                  <li v-on:click="showSchedule('one')" class="flex-fill" style="border-radius: 0.25rem 0rem 0rem 0rem;" :class="activelist1"><span class="d-block px-2 py-2 text-center">Day One</span></li>
+                  <li v-on:click="showSchedule('two')" class="flex-fill " :class="activelist2"><span class="d-block px-2 py-2 text-center">Day Two</span></li>
+                  <li v-on:click="showSchedule('three')" class="flex-fill" style="border-radius: 0rem 0.25rem 0rem 0rem;" :class="activelist3"><span class="d-block px-2 py-2 text-center">Day Three</span></li>
+                </ul>
+              </div>
+              <table v-if="dayone" class="table table-hover rounded-lg my-0">
+                <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
+                  <tr class="cursor-pointer">
+                    <td>08:30-09:30</td>
+                    <td>Registration</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>09:30-10.30</td>
+                    <td class="">Opening addresses.</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>10:30-11:00</td>
+                    <td>Vote of thanks and tea break.</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>11:00-11:30</td>
+                    <td>Session 1 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>11:30-12:00</td>
+                    <td>Session 1 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>12:00-12:30</td>
+                    <td>Session 1 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>12:30-01:30</td>
+                    <td>Lunch</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>01:30-02:30</td>
+                    <td>Session 2 (20 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>02:30-03:00</td>
+                    <td>Session 2 (20 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:00-03:30</td>
+                    <td>Tea break</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:30-04:00</td>
+                    <td>Poster session</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>04:00-04:30</td>
+                    <td>Poster session</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>04:30-05:00</td>
+                    <td>Poster session</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>05:00-06:00</td>
+                    <td>Documentary screening</td>
+                  </tr>
+                </tbody> --}}
+              </table>
+
+              <table v-if="daytwo" class="table table-hover rounded-lg my-0">
+                <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
+                  <tr class="cursor-pointer">
+                    <td>09:00-09.30</td>
+                    <td class="">Session 3 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>09:30-10:00</td>
+                    <td class="">Session 3 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>10:00-10:30</td>
+                    <td class="">Session 3 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>10:30-11:00</td>
+                    <td>Tea break</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>11:00-11:30</td>
+                    <td>Session 4 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>11:30-12:00</td>
+                    <td>Session 4 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>12:00-12:30</td>
+                    <td>Session 4 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>12:30-01:30</td>
+                    <td>Lunch</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>01:30-03:00</td>
+                    <td>Session 5 (4x20 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:00-03:30</td>
+                    <td>Tea break</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:30-05:00</td>
+                    <td>Session 6 (4x20 minutes)</td>
+                  </tr>
+                </tbody> --}}
+              </table>
+
+              <table v-if="daythree" class="table table-hover rounded-lg my-0">
+                <tbody>
+                  <tr>
+                    <td>Will be updated soon.</td>
+                  </tr>
+                </tbody>
+                {{-- <tbody>
+                  <tr class="cursor-pointer">
+                    <td>09:00-09.30</td>
+                    <td class="">Session 7 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>09:30-10:00</td>
+                    <td class="">Session 7 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>10:00-10:30</td>
+                    <td class="">Session 7 (30 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>10:30-11:00</td>
+                    <td>Tea break</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>11:00-12:30</td>
+                    <td>Session 8 (4x20 minutes)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>12:30-01:30</td>
+                    <td>Lunch</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>01:30-03:00</td>
+                    <td>Workshop 1 (1.5 hours)</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:00-03:30</td>
+                    <td>Tea break</td>
+                  </tr>
+                  <tr class="cursor-pointer">
+                    <td>03:30-05:00</td>
+                    <td>Workshop 2 (1.5 hours)</td>
+                  </tr>
+                </tbody> --}}
+              </table>
+            </div>
           </div>
 
           <div class="mb-4">
