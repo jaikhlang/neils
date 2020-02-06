@@ -44,7 +44,9 @@
       </div>
 
       <div class="d-block text-center">
-        <a href="{{ route('register') }}" class="d-inline-block btn btn-outline-danger btn-lg">Register for NEILS11</a>
+        {{-- <a href="{{ route('register') }}" class="d-inline-block btn btn-outline-danger btn-lg">Register for NEILS11</a> --}}
+        <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block btn btn-outline-danger btn-lg">NEILS11 Abstracts</a>
+
       </div>
     </div>
   </section>

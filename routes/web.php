@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+
 Route::get('/', 'PageController@index')->name('pages.index');
 Route::get('/neils', 'PageController@neils')->name('pages.neils');
 Route::get('/paper', 'PageController@paper')->name('pages.paper');

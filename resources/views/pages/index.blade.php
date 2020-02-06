@@ -78,7 +78,8 @@
     <div class="d-block py-5 border-bottom border-top">
       <div class="container">
         <div class="d-md-flex justify-content-center mb-4">
-          <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
+          {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a> --}}
+          <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
           <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a>
           <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Kokrajhar?</a>
           {{-- <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a> --}}

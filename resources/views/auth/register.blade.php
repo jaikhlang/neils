@@ -12,6 +12,11 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
+
+                  <div class="text-danger text-center py-5">
+                    Registration Closed!!
+                  </div>
+                  {{--
                     <form method="POST" class="" action="{{ route('register') }}">
                         @csrf
 
@@ -87,6 +92,8 @@
                             </div>
                         </div>
                     </form>
+
+                    --}}
                 </div>
             </div>
         </div>
