@@ -19,12 +19,17 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ asset('images/slides/neils12a.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
+            <img src="{{ asset('images/slides/neils12c.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
             <div class="carousel-caption d-none d-md-block">
+              <div class="mb-5 pb-5">
+                <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
+                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p-->
+                <!--span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span-->
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -37,16 +42,11 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="{{ asset('images/slides/neils12c.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
+          <!--div class="carousel-item active">
+            <img src="{{ asset('images/slides/neils12a.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
             <div class="carousel-caption d-none d-md-block">
-              <div class="mb-5 pb-5">
-                <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
-                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p-->
-                <!--span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span-->
-              </div>
             </div>
-          </div>
+          </div-->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
