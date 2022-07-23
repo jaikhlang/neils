@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/slides/neils12C.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
+            <img src="{{ asset('images/slides/neils12c.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
             <div class="carousel-caption d-none d-md-block">
               <div class="mb-5 pb-5">
                 <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
