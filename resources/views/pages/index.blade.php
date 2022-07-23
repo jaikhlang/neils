@@ -23,32 +23,27 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{ asset('images/abc.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('images/slides/neils12a.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/slides/neils12b.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
             <div class="carousel-caption d-none d-md-block">
               <div class="mb-5 pb-5">
-                <h5 class="mb-0 font-weight-bold h2"><!--img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span--></h5>
-                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
-                <span class="d-block pb-2"><a href="{{ route('register') }}" class="btn btn-danger">Register Now</a></span-->
+                <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
+                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p-->
+                <!--span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span-->
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{{ url('https://dummyimage.com/1300x400/b51d1d/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('images/slides/neils12C.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
             <div class="carousel-caption d-none d-md-block">
               <div class="mb-5 pb-5">
-                <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
-                <span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{ url('https://dummyimage.com/1300x400/071c4a/fff.jpg&text=+') }}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="mb-5 pb-5">
-                <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5>
-                <p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p>
-                <span class="d-block pb-2">From 7th to 9th February 2020 | CIT Kokrajhar BTAD Assam</span>
+                <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
+                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p-->
+                <!--span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span-->
               </div>
             </div>
           </div>
@@ -66,12 +61,12 @@
       </div>
     </div>
 
-    <div class="" style="background-color: #FFBB00; color: #1A3365;">
+    <div class="" style="background-color: #000000; color: #FFFFFF;">
       <div class="container">
         <marquee class="mb-0 py-2 align-middle">
-          <a href="{{ route('pages.paper') }}#posterpresenter" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mr-4 mb-0 text-uppercase" target="_blank">⚫ Instructons for poster presenters. (Poster Size)</a>
-          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mr-4 mb-0" target="_blank">⚫ ACCOMMODATION FOR NEILS2020</a>
-          <span class="h6 mb-0 d-inline-block mr-4" style="font-size: 12px; color: #1A3365;">⚫ NEILS2020 REGISTRATION DEADLINE FOR PRESENTERS IS EXTENDED TILL 8TH DECEMBER 2019</span> <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" style="font-size: 12px; color: #1A3365;" class="d-inline-block text-decoration-none mb-0">⚫ HIMALAYAN LANGUAGES SYMPOSIUM (HLS26)-CALL FOR PAPER</a></marquee>
+          <span class="text-white">This site is currently undergoing maintenance and will be back shortly.</span>
+          <a href="{{ route('pages.paper') }}#posterpresenter" style="font-size: 12px; color: #FFFFFF;" class="d-inline-block text-decoration-none mr-4 mb-0 text-uppercase" target="_blank">⚫ Instructons for poster presenters. (Poster Size)</a>
+        </marquee>
       </div>
     </div>
 
@@ -80,13 +75,10 @@
         <div class="d-md-flex justify-content-center mb-4">
           {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a> --}}
           <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
-          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a>
-          <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Kokrajhar?</a>
-          {{-- <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Call for Paper</a> --}}
+          <!-- <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a> -->
+          <!-- <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Kokrajhar?</a> -->
+          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS12 Call for Paper</a>
         </div>
-        {{-- <div class="text-center">
-          <a href="{{ url('http://www.himalayansymposium.org/hls24-call-for-papers') }}" class="text-decoration-none text-dark">HIMALAYAN LANGUAGES SYMPOSIUM (HLS26) CALL FOR PAPER</a>
-        </div> --}}
       </div>
     </div>
 
@@ -94,10 +86,10 @@
       <div class="container">
         <div class="d-block mb-5">
            <div class="neils-head text-center">
-             <h2 class="font-weight-bold">NEILS 11 CONFERENCE 2020</h2>
-             <span class="d-block text-uppercase">Will be held in Central Institute of Technology Kokrajhar</span>
-             <span class="d-block text-uppercase mb-3">from 7th to 9th february 2020</span>
-             <a href="{{ route('pages.neils') }}" class="d-inline-block btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Explore NEILS11</a>
+             <h2 class="font-weight-bold">NEILS 12 CONFERENCE 2023</h2>
+             <span class="d-block text-uppercase">Will be held in Gauhati University, Guwahati, Assam India</span>
+             <span class="d-block text-uppercase mb-3">from 3rd to 5th february 2023</span>
+             <a href="{{ route('pages.neils') }}" class="d-inline-block btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Explore NEILS12</a>
            </div>
         </div>
 

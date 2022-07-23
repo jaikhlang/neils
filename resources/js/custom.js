@@ -6,9 +6,9 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 100) {
           console.log(scroll + 'triggered');
-            header.removeClass('native-navbar bg-transparent').addClass("bg-white border-bottom border-light");
+            header.removeClass('native-navbar bg-orange').addClass("bg-white border-bottom border-light");
         } else {
-            header.removeClass("bg-white border-bottom border-light").addClass('native-navbar bg-transparent');
+            header.removeClass("bg-white border-bottom border-light").addClass('native-navbar bg-orange');
         }
     });
 });
@@ -19,7 +19,7 @@ function displayWindowSize(){
   // var breakpoint = document.getElementById("result").innerHTML = "Width: " + w;
   window.addEventListener("resize", displayWindowSize);
   if(breakpoint < 568){
-    header.removeClass('native-navbar bg-transparent fixed-top').addClass("bg-white border-bottom border-light");
+    header.removeClass('native-navbar bg-orange fixed-top').addClass("bg-white border-bottom border-light");
   }else{
 
   }

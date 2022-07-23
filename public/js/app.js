@@ -49555,9 +49555,9 @@ $(function () {
 
     if (scroll >= 100) {
       console.log(scroll + 'triggered');
-      header.removeClass('native-navbar bg-transparent').addClass("bg-white border-bottom border-light");
+      header.removeClass('native-navbar bg-orange').addClass("bg-white border-bottom border-light");
     } else {
-      header.removeClass("bg-white border-bottom border-light").addClass('native-navbar bg-transparent');
+      header.removeClass("bg-white border-bottom border-light").addClass('native-navbar bg-orange');
     }
   });
 });
@@ -49569,7 +49569,7 @@ function displayWindowSize() {
   window.addEventListener("resize", displayWindowSize);
 
   if (breakpoint < 568) {
-    header.removeClass('native-navbar bg-transparent fixed-top').addClass("bg-white border-bottom border-light");
+    header.removeClass('native-navbar bg-orange fixed-top').addClass("bg-white border-bottom border-light");
   } else {}
 }
 
@@ -49643,9 +49643,9 @@ $('.map-container').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/thomas/Desktop/Projects/neils.dev/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/thomas/Desktop/Projects/neils.dev/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/thomas/Desktop/Projects/neils.dev/resources/sass/manage.scss */"./resources/sass/manage.scss");
+__webpack_require__(/*! C:\Users\MNarzary\Desktop\Projects\neils\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\MNarzary\Desktop\Projects\neils\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\MNarzary\Desktop\Projects\neils\resources\sass\manage.scss */"./resources/sass/manage.scss");
 
 
 /***/ })

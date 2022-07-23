@@ -9,6 +9,9 @@
 <!-- Custom Styles -->
 @section('stylesheets')
   <!-- Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style media="screen">
     #showcase {
@@ -19,6 +22,11 @@
         background-image: -o-linear-gradient(45deg, #003073, #029797);
         background-image: linear-gradient(135deg, #003073, #029797);
     }
+
+    .homemadeApple{
+      font-family: 'Zeyada', cursive;
+
+    }
   </style>
 
 @endsection
@@ -28,31 +36,38 @@
   <section id="showcase" class="border-top border-bottom border-light">
     <div class="container">
       <div class="d-md-flex align-items-center">
-        <div class="mb-4 text-md-right text-center w-100 px-2 border-right">
-          <h1 class="font-weight-bold"><img src="{{ asset('images/logo.png') }}" class="img-fluid" style="height: 60px;" alt=""> CONFERENCE 2020<span class="d-inline-block font-weight-regular h4"></span></h1>
-          <h4 class="font-weight-regular text-light"><span class="d-block h5">11th International Conference of the</span> <span class="d-block h2">North East Indian Linguistics Society</span> <span class="d-block h6">February 7<sup>th</sup>, 8<sup>th</sup> &amp; 9<sup>th</sup> 2020</span></h4>
+        <div class="pr-md-4 mb-4  text-center text-md-right px-2 w-100 border-right">
+          <h1 class="font-weight-bold"><img src="{{ asset('images/neils.png') }}" class="img-fluid" style="height: 60px;" alt=""><br>CONFERENCE 2023</h1>
         </div>
-        <div class="text-md-left text-center flex-shrink-1 px-2">
+        <div class="pl-md-4 mb-4  text-center text-md-left px-2 w-100">
+          <h4 class="font-weight-regular text-light">
+            <span class="d-block h5 orange font-weight-semibold mb-0 pb-0">12th International Conference of the</span>
+            <span class="d-block h2 font-weight-bold mb-3">North East Indian Linguistics Society</span>
+            <span class="d-block h5"><span class="bg-orange px-2 py-2">February 3<sup>rd</sup>, 4<sup>th</sup> &amp; 5<sup>th</sup> 2023</span></span>
+            <span class="d-block h5 pt-4"><span class="orange">Hosted By </span>Department of Linguistics, Gauhati University, Guwahati, Assam India</span>
+          </h4>
+        </div>
+        <!--div class="text-md-left text-center flex-shrink-1 px-2">
           <div class=" text-dark-50">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Venue:</span>
               <span class="d-block h6">
-                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Central Institute of Technology Kokrajhar, BTAD Assam, India 783370</a>
+                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
               </span>
             </h6>
           </div>
           <div class="">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
               <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences</a><br>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">and Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
+                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Linguistics</a><br>
+                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati Assam India</a>
               </span>
             </h6>
           </div>
-        </div>
+        </div-->
       </div>
 
       <div class="d-block text-center">
-        <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg">Register for NEILS11</a>
+        <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg">Register for NEILS12</a>
       </div>
     </div>
   </section>
@@ -61,21 +76,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
+
+          <span class="d-block mb-2 font-weight-bold h1 orange homemadeApple py-2">Dear fellow linguist and/or North East Indianist,</span>
           <div class="text-justify bg-white border rounded px-4 py-4 mb-4">
-            <span class="d-block text-dark-50 mb-2 font-weight-bold">Dear fellow linguist and/or North East Indianist,</span>
-            <span class="d-block text-dark-50 mb-2">
-              &nbsp;&nbsp;&nbsp;&nbsp;We are pleased to announce the Call for Papers for the 11th International Conference of the North East Indian Linguistics Society (NEILS). NEILS11 will take place from February 7-9, 2020, in Kokrajhar, Assam, India and will be hosted by the Department of Humanities and Social Sciences and Centre for Linguistics and Cultural Studies, Central Institute of Technology Kokrajhar.
+            <span class="d-block text-dark-50 mb-2" style="text-indent: 50px;">
+              We would like to announce the Call for Papers for the 12th International Conference of the North East Indian Linguistics Society (NEILS)! Although NEILS12 should have taken place earlier this year, the ongoing COVID-19 pandemic made this impossible. We are all the happier now that we expect to be able to gather for NEILS12 this coming February.
+              NEILS12 will take place from February 3-5, 2023, in Guwahati, Assam, India and will be hosted by the Department of Linguistics at Gauhati University. Returning, once again, to the venue where NEILS started more than 15 years ago will provide us with the opportunity to celebrate the achievements of Prof. Jyotiprakash Tamuli, who is going to retire this year.
+            </span>
+            <span class="d-block text-dark-50 mb-2" style="text-indent: 50px;">
+              As the primary focus of NEILS is the description of the rich cultural-linguistic diversity that exists in North East India, papers should have a primary descriptive component, preferably from a functional-typological or anthropological-linguistic perspective. Field reports are acceptable. Papers whose sole or primary focus is formal, theoretical and/or computational in nature, or papers whose focus is about languages not spoken in North East India, are unlikely to be accepted for presentation. However, we will consider papers concerning languages spoken in the areas of Myanmar, China, Bhutan, Bangladesh and West Bengal that border the North East.
             </span>
             <span class="d-block text-dark-50 mb-2">
-              &nbsp;&nbsp;&nbsp;&nbsp;As the primary focus of NEILS is the description of the rich cultural-linguistic diversity that exists in North East India, papers should have a primary descriptive component, preferably from a functional-typological or anthropological-linguistic perspective. Field reports are acceptable. Papers whose sole or primary focus is formal, theoretical and/or computational in nature, or papers whose focus is about languages not spoken in North East India, are unlikely to be accepted for presentation. However, we will consider papers concerning languages spoken in the areas of Myanmar, China, Bhutan, Bangladesh and West Bengal that border the North East.
-            </span>
-            <span class="d-block text-dark-50 mb-2">
-                &nbsp;&nbsp;&nbsp;&nbsp;To present a paper at the conference, please prepare an abstract of no more than 500 words (exclusive of data and references, if any). Please write your abstract using only Times New Roman, 12pt. In the first line(s), give the full title of your paper; below it give your name and affiliation (e.g., [Stephen Morey (La Trobe University)]; below it leave one line empty; and below that, give the abstract, followed by references, if any. Examples/tables/figures should be inserted where discussed, rather than at the end of the abstract.
+              <span class="d-block" style="text-indent: 50px;">
+              To present a paper at the conference, please prepare an abstract of no more than 500 words (exclusive of data and references, if any). Please write your abstract using only Times New Roman, 12pt. In the first line(s), give the full title of your paper; below it give your name and affiliation (e.g., [Stephen Morey (La Trobe University)]; below it leave one line empty; and below that, give the abstract, followed by references, if any. Examples/tables/figures should be inserted where discussed, rather than at the end of the abstract.</span>
             </span>
 
-            <span class="d-block py-4 bg-danger text-white px-4 mb-4 rounded">
-              <span class="font-semibold">Please submit your abstract no later than September 10, 2019 on the EasyChair website.<br>
-              To do so, please use the following link:</span> <a href="https://easychair.org/conferences/?conf=neils11" class="text-white" target="_blank"><u>https://easychair.org/conferences/?conf=neils11</u></a>
+            <span class="d-block py-4 bg-orange text-white px-4 mb-4 rounded h5">
+              <span class="font-semibold">Please submit your abstract no later than September 1, 2022 on the EasyChair website: </span> <a href="https://easychair.org/conferences/?conf=neils12" class="text-white text-decoration-none" target="_blank">https://easychair.org/conferences/?conf=neils12</a>
             </span>
 
             <div class="">

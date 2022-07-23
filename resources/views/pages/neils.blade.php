@@ -20,32 +20,35 @@
   <section id="showcase" class="border-top border-bottom border-light">
     <div class="container">
       <div class="d-md-flex align-items-center">
-        <div class="mb-4 text-md-right text-center w-100 px-2 border-right">
-          <h1 class="font-weight-bold"><img src="{{ asset('images/logo.png') }}" class="img-fluid" style="height: 60px;" alt=""> CONFERENCE 2020<span class="d-inline-block font-weight-regular h4"></span></h1>
-          <h4 class="font-weight-regular text-light"><span class="d-block h5">11th International Conference of the</span> <span class="d-block h2">North East Indian Linguistics Society</span> <span class="d-block h6">February 7<sup>th</sup>, 8<sup>th</sup> &amp; 9<sup>th</sup> 2020</span></h4>
+        <div class="mb-4 w-100 px-2 text-center text-md-right">
+          <h1 class="font-weight-bold"><img src="{{ asset('images/neils.png') }}" class="img-fluid" style="height: 60px;" alt=""></h1>
+          <h4 class="font-weight-regular text-light"><span class="d-block h5 pb-0 mb-0">12th International Conference of the</span>
+            <span class="d-block h2 font-weight-bold">North East Indian Linguistics Society</span>
+            <span class="d-block h6"><span class="orange "> February 3<sup>rd</sup>, 4<sup>th</sup> &amp; 5<sup>th</sup> 2023 </span></span>
+          </h4>
         </div>
-        <div class="text-md-left text-center flex-shrink-1 px-2">
+        <!--div class="text-md-left text-center flex-shrink-1 px-2">
           <div class=" text-dark-50">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Venue:</span>
               <span class="d-block h6">
-                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Central Institute of Technology Kokrajhar, BTAD Assam, India 783370</a>
+                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
               </span>
             </h6>
           </div>
           <div class="">
             <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
               <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Humanities & Social Sciences</a><br>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">and Center for Linguistics and Cultural Studies, CIT Kokrajhar</a>
+                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Linguistics</a><br>
+                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
               </span>
             </h6>
           </div>
-        </div>
+        </div-->
       </div>
 
       <div class="d-block text-center">
         {{-- <a href="{{ route('register') }}" class="d-inline-block btn btn-outline-danger btn-lg">Register for NEILS11</a> --}}
-        <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block btn btn-outline-danger btn-lg">NEILS11 Abstracts</a>
+        <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block btn btn-outline-danger btn-lg">NEILS12 Abstracts</a>
 
       </div>
     </div>

@@ -49224,7 +49224,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/thomas/Desktop/Projects/neils.dev/resources/js/manage.js */"./resources/js/manage.js");
+module.exports = __webpack_require__(/*! C:\Users\MNarzary\Desktop\Projects\neils\resources\js\manage.js */"./resources/js/manage.js");
 
 
 /***/ })

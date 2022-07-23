@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light {{ Request::is('/') ? 'bg-transparent bg-xs-white native-navbar fixed-top' : 'bg-white' }}">
+<nav class="navbar navbar-expand-md navbar-light {{ Request::is('/') ? 'bg-orange bg-xs-white native-navbar fixed-top' : 'bg-white' }}">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <span class="d-none d-lg-block d-xl-block">{{ config('app.name', 'Laravel') }}</span><span class="d-block d-lg-none d-xl-none">NEILS</span>
@@ -14,7 +14,7 @@
                 <a class="nav-link" href="{{ route('pages.index') }}">HOME</a>
               </li>
               <li class="nav-item {{ Request::is('neils') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('pages.neils') }}">NEILS 2020</a>
+                <a class="nav-link" href="{{ route('pages.neils') }}">NEILS12</a>
               </li>
               <li class="nav-item {{ Request::is('paper') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages.paper') }}">CALL FOR PAPER</a>
