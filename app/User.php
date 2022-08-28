@@ -47,16 +47,16 @@ class User extends Authenticatable implements MustVerifyEmail
     public function calculateFee(){
       switch ($this->category->code_no) {
         case '1':
-          $fee = 700;
+          $fee = 1000;  //700
           break;
         case '2':
-          $fee = 1800;
+          $fee = 2200;  //1800
           break;
         case '3':
-          $fee = 2500;
+          $fee = 3200;  //2500
           break;
         case '4':
-          $fee = 4500;
+          $fee = 5500;  //4500
           break;
       }
       return $fee;

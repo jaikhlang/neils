@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app" class="relative">
-
+        @include('layouts.widgets.intro')
         @include('layouts.partials.header')
 
         <main class="">

@@ -11,7 +11,7 @@
   <!-- Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style media="screen">
     #showcase {
@@ -24,7 +24,7 @@
     }
 
     .homemadeApple{
-      font-family: 'Zeyada', cursive;
+      font-family: 'Playfair Display', serif;
 
     }
   </style>
@@ -33,7 +33,7 @@
 
 <!-- Contents -->
 @section('content')
-  <section id="showcase" class="border-top border-bottom border-light">
+  <!--section id="showcase" class="border-top border-bottom border-light">
     <div class="container">
       <div class="d-md-flex align-items-center">
         <div class="pr-md-4 mb-4  text-center text-md-right px-2 w-100 border-right">
@@ -47,37 +47,20 @@
             <span class="d-block h5 pt-4"><span class="orange">Hosted By </span>Department of Linguistics, Gauhati University, Guwahati, Assam India</span>
           </h4>
         </div>
-        <!--div class="text-md-left text-center flex-shrink-1 px-2">
-          <div class=" text-dark-50">
-            <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Venue:</span>
-              <span class="d-block h6">
-                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
-              </span>
-            </h6>
-          </div>
-          <div class="">
-            <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
-              <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Linguistics</a><br>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati Assam India</a>
-              </span>
-            </h6>
-          </div>
-        </div-->
       </div>
 
       <div class="d-block text-center">
         <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg">Register for NEILS12</a>
       </div>
     </div>
-  </section>
+  </section-->
 
-  <section id="" class="bg-light py-5 border-bottom">
+  <section id="" class="bg-light py-5 border-bottom border-top">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
 
-          <span class="d-block mb-2 font-weight-bold h1 orange homemadeApple py-2">Dear fellow linguist and/or North East Indianist,</span>
+          <span class="d-block mb-2 font-weight-bold h4 orange homemadeApple py-2">Dear fellow linguist and/or North East Indianist,</span>
           <div class="text-justify bg-white border rounded px-4 py-4 mb-4">
             <span class="d-block text-dark-50 mb-2" style="text-indent: 50px;">
               We would like to announce the Call for Papers for the 12th International Conference of the North East Indian Linguistics Society (NEILS)! Although NEILS12 should have taken place earlier this year, the ongoing COVID-19 pandemic made this impossible. We are all the happier now that we expect to be able to gather for NEILS12 this coming February.
@@ -232,33 +215,77 @@
             <div class="mb-4">
               <span class="d-block text-dark-50 font-weight-bold">Contact</span>
               <span class="d-block text-justify">
-                A new website is currently being built at <a href="http://www.neils.co.in">http://www.neils.co.in</a>. We will soon start making information available on this website. For any specific questions, please contact any of the organizers.
+                For any specific questions, please contact any organizers.
               </span>
             </div>
 
             <div class="mb-2">
-              <span class="block mb-2">We look forward to welcoming you to Kokrajhar in February!</span>
+              <span class="block mb-2">We look forward to welcoming you to Guwahati in February!</span>
             </div>
 
-            <div class="d-none">
+            <div class="">
               With our best,<br>
               The Organizers, NEILS11
               <div class="">
-              Krishna Boro (Gauhati University and University of Oregon) krishnaboro08@gmail.com
-              Scott DeLancey (University of Oregon) delancey@uoregon.edu
-              Linda Konnerth (Hebrew University and University of Oregon) linda.konnerth@mail.huji.ac.il
-              Stephen Morey (La Trobe University) s.morey@latrobe.edu.au
-              Jyotiprakash Tamuli (Gauhati University) jyotiprakash.tamuli@gmail.com
-              http://www.neils.co.in/
-              http://sealang.net/neils
-            </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Prafulla Basumatary </span>
+                    <span class="d-block">(Gauhati University)</span>
+                    <span class="d-block">pbasumatari@gmail.com</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Krishna Boro </span>
+                    <span class="d-block">(Gauhati University and University of Oregon)</span>
+                    <span class="d-block">krishnaboro08@gmail.com</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Bihung Brahma </span>
+                    <span class="d-block">(Central Institute of Technology Kokrajhar)</span>
+                    <span class="d-block">bihung.brahma@gmail.com</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Scott DeLancey </span>
+                    <span class="d-block">(University of Oregon)</span>
+                    <span class="d-block">delancey@uoregon.edu</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Linda Konnerth </span>
+                    <span class="d-block">(Hebrew University and University of Oregon)</span>
+                    <span class="d-block">linda.konnerth@mail.huji.ac.il</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Stephen Morey </span>
+                    <span class="d-block">(La Trobe University)</span>
+                    <span class="d-block">s.morey@latrobe.edu.au</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Mijke Mulder </span>
+                    <span class="d-block">(Chiang Mai University)</span>
+                    <span class="d-block">mijke.mulder@gmail.com</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Kellen Parker van Dam </span>
+                    <span class="d-block">(University of Zurich)</span>
+                    <span class="d-block">kellenparker@gmail.com</span>
+                  </div>
+                  <div class="mb-2 w-1/2">
+                    <span class="d-block">Jyotiprakash Tamuli </span>
+                    <span class="d-block">(Gauhati University)</span>
+                    <span class="d-block">jyotiprakash.tamuli@gmail.com</span>
+                  </div>
+                  <div class="">
+                    <a href="http://www.neils.org.in/" class="text-decoration-none">http://www.neils.org.in</a>
+                    <a href="http://sealang.net/neils" class="text-decoration-none">http://sealang.net/neils</a>
+                  </div>
+
+
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="bg-white rounded px-4 py-4 border">
-            <a href="{{ url('https://easychair.org/conferences/?conf=neils11') }}" class="d-block btn btn-primary btn-lg mx-4 my-4" target="_blank">NEILS11 Registtration</a>
-            <a href="{{ url('https://easychair.org/conferences/?conf=neils11') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">Abstract Submission Link</a>
+            <a href="{{ url('https://easychair.org/conferences/?conf=neils12') }}" class="d-block btn btn-primary btn-lg mx-4 my-4" target="_blank">NEILS12 Registtration</a>
+            <a href="{{ url('https://easychair.org/conferences/?conf=neils12') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">Abstract Submission Link</a>
             <a href="{{ asset('uploads/instructions.pdf') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">EasyChair Instructions</a>
           </div>
 

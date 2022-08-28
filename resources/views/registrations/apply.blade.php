@@ -25,7 +25,7 @@
           </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
+              <span class="font-weight-bold h4">NEILS12 CONFERENCE 2023 REGISTRATION</span>
             </div>
               <div class="card">
 
@@ -196,7 +196,7 @@
                           <label class="custom-control-label" for="subscription">Would you like to add your email to NEILS mailing list</label>
                         </div>
 
-                        <div class="mb-2 custom-control custom-checkbox">
+                        <div class="mb-4 custom-control custom-checkbox">
                           <input type="checkbox" name="disclaimer" v-model="acceptTermsNcondition" class="custom-control-input" id="disclaimer">
                           <label class="custom-control-label" for="disclaimer">“I hereby confirm that I expect to participate in the conference. If for any
                             currently unforeseeable reason, it turns out that I will not be able to
@@ -206,7 +206,7 @@
 
                         <div class="mb-2">
                           <button type="button" v-if="!acceptTermsNcondition" class="btn btn-outline-secondary btn-lg cursor-pointer" disabled>Save & Continue</button>
-                          <input type="submit" name="" v-if="acceptTermsNcondition" class="btn btn-outline-success btn-lg" value="Save & Continue">
+                          <input type="submit" name="" v-if="acceptTermsNcondition" class="btn btn-outline-primary btn-lg" value="Save & Continue">
                         </div>
                       </form>
                   </div>

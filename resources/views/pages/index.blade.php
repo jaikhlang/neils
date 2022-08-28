@@ -2,8 +2,8 @@
 @section('title', 'Home')
 <!-- Meta Tags  -->
 @section('metatags')
-  <meta name="description" content="11th International Conference of the North East Indian Linguistics Society will be held in CIT Kokrajhar BTAD Assam India 783370 from 7th to 9th February 2020. The conference is hosted by the Department of Humanities & Social Sciences and Center for Linguistics and Cultural Studies, CIT Kokrajhar.">
-  <meta name="keywords" content="NEILS, NEILS11, 'North East Indian Linguistics', 'Linguistics', 'CIT Kokrajhar', 'Conference 2020', 'Gauhati University Conference'">
+  <meta name="description" content="12th International Conference of the North East Indian Linguistics Society will be held in Gauhati University, Guwahati, Assam India from 3rd to 5th February 2023. The conference is hosted by the Department of Linguistics Gauhati University, Guwahati, Assam IN">
+  <meta name="keywords" content="NEILS, NEILS12, 'North East Indian Linguistics', 'Linguistics', 'Gauhati University', 'Conference 2023', 'Gauhati University Conference'">
 @endsection
 <!-- Custom Styles -->
 @section('stylesheets')
@@ -61,14 +61,9 @@
       </div>
     </div>
 
-    <div class="" style="background-color: #000000; color: #FFFFFF;">
-      <div class="container">
-        <marquee class="mb-0 py-2 align-middle">
-          <span class="text-white">This site is currently undergoing maintenance and will be back shortly.</span>
-          <a href="{{ route('pages.paper') }}#posterpresenter" style="font-size: 12px; color: #FFFFFF;" class="d-inline-block text-decoration-none mr-4 mb-0 text-uppercase" target="_blank">⚫ Instructons for poster presenters. (Poster Size)</a>
-        </marquee>
-      </div>
-    </div>
+    @include('layouts.widgets.intro')
+
+
 
     <div class="d-block py-5 border-bottom border-top">
       <div class="container">

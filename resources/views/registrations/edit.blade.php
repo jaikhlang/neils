@@ -25,7 +25,7 @@
           </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
+              <span class="font-weight-bold h4">NEILS12 CONFERENCE 2023 REGISTRATION</span>
             </div>
               <div class="card">
 

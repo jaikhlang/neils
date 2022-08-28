@@ -13,7 +13,7 @@ class PaymentController extends Controller
 {
 
     public function pay(Request $request){
-      // dd(Auth::user()->phone);
+      //dd(Auth::user()->phone);
       if(config('app.payment_status') == 'TEST'){
         //Still Testing
         $api = new \Instamojo\Instamojo(
@@ -32,7 +32,7 @@ class PaymentController extends Controller
 
         try {
           $response = $api->paymentRequestCreate([
-            'purpose' => config('app.payment_status') == 'TEST' ? 'Test Account' : 'NEILS Conference 2020',
+            'purpose' => config('app.payment_status') == 'TEST' ? 'Test Account' : 'NEILS12 CONFERENCE',
             'amount' => Auth::user()->calculateFee(),
             'buyer_name' => Auth::user()->firstname .' '. Auth::user()->lastname,
             'send_email' => true,
@@ -40,7 +40,7 @@ class PaymentController extends Controller
             'email' => Auth::user()->email,
             'phone' => Auth::user()->phone,
             'redirect_url' => route('payment.response'),
-            'webhook' => route('payment.webhook')
+            'webhook' => route('payment.webhook'),
           ]);
 
           header('Location: '.$response['longurl']);

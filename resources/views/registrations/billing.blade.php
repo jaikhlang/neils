@@ -9,40 +9,40 @@
       <div class="row justify-content-between">
           <div class="col-md-4 py-5">
             <div class="pt-lg-5 mb-2">
-              <a href="{{ route('application.show') }}" class="btn btn-outline-success  mb-2" target="_blank">View Application</a>
+              <a href="{{ route('application.show') }}" class="btn btn-success btn-lg  mb-4" target="_blank">View Application</a>
               <span class="d-block font-weight-bold">REGISTRATION FEES</span>
             </div>
             <div class="bg-white ">
               <table class="table border text-danger">
                 <tbody>
                   <tr class="">
-                    <td class="px-4 py-1 text-nowrap">Rs. 700</td>
-                    <td class="px-4 py-1 border-left">SAARC student without financial support.</td>
+                    <td class="px-4 py-1 text-nowrap">Rs. 1000</td>
+                    <td class="px-4 py-1 border-left"><strong>SAARC student without</strong> financial support. <span class="text-dark">(please provide evidence such as a letter from the Head of the Department)</span></td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 py-1 text-nowrap">Rs. 1800</td>
-                    <td class="px-4 py-1 border-left">SAARC student with financial support</td>
+                    <td class="px-4 py-1 text-nowrap">Rs. 2200</td>
+                    <td class="px-4 py-1 border-left"><strong>SAARC student with</strong> financial support.</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 py-1 text-nowrap">Rs. 2500</td>
-                    <td class="px-4 py-1 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
+                    <td class="px-4 py-1 text-nowrap">Rs. 3200</td>
+                    <td class="px-4 py-1 border-left"><strong>SAARC non-student</strong> <span class="text-dark">(includes teaching faculty pursuing PhD) or <strong>International student</strong></span></td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 py-1 text-nowrap">Rs. 4500</td>
-                    <td class="px-4 py-1 border-left">International non-student</td>
+                    <td class="px-4 py-1 text-nowrap">Rs. 5500</td>
+                    <td class="px-4 py-1 border-left"><strong>International non-student</strong></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="">
-              <span class="d-block text-black-50 h6">*Note: For any difficulties regarding payments, mail us at <a href="mailto:b.brahma@cit.ac.in" class="text-decoration-none text-black-50">b.brahma@cit.ac.in</a></span>
+              <span class="d-block text-black-50 h6">*Note: For any difficulties regarding payments, mail us at <a href="mailto:krishnaboro08@gmail.com" class="text-decoration-none text-black-50">krishnaboro08@gmail.com</a></span>
             </div>
           </div>
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4">NEILS CONFERENCE 2020 REGISTRATION</span>
+              <span class="font-weight-bold h4">NEILS12 CONFERENCE 2023 REGISTRATION</span>
             </div>
-              <div class="card mb-2">
+              <div class="card mb-4">
                   <div class="card-body">
                       @if (session('message'))
                           <div class="alert alert-success" role="alert">

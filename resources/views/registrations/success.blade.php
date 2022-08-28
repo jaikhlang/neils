@@ -14,7 +14,7 @@
               </div>
           @endif
           <div class="font-weight-bold h4 pt-md-5">
-            Successfully registered for NEILS 2020!!
+            Successfully registered for NEILS12!!
           </div>
           <div class="">
             <span class="d-block mb-2">We look forward to welcoming you to Kokrajhar in February!</span>

@@ -17,52 +17,23 @@
 
 <!-- Contents -->
 @section('content')
-  <section id="showcase" class="border-top border-bottom border-light">
-    <div class="container">
-      <div class="d-md-flex align-items-center">
-        <div class="mb-4 w-100 px-2 text-center text-md-right">
-          <h1 class="font-weight-bold"><img src="{{ asset('images/neils.png') }}" class="img-fluid" style="height: 60px;" alt=""></h1>
-          <h4 class="font-weight-regular text-light"><span class="d-block h5 pb-0 mb-0">12th International Conference of the</span>
-            <span class="d-block h2 font-weight-bold">North East Indian Linguistics Society</span>
-            <span class="d-block h6"><span class="orange "> February 3<sup>rd</sup>, 4<sup>th</sup> &amp; 5<sup>th</sup> 2023 </span></span>
-          </h4>
-        </div>
-        <!--div class="text-md-left text-center flex-shrink-1 px-2">
-          <div class=" text-dark-50">
-            <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Venue:</span>
-              <span class="d-block h6">
-                <a href="{{ url('//cit.ac.in') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
-              </span>
-            </h6>
-          </div>
-          <div class="">
-            <h6 class="text-light mx-0 my-0"><span class="d-block font-weight-regular">Hosted By:</span>
-              <span class="d-block h6">
-                <a href="{{ url('http://www.cit.ac.in/departments/hss/academic') }}" class="text-decoration-none text-light" target="_blank">Department of Linguistics</a><br>
-                <a href="{{ url('http://www.cit.ac.in/center-for-linguistics-and-cultural-studies') }}" class="text-decoration-none text-light" target="_blank">Gauhati University, Guwahati, Assam India</a>
-              </span>
-            </h6>
-          </div>
-        </div-->
-      </div>
-
-      <div class="d-block text-center">
-        {{-- <a href="{{ route('register') }}" class="d-inline-block btn btn-outline-danger btn-lg">Register for NEILS11</a> --}}
-        <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block btn btn-outline-danger btn-lg">NEILS12 Abstracts</a>
-
-      </div>
+  <section id="" class="">
+    <div class="d-md-flex align-items-center">
+      <img src="{{ asset('images/slides/neils12e.jpg') }}" alt="" class="w-full img-fluid">
     </div>
+
   </section>
 
   <div id="schedule" class="d-block py-5 border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="">Programme Schedule</h4>
+          <!--<h4 class="">Programme Schedule</h4>
           <div class="py-2 mb-4">
             <a href="{{ asset('uploads/programme-schedule.pdf') }}" class="d-inline-block btn btn-danger btn-lg mb-2" target="_blank">Preliminary Schedule of NEILS 11</a>
             <span class="d-block small">Note: Preliminary Schedule of NEILS 11 subject to change.</span>
           </div>
+        -->
 
           <div class="mb-4">
             <h4 class="">Registration Fees</h4>
@@ -70,19 +41,19 @@
               <table class="table border text-danger">
                 <tbody>
                   <tr class="">
-                    <td class="px-4 text-nowrap">Rs. 700</td>
-                    <td class="px-4 border-left">SAARC student without financial support (please provide evidence such as a letter from the Head of the Department)</td>
+                    <td class="px-4 text-nowrap">Rs. 1000</td>
+                    <td class="px-4 border-left"><strong>SAARC student without</strong> financial support (please provide evidence such as a letter from the Head of the Department)</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 1800</td>
-                    <td class="px-4 border-left">SAARC student with financial support</td>
+                    <td class="px-4 text-nowrap">Rs. 2200</td>
+                    <td class="px-4 border-left"><strong>SAARC student</strong> with financial support</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 2500</td>
-                    <td class="px-4 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
+                    <td class="px-4 text-nowrap">Rs. 3200</td>
+                    <td class="px-4 border-left"><strong>SAARC non-student</strong> (includes teaching faculty pursuing PhD) or International student</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 4500</td>
+                    <td class="px-4 text-nowrap">Rs. 5500</td>
                     <td class="px-4 border-left">International non-student</td>
                   </tr>
                 </tbody>
@@ -101,33 +72,33 @@
         <div class="col-md-6">
           <h4 class="">Important Dates</h4>
           <div class="py-2 mb-4">
-            <div class="rounded-lg border bg-white shadow" id="status">
-              <table class="table table-hover rounded-lg my-0">
+            <div class="rounded-lg bg-white" id="status">
+              <table class="table rounded-lg my-0">
                 <tbody>
                   <tr class="cursor-pointer">
-                    <td>September 1, 2019</td>
-                    <td class="text-danger">Abstract submission is closed.</td>
+                    <td>September 1, 2022</td>
+                    <td class="text-danger">Abstract submission deadline.</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>Early October</td>
                     <td>
-                      <span class="d-block text-danger">Notification of abstract acceptance has been sent to your email. Please check.</span>
+                      <span class="d-block text-danger">Notification of abstract acceptance.</span>
                     </td>
                   </tr>
                   <tr class="cursor-pointer">
-                    <td>November 1, 2019</td>
+                    <td>November 1, 2022</td>
                     <td class="text-danger">Registration opens (For presenters and non-presenters).</td>
                   </tr>
                   <tr class="cursor-pointer">
-                    <td>December 1, 2019</td>
-                    <td class="blinkme">Registration deadline extended till 8th December 2019 for presenters.</td>
+                    <td>December 1, 2022</td>
+                    <td class="blinkme">Registration closes for presenters.</td>
                   </tr>
                   <tr class="cursor-pointer">
-                    <td>January 15, 2020</td>
+                    <td>January 15, 2023</td>
                     <td>Registration closes for non-presenters.</td>
                   </tr>
                   <tr class="cursor-pointer">
-                    <td>January 16, 2020</td>
+                    <td>January 16, 2023</td>
                     <td>Last day to cancel registration.</td>
                   </tr>
                 </tbody>
@@ -138,60 +109,6 @@
       </div>
     </div>
   </div>
-
-  <section id="reach" class="reach py-5 bg-white border-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="px-4 py-5 rounded-top" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 20, 0, 0.73)), url('{{ asset('images/tea-garden.jpg') }}'); background-repeat: no-repeat; background-position: top; background-size: cover;">
-            <h4 class="pt-4 mb-5">How to reach Kokrajhar?</h4>
-
-            <div class="text-white cursor-pointer">
-              <strong class="text-danger">By road:</strong> <br>
-              <div class="font-italic mb-2">
-                a. Via Rangia-Barpeta Road (Buses are available from ISBT Guwahati).<br>
-                b. Via Goalpara (No direct buses are available.  People coming from Tura or Goalpara may use this route)
-              </div>
-              <strong class="text-danger">Travel by Bus:</strong> <br>
-              <div class="d-block mb-2">Morning 5 A.M. from ISBT Guwahati and 12 P.M. from ISBT</div>
-
-              <strong class="text-danger">Travel by Railway:</strong> <br>
-              <div class="d-block mb-2">
-                 Many expresses including Rajdhani stop at Kokrajhar. New Bongaigaon (junction) station is also not far from Kokrajhar. CIT Kokrajhar is 8 K.M. away from Kokrajhar Train Station and about 40 K.M. from New Bongaigaon.
-              </div>
-
-              <div class="text-justify mb-2">
-                <span class="font-weight-bold d-block text-danger">Daily convenient trains from Guwahati:</span>
-                Rajdhani Express: 6:58 A.M.,
-                Kamrup Express: 7.43 A.M.,
-                North East Express(From Kamakhya Station): 10.02 A.M.,
-                Brahmaputra Mail : 12.48 P.M.
-              </div>
-
-              <div class="text-justify">
-                <span class="font-weight-bold d-block text-danger">Local trains:  </span>
-                Sifung Passenger 2.20 P.M.,
-                Intercity express (Kamakhya-Alipur Duar) 4.00 PM<br>
-                (Nearer Station from Gauhati University is Kamakhya Station at Maligaon)<br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="px-4 py-4 shadow cursor-pointer" style="border-top: 4px solid #e6524e; border-bottom: 4px solid #e6524e;">
-              <div class="">
-                <span class="d-block font-weight-bold text-danger">Common transportation facility from NEILS 11 host:</span>
-                <div class="text-justify">
-                  1. Two buses from CITK will be sent to Linguistics Department of Gauhati University on 6th of February to pick up the participants. So, participants should come to GU Linguistics department by 12.30 P.M. On arrival in Guwahati participants may proceed to Linguistics Department of G.U.<br>
-                  2.  Or in case if you miss the bus the local trains leave from Kamakhya Station (Maligaon) to New Bongaigaon or Kokrajhar. Volunteers will be there to receive the guests at Kokrajhar stations.
-                </div>
-                For any problem of transportation feel free to contact: +91-84720-14223 (WhatsApp also available)
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <div id="organizer" class="py-5 bg-white border-bottom">
     <div class="container">
