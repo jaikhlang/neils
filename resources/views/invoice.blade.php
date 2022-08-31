@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html">
-    <title>Invoice | NEILS 2020</title>
+    <title>Invoice | NEILS 2023</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" media="print, screen">
     <style media="screen, print">
       html, body{
@@ -19,17 +19,17 @@
       <div id="main" class="bg-white">
         <div class="px-4 py-4 text-center border-b border-dashed border-red-500">
           <div class="">
-            <h4 class="font-semibold text-gray-800">11th International Conference of the</h4>
+            <h4 class="font-semibold text-gray-800">12th International Conference of the</h4>
             <h2 class="font-semibold uppercase text-blue-900">North East Indian Linguistics Society (NEILS)</h2>
             <div class="text-sm">
-              <span class="block">February 7th, 8th & 9th of 2020 | CIT Kokrajhar BTAD Assam India</span>
+              <span class="block">February 3rd, 4th & 5th of 2023 | Gauhati University, Guwahati, Assam, India</span>
             </div>
           </div>
         </div>
 
         <div class="text-center py-2">
-          <h6 class="font-semibold text-sm text-gray-800">Hosted by Department of Humanities & Social Sciences <br>& Center for Linguistics and Cultural Studies, CIT Kokrajhar</h6>
-          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">https://neils.co.in</a>
+          <h6 class="font-semibold text-sm text-gray-800">Hosted by Department of Linguistics, Gauhati University, Guwahati, Assam India</h6>
+          <a href="{{ url('/') }}" class="text-decoration-none text-gray-800">https://neils.org.in</a>
         </div>
         <div class="text-center border-t border-dashed border-red-500 bg-red-200">
           <span class="block py-2 font-semibold">INVOICE</span>
@@ -80,13 +80,13 @@
           </tbody>
         </table>
         <div class="text-right py-2 mt-4">
-          <span class="d-block text-sm">The Organizers, NEILS11</span>
+          <span class="d-block text-sm">The Organizers, NEILS12</span>
           <span class="block text-sm text-gray-700">Computer generated receipt doesn't require any signature.</span>
         </div>
       </div>
     </div>
   </body>
   <script type="text/javascript">
-        window.onload = function() { window.print(); }
+        // window.onload = function() { window.print(); }
    </script>
 </html>
