@@ -24,35 +24,33 @@
 <!-- Contents -->
 @section('content')
 
-  <section id="" class="bg-light py-5">
+  <section id="" class="bg-orange py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class=" mb-4">
-            <span class="d-block mb-2 text-dark-50">NEILS 2020 ADDRESS</span>
-            <div class="address bg-white rounded-lg px-2 py-2 mb-2 shadow cursor-pointer">
-              <span class="d-block mb-2 text-dark">
-                  DEPARTMENT OF HUMANITIES AND SOCIAL SCIENCES<br>
-                  CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR<br>
-                  Balagaon,Kokrajhar, BTAD, Assam India<br>
-                  Rangalikhata 783370
+          <div class=" mb-4 py-4">
+            <span class="d-block mb-3 font-weight-bold text-white h2">NEILS12 ADDRESS</span>
+            <div class="address bg-white rounded-lg p-4 mb-2 shadow cursor-pointer">
+              <span class="d-block mb-2 text-dark h4 font-weight-bold">
+                  DEPARTMENT OF LINGUISTICS<br>
+                  GAUHATI UNIVERSITY, GUWAHATI ASSAM INDIA 781014<br>
               </span>
               <div class="">
                 <span class="d-inline-block mr-4 d-flex align-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline-block fill-current mr-2" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
-                  <span class="block">Phone: +91 8472014223</span>
+                  <span class="block">Phone: +91 9101213588</span>
                 </span>
                 <span class="d-inline-block mr-4 d-flex align-items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline-block fill-current mr-2" viewBox="0 0 20 20"><path d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"/></svg>
-                  <span class="block">Email: <a href="{{ url('mailto:b.brahma@cit.ac.in') }}" class="text-gray-700 hover:text-gray-800">b.brahma@cit.ac.in</a></span>
+                  <span class="block">Email: <a href="{{ url('mailto:krishnaboro08@gmail.com') }}" class="text-gray-700 hover:text-gray-800">krishnaboro08@gmail.com</a></span>
                 </span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="theorganizer mb-4">
-            <span class="d-block mb-2 text-dark-50">THE ORGANIZERS NEILS11</span>
+          <div class="theorganizer mb-4 py-4">
+            <span class="d-block mb-2 text-white h6 font-weight-bold">THE ORGANIZERS NEILS12</span>
             <div class="row">
               <div class="col-md-6 d-block">
                 <div class="bg-white rounded-lg px-2 py-2 mb-2 shadow cursor-pointer">
@@ -114,14 +112,14 @@
         <div class="flex-fill">
           <span class="d-flex align-items-center px-3 py-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="text-white d-inline-block mr-2" viewBox="0 0 20 20"><path d="M12 18H8l-2 2H3l2-2a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2l2 2h-3l-2-2zM5 5v6h10V5H5zm1.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM8 2v1h4V2H8z"/></svg>
-            <span class="inline-block">Nearest Railhead<br>Kokrajhar | Bongaigaon Train Station</span>
+            <span class="inline-block">Nearest Railhead<br>(KYQ)KAMAKHYA 3.19 Kms | (GHY)GUWAHATI 9.58 Kms</span>
           </span>
         </div>
 
         <div class="flex-fill">
           <span class="d-flex align-items-center px-3 py-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="text-white d-inline-block mr-2" viewBox="0 0 20 20"><path d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
-            <span class="inline-block">By Road<br>10.5km From NH27 Karigaon through SH14</span>
+            <span class="inline-block">By Road<br>2.7 km From Jalukbari, Guwahati via NH17/NH427</span>
           </span>
         </div>
       </div>
@@ -129,7 +127,7 @@
   </section>
 
   <div class="map-container border-bottom">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d57159.89602352124!2d90.24765542932573!3d26.43981691707083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x37586031ae5ae7ff%3A0x62a4f52cd1572498!2sKokrajhar%2C%20Assam%20783370!3m2!1d26.4014362!2d90.266699!4m5!1s0x3758f4d277d13e8d%3A0x233749495bfdb465!2sCentral%20Institute%20of%20Technology%2C%20PO%3A%20Rangalikhata%2C%20Dist%3A%20Kokrajhar%2C%20BTAD%2C%20Assam%20783370%2C%20India!3m2!1d26.4780512!2d90.3026385!5e0!3m2!1sen!2sin!4v1572425205720!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d57314.74811599818!2d91.58948724061074!3d26.125942218875025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x375a4142182c00c1%3A0x69ba1fb4e82844d8!2sLokpriya%20Gopinath%20Bordoloi%20International%20Airport%20(GAU)%2C%20Borjhar%2C%20Guwahati%2C%20Assam!3m2!1d26.106472699999998!2d91.58604679999999!4m5!1s0x375a44c762f12a67%3A0x95386a0503457611!2sGauhati%20University%2C%20Gopinath%20Bordoloi%20Nagar%2C%20Jalukbari%2C%20Guwahati%2C%20Assam%20781014!3m2!1d26.1540389!2d91.66296679999999!5e0!3m2!1sen!2sin!4v1661929628139!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   @include('layouts.partials.footer')
 @endsection

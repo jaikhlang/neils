@@ -2,8 +2,8 @@
 @section('title', 'NEILS 2020')
 <!-- Meta Tags  -->
 @section('metatags')
-<meta name="keywords" content="neils 2020, conference, linguistic conference, neils at cit kokrajhar, north east indian linguistics society, center for linguistics, february conference cit kokrajhar">
-<meta name="description" content="NEILS 2020 conference will be held in CIT Kokrajhar BTAD Assam India 783370 in the month of February 2020. The conference will be hosted by Dept. of Humanities and Social Sciences and Center for Linguistics and Cultural Studies, CIT Kokrajhar.">
+<meta name="keywords" content="neils 2023, conference, linguistic conference, neils at cit kokrajhar, north east indian linguistics society, center for linguistics, february conference cit kokrajhar">
+<meta name="description" content="NEILS 12 conference will be held in Gauhati University, Guwahati, Assam India in the month of February 2023. The conference will be hosted by Dept. of Humanities and Social Sciences and Center for Linguistics and Cultural Studies, CIT Kokrajhar.">
 @endsection
 
 <!-- Custom Styles -->
@@ -65,7 +65,7 @@
           </div>
 
           <div class="mb-4">
-            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2">Register for NEILS11</a>
+            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2 mr-2">Register for NEILS12</a>
             <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg mb-2">Call for Paper</a>
           </div>
         </div>

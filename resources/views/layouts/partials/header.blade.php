@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light {{ Request::is('/') ? 'bg-orange bg-xs-white native-navbar fixed-top' : 'bg-white' }}">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <span class="d-none d-lg-block d-xl-block">{{ config('app.name', 'Laravel') }}</span><span class="d-block d-lg-none d-xl-none">NEILS</span>
+            <span class="d-none d-lg-block d-xl-block font-weight-bold">{{ config('app.name', 'Laravel') }}</span><span class="d-block d-lg-none d-xl-none font-weight-bold">NEILS</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>

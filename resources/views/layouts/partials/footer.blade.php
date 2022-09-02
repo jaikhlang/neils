@@ -3,9 +3,9 @@
     <div class="d-md-flex justify-content-center">
       <div class="mr-md-5">
         <a href="{{ route('pages.neils') }}#compactgallery" class="d-block text-black-50 text-decoration-none">Conference Photos</a>
-        <a href="" class="d-block text-black-50 text-decoration-none">NEILS Volumes</a>
-        <a href="" class="d-block text-black-50 text-decoration-none">NEILS Conference 2006-2020</a>
-        <a href="" class="d-block text-black-50 text-decoration-none">Downloads</a>
+        <a href="#!" class="d-block text-black-50 text-decoration-none">NEILS Volumes</a>
+        <a href="{{ url('//11.neils.org.in') }}" class="d-block text-black-50 text-decoration-none" target="_blank">NEILS Conference 2006-2020</a>
+        <a href="#!" class="d-block text-black-50 text-decoration-none">Downloads</a>
       </div>
 
       <div class="mr-md-5">
@@ -16,8 +16,7 @@
       </div>
 
       <div class="align-self-end text-black-50">
-        <span class="d-block mr-4">&copy; 2019 NEILS, All rights reserved.</span>
-        <span class="d-block">Design & Developed By <a href="{{ url('//4btechnologies.in') }}" class="text-decoration-none text-black-50">4B IT Solutions</a></span>
+        <span class="d-block mr-4">&copy; {{ date('Y')}} NEILS, All rights reserved.</span>
       </div>
     </div>
 

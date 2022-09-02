@@ -65,26 +65,31 @@
 
 
 
-    <div class="d-block py-5 border-bottom border-top">
+    <!--div class="d-block py-5 border-bottom border-top">
       <div class="container">
         <div class="d-md-flex justify-content-center mb-4">
           {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a> --}}
           <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
-          <!-- <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a> -->
-          <!-- <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Kokrajhar?</a> -->
+          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a>
+          <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Gauhati University?</a>
           <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS12 Call for Paper</a>
         </div>
       </div>
-    </div>
+    </div-->
 
-    <div class="bg-white d-block py-5 border-bottom border-light">
+    <div class="bg-grey-light d-block py-5 border-bottom border-top border-grey-dark">
       <div class="container">
         <div class="d-block mb-5">
            <div class="neils-head text-center">
              <h2 class="font-weight-bold">NEILS 12 CONFERENCE 2023</h2>
              <span class="d-block text-uppercase">Will be held in Gauhati University, Guwahati, Assam India</span>
              <span class="d-block text-uppercase mb-3">from 3rd to 5th february 2023</span>
-             <a href="{{ route('pages.neils') }}" class="d-inline-block btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Explore NEILS12</a>
+             <div class="d-md-flex justify-content-center">
+               <a href="{{ route('pages.neils') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Explore NEILS12</a>
+               <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS12 Call for Paper</a>
+               <a href="{{ route('register') }}"    class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
+               <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
+             </div>
            </div>
         </div>
 
@@ -98,12 +103,12 @@
             As the primary focus of NEILS is description of the rich cultural-linguistic diversity that exists in North East India, we are interested in work that is grounded in data, new data collected from the large number of languages and dialects spoken in the North East, leading to important new research on the classification and grouping of languages, on their sound systems, word and phrase structures, literature and social use.
           </span>
 
-          <span class="d-block text-justify">
+          <span class="d-block text-justify mb-2">
             So far NEILS has organised 10 conferences in various universities of North East India. It was annually held from 2006 to 2012 and then 2014 and henceforth the conference has been organised biennially. NEILS presents a unique opportunity from younger scholars, often PhD students and those who are engaged in study at different levels, to interact with some of the most experienced and knowledgeable scholars in the field of linguistics.
           </span>
         </div>
 
-        <div id="photos" class="d-block">
+        <div id="photos" class="d-block pt-4">
           <div class="row">
             <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image1.jpg') }}" class="img-fluid mb-4" alt="">
@@ -123,41 +128,6 @@
             <div class="col-md-4 cursor-pointer">
               <img src="{{ asset('images/conferences/image6.jpg') }}" class="img-fluid mb-4" alt="">
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="publications" class="d-none py-5 border-top border-bottom border-light">
-      <div class="container">
-        <div class="d-block mb-4">
-          <h4 class="text-center">NEILS Publications</h4>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <a href="#!" class="d-block text-decoration-none bg-white rounded shadow mb-3">
-              <div class="d-md-flex align-items-center">
-                <img src="{{ asset('images/book.jpeg') }}" class="img-fluid rounded-left" alt="">
-                <div class="px-3 py-3 text-left">
-                  <h5 class="text-black-50 mx-0 my-0">Some Book Title</h5>
-                  <span class="d-block text-black-50">Author Name</span>
-                  <span class="d-block text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi necessitatibus temporibus tenetur quisquam iusto explicabo voluptates, consectetur veritatis reiciendis adipisci!</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="#!" class="d-block text-decoration-none bg-white rounded shadow">
-              <div class="d-md-flex align-items-center">
-                <img src="{{ asset('images/book.jpeg') }}" class="img-fluid rounded-left" alt="">
-                <div class="px-3 py-3 text-left">
-                  <h5 class="text-black-50 mx-0 my-0">Some Book Title</h5>
-                  <span class="d-block text-black-50">Author Name</span>
-                  <span class="d-block text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quod modi ipsam nemo enim accusamus, aliquid commodi nostrum nam sit.</span>
-                </div>
-              </div>
-            </a>
           </div>
         </div>
       </div>
