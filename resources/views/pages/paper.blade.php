@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-md-8">
 
-          <span class="d-block mb-2 font-weight-bold h4 orange homemadeApple py-2">Dear fellow linguist and/or North East Indianist,</span>
+          <span class="d-block mb-2 font-weight-bold h4 text-dark homemadeApple py-2">Dear fellow linguist and/or North East Indianist,</span>
           <div class="text-justify bg-white border rounded px-4 py-4 mb-4">
             <span class="d-block text-dark-50 mb-2" style="text-indent: 50px;">
               We would like to announce the Call for Papers for the 12th International Conference of the North East Indian Linguistics Society (NEILS)! Although NEILS12 should have taken place earlier this year, the ongoing COVID-19 pandemic made this impossible. We are all the happier now that we expect to be able to gather for NEILS12 this coming February.
@@ -69,9 +69,13 @@
             <span class="d-block text-dark-50 mb-2" style="text-indent: 50px;">
               As the primary focus of NEILS is the description of the rich cultural-linguistic diversity that exists in North East India, papers should have a primary descriptive component, preferably from a functional-typological or anthropological-linguistic perspective. Field reports are acceptable. Papers whose sole or primary focus is formal, theoretical and/or computational in nature, or papers whose focus is about languages not spoken in North East India, are unlikely to be accepted for presentation. However, we will consider papers concerning languages spoken in the areas of Myanmar, China, Bhutan, Bangladesh and West Bengal that border the North East.
             </span>
+          </div>
+
+          <div class="text-justify bg-white border rounded px-4 py-4 mb-4">
             <span class="d-block text-dark-50 mb-2">
+              <span class="d-block text-dark-50 font-weight-bold">Abstract Submission:</span>
               <span class="d-block" style="text-indent: 50px;">
-              To present a paper at the conference, please prepare an abstract of no more than 500 words (exclusive of data and references, if any). Please write your abstract using only Times New Roman, 12pt. In the first line(s), give the full title of your paper; below it give your name and affiliation (e.g., [Stephen Morey (La Trobe University)]; below it leave one line empty; and below that, give the abstract, followed by references, if any. Examples/tables/figures should be inserted where discussed, rather than at the end of the abstract.</span>
+              To present a paper at the conference, please prepare an abstract of no more than 500 words (exclusive of data and references, if any). Please write your abstract using only <span style="font-family: 'Times New Roman', Times, serif; font-size: 16px;" class="font-weight-bold">Times New Roman, 12pt.</span> In the first line(s), give the full title of your paper; below it give your name and affiliation (e.g., [Stephen Morey (La Trobe University)]; below it leave one line empty; and below that, give the abstract, followed by references, if any. Examples/tables/figures should be inserted where discussed, rather than at the end of the abstract.</span>
             </span>
 
             <span class="d-block py-4 bg-orange text-white px-4 mb-4 rounded h5">
@@ -79,8 +83,20 @@
             </span>
 
             <div class="">
-              <span class="d-block text-dark-50 font-weight-bold">EasyChair abstract submission instructions:</span>
-              <ul class="mb-4 list-unstyled">
+
+              <span>
+
+                <span class="d-block mb-2">You will need to upload a PDF of your abstract at the end of the EasyChair submission form!</span>
+
+                <span>If you re using EasyChair for the first time, you may consult instructions that are
+                appended <strong>**at the end of this email**</strong> (please scroll all the way down).
+                Notification of abstract acceptance will normally take place in early October, although early
+                submissions/decisions for those needing to make extensive advance travel arrangements can
+                be arranged.</span>
+              </span>
+
+              <!--span class="d-block text-dark-50 font-weight-bold">EasyChair abstract submission instructions:</span-->
+              <!--ul class="mb-4 list-unstyled">
                 <li class="border-bottom border-dark-50 py-2">
                   (1)   If you do not have an EasyChair account yet, you will first need to create one. The link above takes you to the log-in page – just below the red “Log in” button, you can click on “create an account”. If you have used EasyChair before (for example for NEILS10), you can log in with the same user name and password that you have used before.
                 </li>
@@ -107,12 +123,12 @@
                     </span>
                   </div>
                 </li>
-              </ul>
+              </ul-->
 
-              <div class="">
+              <!--div class="">
                   If you have trouble submitting your abstract on the EasyChair website, please get in touch with <strong>Linda Konnerth (linda.konnerth@mail.huji.ac.il).</strong><br>
                   Notification of abstract acceptance will normally take place in early October, although early submissions/decisions for those needing to make extensive advance travel arrangements can be arranged.
-              </div>
+              </div-->
             </div>
 
           </div>
@@ -121,7 +137,7 @@
             <div class="mb-4">
               <span class="d-block text-dark-50 font-weight-bold mb-2">Presentation time slots</span>
               <span class="d-block text-justify">
-                At NEILS11, the schedule will again include a mix of 20 minute and 30 minute slots for presentations. Generally, the Program Committee gives 30 minute slots to those papers that appear to require, and benefit from, more time for presentation and discussion, based on the submitted abstract. However, those participants who prefer a 20 minute slot should check the box "Preference for 20 minute time slot" during the abstract submission in EasyChair.
+                At NEILS12, the schedule will again include a mix of <strong>20 minute and 30 minute slots</strong> for presentations. Generally, the Program Committee gives 30 minute slots to those papers that appear to require, and benefit from, more time for presentation and discussion, based on the submitted abstract. However, those participants who prefer a 20 minute slot should check the box <strong>"Preference for 20 minute time slot"</strong> during the abstract submission in EasyChair.
               </span>
             </div>
             <div class="mb-4">
@@ -132,20 +148,20 @@
               <table class="table border">
                 <tbody>
                   <tr class="">
-                    <td class="px-4 text-nowrap">Rs. 700</td>
-                    <td class="px-4 border-left">SAARC student without financial support (please provide evidence such as a letter from the Head of the Department)</td>
+                    <td class="px-4 text-nowrap">Rs. 1000</td>
+                    <td class="px-4 border-left"><strong>SAARC student without</strong> financial support <i>(please provide evidence such as a letter from the Head of the Department)</i></td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 1800</td>
-                    <td class="px-4 border-left">SAARC student with financial support</td>
+                    <td class="px-4 text-nowrap">Rs. 2200</td>
+                    <td class="px-4 border-left"><strong>SAARC student with</strong> financial support</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 2500</td>
-                    <td class="px-4 border-left">SAARC non-student (includes teaching faculty pursuing PhD) or International student</td>
+                    <td class="px-4 text-nowrap">Rs. 3200</td>
+                    <td class="px-4 border-left"><strong>SAARC non-student</strong> (includes teaching faculty pursuing PhD) or International student</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="px-4 text-nowrap">Rs. 4500</td>
-                    <td class="px-4 border-left">International non-student</td>
+                    <td class="px-4 text-nowrap">Rs. 5500</td>
+                    <td class="px-4 border-left"><strong>International non-student</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -157,34 +173,34 @@
               <table class="table w-100 border mb-2">
                 <tbody>
                   <tr class="">
-                    <td class="text-nowrap px-4">September  , 2019:</td>
-                    <td class="px-4 border-left">Abstract submission deadline.</td>
+                    <td class="text-nowrap px-4 font-weight-bold">September  1, 2022:</td>
+                    <td class="px-4 border-left font-weight-bold">Abstract submission deadline.</td>
                   </tr>
                   <tr class="border-top">
                     <td class="text-nowrap px-4">Early October </td>
                     <td class="px-4 border-left">Notification of abstract acceptance.</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="text-nowrap px-4">November 1 </td>
+                    <td class="text-nowrap px-4">November 1, 2022 </td>
                     <td class="px-4 border-left">Registration opens (for presenters and non-presenters).</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="text-nowrap px-4">December 1 </td>
-                    <td class="px-4 border-left">Registration closes for presenters.</td>
+                    <td class="text-nowrap px-4 font-weight-bold">December 1, 2022 </td>
+                    <td class="px-4 border-left font-weight-bold">Registration closes for presenters.</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="text-nowrap px-4">January 15 </td>
+                    <td class="text-nowrap px-4">January 15, 2023 </td>
                     <td class="px-4 border-left">Registration closes for non-presenters.</td>
                   </tr>
                   <tr class="border-top">
-                    <td class="text-nowrap px-4">January 16 </td>
+                    <td class="text-nowrap px-4">January 16, 2023 </td>
                     <td class="px-4 border-left">Last day to cancel registration.</td>
                   </tr>
                 </tbody>
               </table>
 
               <div class="">
-                  Note: We will need to collect registration fees at the time of registration (i.e., by December 1st, 2019 at the latest). We are currently setting up payment options. Details will be provided when registration opens on November 1st.
+                  Note: We will need to collect registration fees at the time of registration (i.e., by January 15, 2023 at the latest). We are currently setting up payment options. Details will be provided when registration opens on November 1st.
               </div>
             </div>
           </div>
@@ -224,59 +240,63 @@
             </div>
 
             <div class="">
-              With our best,<br>
-              The Organizers, NEILS11
-              <div class="">
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Prafulla Basumatary </span>
+              <span class="mb-4 d-block font-weight-bold">
+                With our best,<br>
+                The Organizers, NEILS12
+              </span>
+
+
+              <div class="row">
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Prafulla Basumatary </span>
                     <span class="d-block">(Gauhati University)</span>
                     <span class="d-block">pbasumatari@gmail.com</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Krishna Boro </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Krishna Boro </span>
                     <span class="d-block">(Gauhati University and University of Oregon)</span>
                     <span class="d-block">krishnaboro08@gmail.com</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Bihung Brahma </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Bihung Brahma </span>
                     <span class="d-block">(Central Institute of Technology Kokrajhar)</span>
                     <span class="d-block">bihung.brahma@gmail.com</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Scott DeLancey </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Scott DeLancey </span>
                     <span class="d-block">(University of Oregon)</span>
                     <span class="d-block">delancey@uoregon.edu</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Linda Konnerth </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Linda Konnerth </span>
                     <span class="d-block">(Hebrew University and University of Oregon)</span>
                     <span class="d-block">linda.konnerth@mail.huji.ac.il</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Stephen Morey </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Stephen Morey </span>
                     <span class="d-block">(La Trobe University)</span>
                     <span class="d-block">s.morey@latrobe.edu.au</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Mijke Mulder </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Mijke Mulder </span>
                     <span class="d-block">(Chiang Mai University)</span>
                     <span class="d-block">mijke.mulder@gmail.com</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Kellen Parker van Dam </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Kellen Parker van Dam </span>
                     <span class="d-block">(University of Zurich)</span>
                     <span class="d-block">kellenparker@gmail.com</span>
                   </div>
-                  <div class="mb-2 w-1/2">
-                    <span class="d-block">Jyotiprakash Tamuli </span>
+                  <div class="mb-2 col-md-6">
+                    <span class="d-block font-weight-bold">Jyotiprakash Tamuli </span>
                     <span class="d-block">(Gauhati University)</span>
                     <span class="d-block">jyotiprakash.tamuli@gmail.com</span>
                   </div>
                   <div class="">
-                    <a href="http://www.neils.org.in/" class="text-decoration-none">http://www.neils.org.in</a>
-                    <a href="http://sealang.net/neils" class="text-decoration-none">http://sealang.net/neils</a>
+                    <div class="mx-3 my-3" style="width: 100%; border-bottom: 1px solid #ccc;"></div>
+                    <a href="http://www.neils.org.in/" class="px-3 text-decoration-none text-dark">http://www.neils.org.in</a><br>
+                    <a href="http://sealang.net/neils" class="px-3 text-decoration-none text-dark">http://sealang.net/neils</a>
                   </div>
-
 
               </div>
             </div>
@@ -289,7 +309,7 @@
             <a href="{{ asset('uploads/instructions.pdf') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">EasyChair Instructions</a>
           </div>
 
-          <div class="py-4 text-danger" id="posterpresenter">
+          <!--div class="py-4 text-danger" id="posterpresenter">
             <span class="d-block font-weight-bold">Instructions for the Poster Presenters:</span>
               a. Poster Size:  5 feet height and 4 feet width (5x4).<br>
               b. Poster should be flex printing.<br>
@@ -300,7 +320,7 @@
                 Email:b.brahma@cit.ac.in<br>
                 Mobile: 8472014223
               </div>
-          </div>
+          </div-->
         </div>
       </div>
     </div>
