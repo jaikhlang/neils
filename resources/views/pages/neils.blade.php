@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'NEILS 2020')
+@section('title', 'NEILS12')
 <!-- Meta Tags  -->
 @section('metatags')
 <meta name="keywords" content="neils 2023, conference, linguistic conference, neils at cit kokrajhar, north east indian linguistics society, center for linguistics, february conference cit kokrajhar">

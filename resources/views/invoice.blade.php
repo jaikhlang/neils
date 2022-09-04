@@ -20,7 +20,7 @@
         <div class="px-4 py-4 text-center border-b border-dashed border-red-500">
           <div class="">
             <h4 class="font-semibold text-gray-800">12th International Conference of the</h4>
-            <h2 class="font-semibold uppercase text-blue-900">North East Indian Linguistics Society (NEILS)</h2>
+            <h2 class="font-bold uppercase text-blue-900">North East Indian Linguistics Society (NEILS)</h2>
             <div class="text-sm">
               <span class="block">February 3rd, 4th & 5th of 2023 | Gauhati University, Guwahati, Assam, India</span>
             </div>

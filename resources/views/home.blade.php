@@ -17,7 +17,7 @@
 
 
                       <span class="d-block my-4">You are logged in!</span>
-                      <a href="{{ route('apply') }}" class="btn btn-primary ">Proceed to Registration</a>
+                      <a href="{{ route('apply') }}" class="btn btn-primary btn-lg">Proceed to Registration</a>
                   </div>
               </div>
           </div>

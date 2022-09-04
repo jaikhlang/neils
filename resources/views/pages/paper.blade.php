@@ -304,7 +304,7 @@
         </div>
         <div class="col-md-4">
           <div class="bg-white rounded px-4 py-4 border">
-            <a href="{{ url('https://easychair.org/conferences/?conf=neils12') }}" class="d-block btn btn-primary btn-lg mx-4 my-4" target="_blank">NEILS12 Registtration</a>
+            <a href="{{ route('register') }}" class="d-block btn btn-primary btn-lg mx-4 my-4" target="_blank">NEILS12 Registtration</a>
             <a href="{{ url('https://easychair.org/conferences/?conf=neils12') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">Abstract Submission Link</a>
             <a href="{{ asset('uploads/instructions.pdf') }}" class="d-block btn btn-outline-danger btn-lg mx-4 my-4" target="_blank">EasyChair Instructions</a>
           </div>

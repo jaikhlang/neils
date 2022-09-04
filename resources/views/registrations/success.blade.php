@@ -17,7 +17,7 @@
             Successfully registered for NEILS12!!
           </div>
           <div class="">
-            <span class="d-block mb-2">We look forward to welcoming you to Kokrajhar in February!</span>
+            <span class="d-block mb-2 h4">We look forward to welcoming you to <strong>Guwahati in February!</strong></span>
             <a href="{{ route('application.show') }}" class="btn btn-outline-primary">Print Application</a>
           </div>
         </div>
