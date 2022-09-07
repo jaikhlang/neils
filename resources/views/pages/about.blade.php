@@ -58,39 +58,24 @@
 
   <section id="abouts" class="bg-light py-5 border-top border-bottom">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6" style="z-index: 300;">
+      <div class="row justify-content-center">
+        <div class="col-md-8" style="z-index: 300;">
           <div class="text-justify bg-white px-4 py-4 rounded shadow">
-            <div class="mb-3">
-              <h4 class="">North East Indian Linguistics Society (NEILS)</h4>
+            <div class="mb-4">
+              <h4 class="font-weight-bold">North East Indian Linguistics Society (NEILS)</h4>
             </div>
-            <span class="d-block mb-2">
+            <span class="d-block mb-3">
               NEILS was set up in 2005 by Prof. Jyotiprakash Tamuli (Gauhati University), Dr. Stephen Morey (La Trobe University, Australia) and Dr. Mark Post (now The University of Sydney) to provide a forum for those who are working on the languages of the North East India. From the very beginning, a key aim of NEILS has been cooperation between local and foreign scholars, with an emphasis on high quality work, on capacity building leading to excellent linguistic research.
             </span>
-            <span class="d-block mb-2">
+            <span class="d-block mb-3">
               As the primary focus of NEILS is description of the rich cultural-linguistic diversity that exists in North East India, we are interested in work that is grounded in data, new data collected from the large number of languages and dialects spoken in the North East, leading to important new research on the classification and grouping of languages, on their sound systems, word and phrase structures, literature and social use.
             </span>
-            <span class="d-block mb-2">
+            <span class="d-block mb-3">
               So far NEILS has organised 10 conferences in various universities of North East India. It was annually held from 2006 to 2012 and then 2014 and henceforth the conference has been organised biennially. NEILS presents a unique opportunity from younger scholars, often PhD students and those who are engaged in study at different levels, to interact with some of the most experienced and knowledgeable scholars in the field of linguistics.
             </span>
             <span class="d-block">
               The conference papers are peer-reviewed and carefully edited and published. These publications have a high academic standard, and have brought important research work by scholars from North East India to the attention of an International audience.
             </span>
-          </div>
-        </div>
-        <div class="col-md-6 d-none" style="margin-left: -50px; z-index: 200;">
-          <div class="py-3">
-            <img src="{{ asset('images/image.jpg') }}" class="-ml-5 w-50 bg-white py-2 pr-2 rounded-right mb-2" alt="">
-            <div class="d-flex mb-2">
-              <img src="{{ asset('images/image2.jpg') }}" class="w-50 d-block bg-warning py-2 pr-2 rounded-right shadow" style="z-index: 200" alt="">
-              <img src="{{ asset('images/image3.jpg') }}" class="w-50 d-block bg-warning py-2 pr-2 rounded-right" style="z-index: 199; margin-left: -20%;" alt="">
-            </div>
-
-            <div class="d-flex mb-2">
-              <img src="{{ asset('images/image3.jpg') }}" class="w-50 d-block bg-white py-2 pr-2 rounded-right shadow" style="z-index: 200" alt="">
-              <img src="{{ asset('images/image2.jpg') }}" class="w-50 d-block bg-white py-2 pr-2 rounded-right" style="z-index: 199; margin-left: -20%;" alt="">
-              <img src="{{ asset('images/image1.jpg') }}" class="w-50 d-block bg-white py-2 pr-2 rounded-right" style="z-index: 198; margin-left: -30%;" alt="">
-            </div>
           </div>
         </div>
       </div>

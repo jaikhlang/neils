@@ -17,14 +17,9 @@
 
 <!-- Contents -->
 @section('content')
-  <section id="" class="">
-    <div class="d-md-flex align-items-center">
-      <img src="{{ asset('images/slides/neils12e.jpg') }}" alt="" class="w-full img-fluid">
-    </div>
 
-  </section>
 
-  <div id="schedule" class="d-block py-5 border-bottom">
+  <div id="schedule" class="d-block py-5 border-top">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -36,13 +31,13 @@
         -->
 
           <div class="mb-4">
-            <h4 class="">Registration Fees</h4>
-            <div class="bg-white">
-              <table class="table border text-danger">
+            <h4 class="font-weight-bold">Registration Fees</h4>
+            <div class="bg-white rounded-lg border my-3">
+              <table class="table text-danger mb-0">
                 <tbody>
                   <tr class="">
-                    <td class="px-4 text-nowrap">Rs. 1000</td>
-                    <td class="px-4 border-left"><strong>SAARC student without</strong> financial support (please provide evidence such as a letter from the Head of the Department)</td>
+                    <td class="px-4 text-nowrap border-top-0">Rs. 1000</td>
+                    <td class="px-4 border-left border-top-0"><strong>SAARC student without</strong> financial support (please provide evidence such as a letter from the Head of the Department)</td>
                   </tr>
                   <tr class="border-top">
                     <td class="px-4 text-nowrap">Rs. 2200</td>
@@ -70,14 +65,14 @@
           </div>
         </div>
         <div class="col-md-6">
-          <h4 class="">Important Dates</h4>
+          <h4 class="font-weight-bold">Important Dates</h4>
           <div class="py-2 mb-4">
-            <div class="rounded-lg bg-white" id="status">
+            <div class="rounded-lg border bg-white" id="status">
               <table class="table rounded-lg my-0">
                 <tbody>
                   <tr class="cursor-pointer">
-                    <td>September 1, 2022</td>
-                    <td class="text-danger">Abstract submission deadline.</td>
+                    <td class=" border-top-0">September 1, 2022</td>
+                    <td class="text-danger border-top-0">Abstract submission deadline.</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>Early October</td>
@@ -87,11 +82,11 @@
                   </tr>
                   <tr class="cursor-pointer">
                     <td>November 1, 2022</td>
-                    <td class="text-danger">Registration opens (For presenters and non-presenters).</td>
+                    <td class="text-danger font-weight-bold">Registration opens (For presenters and non-presenters).</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>December 1, 2022</td>
-                    <td class="blinkme">Registration closes for presenters.</td>
+                    <td class="blinkme font-weight-bold">Registration closes for presenters.</td>
                   </tr>
                   <tr class="cursor-pointer">
                     <td>January 15, 2023</td>
@@ -109,11 +104,15 @@
       </div>
     </div>
   </div>
-
+  <section id="" class="">
+    <div class="d-md-flex align-items-center">
+      <img src="{{ asset('images/slides/neils12i.jpg') }}" alt="" style="width: 100%;" class="w-full img-fluid">
+    </div>
+  </section>
   <div id="organizer" class="py-5 bg-white border-bottom">
     <div class="container">
       <div class="mb-4">
-        <h4 class="">Local Organizers, NEILS12</h4>
+        <h4 class=" font-weight-bold">Local Organizers, NEILS12</h4>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -174,13 +173,46 @@
 
   <section id="compactgallery" class="gallery-block compact-gallery border-bottom">
       <div class="container">
-          <div class="mb-4">
+          <div class="mb-4 font-weight-bold">
               <h4>Previous NEILS Conferences</h4>
           </div>
           <div class="row no-gutters">
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{ asset('images/conferences/image16.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image16.jpg') }}">
+                    <span class="description">
+                        <span class="description-heading">NEILS11 Conference</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{ asset('images/conferences/image17.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image17.jpg') }}">
+                    <span class="description">
+                        <span class="description-heading">NEILS11 Conference</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{ asset('images/conferences/image18.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image18.jpg') }}">
+                    <span class="description">
+                        <span class="description-heading">NEILS11 Conference</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{ asset('images/conferences/image15.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image15.jpg') }}">
+                    <span class="description">
+                        <span class="description-heading">NEILS11 Conference</span>
+                    </span>
+                </a>
+            </div>
+
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                  <a class="lightbox" href="{{ asset('images/conferences/image7.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image7.jpg') }}">
+                  <a class="lightbox" href="{{ asset('images/conferences/image1.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image1.jpg') }}">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -188,8 +220,8 @@
                   </a>
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                  <a class="lightbox" href="{{ asset('images/conferences/image8.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image8.jpg') }}">
+                  <a class="lightbox" href="{{ asset('images/conferences/image2.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image2.jpg') }}">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -197,23 +229,14 @@
                   </a>
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                  <a class="lightbox" href="{{ asset('images/conferences/image9.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image9.jpg') }}">
+                  <a class="lightbox" href="{{ asset('images/conferences/image3.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image3.jpg') }}">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
                       </span>
                   </a>
               </div>
-              <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                  <a class="lightbox" href="{{ asset('images/conferences/image10.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image10.jpg') }}">
-                      <span class="description">
-                          <span class="description-heading">Previous NEILS Conference</span>
-                          {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
-                      </span>
-                      </a>
-                  </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image11.jpg') }}">
                       <img class="img-fluid image" src="{{ asset('images/conferences/image11.jpg') }}">

@@ -9,6 +9,9 @@
 @section('stylesheets')
   <!-- Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="{{ asset('css/compact-gallery.css')}}">
 @endsection
 
 <!-- Contents -->
@@ -19,7 +22,7 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -47,6 +50,17 @@
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div-->
+
+          <div class="carousel-item">
+            <img src="{{ asset('images/slides/neils12f.jpg') }}" class="d-block w-100" style="padding-top: 50px" alt="NEILS12 Conference">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="mb-5 pb-5">
+                <!-- <h5 class="mb-0 font-weight-bold h2"><img src="{{ asset('images/logo.png') }}" class="d-inline-block img-fluid" alt=""> <span class="d-inline-block">CONFERENCE 2020</span></h5> -->
+                <!--p class="mb-0 font-weight-bold h4 pb-2">11th International Conference of the North East Indian Linguistics Society</p-->
+                <!--span class="d-block pb-2"><a href="{{ route('pages.neils') }}" class="btn btn-danger">Konw More</a></span-->
+              </div>
+            </div>
+          </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
@@ -62,8 +76,6 @@
     </div>
 
     @include('layouts.widgets.intro')
-
-
 
     <!--div class="d-block py-5 border-bottom border-top">
       <div class="container">
@@ -108,28 +120,126 @@
           </span>
         </div>
 
-        <div id="photos" class="d-block pt-4">
-          <div class="row">
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image1.jpg') }}" class="img-fluid mb-4" alt="">
+        <section id="compactgallery" class="gallery-block compact-gallery">
+            <div class="">
+                <div class="mb-4 font-weight-bold">
+                    <h4>Previous NEILS Conferences</h4>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                      <a class="lightbox" href="{{ asset('images/conferences/image16.jpg') }}">
+                          <img class="img-fluid image" src="{{ asset('images/conferences/image16.jpg') }}">
+                          <span class="description">
+                              <span class="description-heading">NEILS11 Conference</span>
+                          </span>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                      <a class="lightbox" href="{{ asset('images/conferences/image17.jpg') }}">
+                          <img class="img-fluid image" src="{{ asset('images/conferences/image17.jpg') }}">
+                          <span class="description">
+                              <span class="description-heading">NEILS11 Conference</span>
+                          </span>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                      <a class="lightbox" href="{{ asset('images/conferences/image18.jpg') }}">
+                          <img class="img-fluid image" src="{{ asset('images/conferences/image18.jpg') }}">
+                          <span class="description">
+                              <span class="description-heading">NEILS11 Conference</span>
+                          </span>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                      <a class="lightbox" href="{{ asset('images/conferences/image15.jpg') }}">
+                          <img class="img-fluid image" src="{{ asset('images/conferences/image15.jpg') }}">
+                          <span class="description">
+                              <span class="description-heading">NEILS11 Conference</span>
+                          </span>
+                      </a>
+                  </div>
+
+
+
+
+
+
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image7.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image7.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image8.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image8.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image9.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image9.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image10.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image10.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                            </a>
+                        </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image12.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image12.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image13.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image13.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image6.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image6.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="{{ asset('images/conferences/image5.jpg') }}">
+                            <img class="img-fluid image" src="{{ asset('images/conferences/image5.jpg') }}">
+                            <span class="description">
+                                <span class="description-heading">Previous NEILS Conference</span>
+                                {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image2.jpg') }}" class="img-fluid mb-4" alt="">
-            </div>
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image3.jpg') }}" class="img-fluid mb-4" alt="">
-            </div>
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image4.jpg') }}" class="img-fluid mb-4" alt="">
-            </div>
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image5.jpg') }}" class="img-fluid mb-4" alt="">
-            </div>
-            <div class="col-md-4 cursor-pointer">
-              <img src="{{ asset('images/conferences/image6.jpg') }}" class="img-fluid mb-4" alt="">
-            </div>
-          </div>
-        </div>
+        </section>
+
       </div>
     </div>
     @include('layouts.partials.footer')
@@ -138,5 +248,8 @@
 
 <!-- Custom Scripts -->
 @section('scripts')
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
+</script>
 @endsection

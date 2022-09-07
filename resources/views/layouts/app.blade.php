@@ -21,7 +21,9 @@
 </head>
 <body>
     <div id="app" class="relative">
-        @include('layouts.widgets.intro')
+        @if(!Request::is('/'))
+          @include('layouts.widgets.intro')
+        @endif
         @include('layouts.partials.header')
 
         <main class="">

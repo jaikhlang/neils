@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', 'Home')
 @section('content')
 <section id="" class="border-top">
   <div class="container">
