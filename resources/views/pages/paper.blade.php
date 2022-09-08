@@ -33,28 +33,6 @@
 
 <!-- Contents -->
 @section('content')
-  <!--section id="showcase" class="border-top border-bottom border-light">
-    <div class="container">
-      <div class="d-md-flex align-items-center">
-        <div class="pr-md-4 mb-4  text-center text-md-right px-2 w-100 border-right">
-          <h1 class="font-weight-bold"><img src="{{ asset('images/neils.png') }}" class="img-fluid" style="height: 60px;" alt=""><br>CONFERENCE 2023</h1>
-        </div>
-        <div class="pl-md-4 mb-4  text-center text-md-left px-2 w-100">
-          <h4 class="font-weight-regular text-light">
-            <span class="d-block h5 orange font-weight-semibold mb-0 pb-0">12th International Conference of the</span>
-            <span class="d-block h2 font-weight-bold mb-3">North East Indian Linguistics Society</span>
-            <span class="d-block h5"><span class="bg-orange px-2 py-2">February 3<sup>rd</sup>, 4<sup>th</sup> &amp; 5<sup>th</sup> 2023</span></span>
-            <span class="d-block h5 pt-4"><span class="orange">Hosted By </span>Department of Linguistics, Gauhati University, Guwahati, Assam India</span>
-          </h4>
-        </div>
-      </div>
-
-      <div class="d-block text-center">
-        <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg">Register for NEILS12</a>
-      </div>
-    </div>
-  </section-->
-
   <section id="" class="bg-light py-5 border-bottom border-top">
     <div class="container">
       <div class="row">
@@ -173,7 +151,7 @@
               <table class="table w-100 border mb-2">
                 <tbody>
                   <tr class="">
-                    <td class="text-nowrap px-4 font-weight-bold">September  1, 2022:</td>
+                    <td class="text-nowrap px-4 font-weight-bold">September  15, 2022:</td>
                     <td class="px-4 border-left font-weight-bold">Abstract submission deadline.</td>
                   </tr>
                   <tr class="border-top">
@@ -254,7 +232,7 @@
                   </div>
                   <div class="mb-2 col-md-6">
                     <span class="d-block font-weight-bold">Krishna Boro </span>
-                    <span class="d-block">(Gauhati University and University of Oregon)</span>
+                    <span class="d-block">(Gauhati University)</span>
                     <span class="d-block">krishnaboro08@gmail.com</span>
                   </div>
                   <div class="mb-2 col-md-6">
@@ -269,8 +247,8 @@
                   </div>
                   <div class="mb-2 col-md-6">
                     <span class="d-block font-weight-bold">Linda Konnerth </span>
-                    <span class="d-block">(Hebrew University and University of Oregon)</span>
-                    <span class="d-block">linda.konnerth@mail.huji.ac.il</span>
+                    <span class="d-block">(University of Cologne)</span>
+                    <span class="d-block">linda.konnerth@uni-koeln.de</span>
                   </div>
                   <div class="mb-2 col-md-6">
                     <span class="d-block font-weight-bold">Stephen Morey </span>
@@ -279,7 +257,7 @@
                   </div>
                   <div class="mb-2 col-md-6">
                     <span class="d-block font-weight-bold">Mijke Mulder </span>
-                    <span class="d-block">(Chiang Mai University)</span>
+                    <span class="d-block">(Payap University)</span>
                     <span class="d-block">mijke.mulder@gmail.com</span>
                   </div>
                   <div class="mb-2 col-md-6">
