@@ -77,18 +77,6 @@
 
     @include('layouts.widgets.intro')
 
-    <!--div class="d-block py-5 border-bottom border-top">
-      <div class="container">
-        <div class="d-md-flex justify-content-center mb-4">
-          {{-- <a href="{{ route('register') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a> --}}
-          <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
-          <a href="{{ url('https://forms.gle/PtAF7ZMTYqmZYxG36') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Accommodation</a>
-          <a href="{{ route('pages.neils') }}#reach" class="d-inline-block mb-2 btn btn-dark btn-lg px-4 py-2 mx-2 text-decoration-none">How to reach Gauhati University?</a>
-          <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS12 Call for Paper</a>
-        </div>
-      </div>
-    </div-->
-
     <div class="bg-grey-light d-block py-5 border-bottom border-top border-grey-dark">
       <div class="container">
         <div class="d-block mb-5">
@@ -105,25 +93,27 @@
            </div>
         </div>
 
-        <div class="d-block mb-4">
-          <h4 class="d-block mb-2">North East Indian Linguistics Society</h4>
-          <span class="d-block text-justify mb-2">
-            NEILS was set up in 2005 by Prof. Jyotiprakash Tamuli (Gauhati University), Dr. Stephen Morey (La Trobe University, Australia) and Dr. Mark Post (now The University of Sydney) to provide a forum for those who are working on the languages of the North East India. From the very beginning, a key aim of NEILS has been cooperation between local and foreign scholars, with an emphasis on high quality work, on capacity building leading to excellent linguistic research.
-          </span>
+        <div class="d-block">
+          <h2 class="d-block mb-2">North East Indian Linguistics Society</h2>
+          <p>
+            <span class="d-block text-justify mb-2">
+              NEILS was set up in 2005 by Prof. Jyotiprakash Tamuli (Gauhati University), Dr. Stephen Morey (La Trobe University, Australia) and Dr. Mark Post (now The University of Sydney) to provide a forum for those who are working on the languages of the North East India. From the very beginning, a key aim of NEILS has been cooperation between local and foreign scholars, with an emphasis on high quality work, on capacity building leading to excellent linguistic research.
+            </span>
 
-          <span class="d-block text-justify mb-2">
-            As the primary focus of NEILS is description of the rich cultural-linguistic diversity that exists in North East India, we are interested in work that is grounded in data, new data collected from the large number of languages and dialects spoken in the North East, leading to important new research on the classification and grouping of languages, on their sound systems, word and phrase structures, literature and social use.
-          </span>
+            <span class="d-block text-justify mb-2">
+              As the primary focus of NEILS is description of the rich cultural-linguistic diversity that exists in North East India, we are interested in work that is grounded in data, new data collected from the large number of languages and dialects spoken in the North East, leading to important new research on the classification and grouping of languages, on their sound systems, word and phrase structures, literature and social use.
+            </span>
 
-          <span class="d-block text-justify mb-2">
-            So far NEILS has organised 10 conferences in various universities of North East India. It was annually held from 2006 to 2012 and then 2014 and henceforth the conference has been organised biennially. NEILS presents a unique opportunity from younger scholars, often PhD students and those who are engaged in study at different levels, to interact with some of the most experienced and knowledgeable scholars in the field of linguistics.
-          </span>
+            <span class="d-block text-justify mb-2">
+              So far NEILS has organised 10 conferences in various universities of North East India. It was annually held from 2006 to 2012 and then 2014 and henceforth the conference has been organised biennially. NEILS presents a unique opportunity from younger scholars, often PhD students and those who are engaged in study at different levels, to interact with some of the most experienced and knowledgeable scholars in the field of linguistics.
+            </span>
+          </p>
         </div>
 
-        <section id="compactgallery" class="gallery-block compact-gallery">
+        <div id="compactgallery" class="gallery-block compact-gallery">
             <div class="">
-                <div class="mb-4 font-weight-bold">
-                    <h4>Previous NEILS Conferences</h4>
+                <div class="mb-4">
+                    <h4 class="font-weight-bold">Previous NEILS Conferences</h4>
                 </div>
                 <div class="row no-gutters">
                   <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -238,7 +228,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
       </div>
     </div>
