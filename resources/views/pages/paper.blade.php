@@ -57,7 +57,7 @@
             </span>
 
             <span class="d-block py-4 bg-orange text-white px-4 mb-4 rounded h5">
-              <span class="font-semibold">Please submit your abstract no later than September 1, 2022 on the EasyChair website: </span> <a href="https://easychair.org/conferences/?conf=neils12" class="text-white text-decoration-none" target="_blank">https://easychair.org/conferences/?conf=neils12</a>
+              <span class="font-semibold">Please submit your abstract no later than September 15, 2022 on the EasyChair website: </span> <a href="https://easychair.org/conferences/?conf=neils12" class="text-white text-decoration-none" target="_blank">https://easychair.org/conferences/?conf=neils12</a>
             </span>
 
             <div class="">

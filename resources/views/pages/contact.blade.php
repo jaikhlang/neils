@@ -70,7 +70,7 @@
                 <div class="bg-white rounded-lg px-2 py-2 mb-2 shadow cursor-pointer">
                   Linda Konnerth <br>
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline-block fill-current mr-2" viewBox="0 0 20 20"><path d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"/></svg>
-                  linda.konnerth@mail.huji.ac.il
+                  linda.konnerth@uni-koeln.de
                 </div>
               </div>
               <div class="col-md-6 d-block">
