@@ -288,7 +288,7 @@
           <div class="row no-gutters">
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
                 <a class="lightbox" href="{{ asset('images/conferences/image16.jpg') }}">
-                    <img class="img-fluid image" src="{{ asset('images/conferences/image16.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image16.jpg') }}" alt="NEILS Conference">
                     <span class="description">
                         <span class="description-heading">NEILS11 Conference</span>
                     </span>
@@ -296,7 +296,7 @@
             </div>
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
                 <a class="lightbox" href="{{ asset('images/conferences/image17.jpg') }}">
-                    <img class="img-fluid image" src="{{ asset('images/conferences/image17.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image17.jpg') }}" alt="NEILS Conference">
                     <span class="description">
                         <span class="description-heading">NEILS11 Conference</span>
                     </span>
@@ -304,7 +304,7 @@
             </div>
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
                 <a class="lightbox" href="{{ asset('images/conferences/image18.jpg') }}">
-                    <img class="img-fluid image" src="{{ asset('images/conferences/image18.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image18.jpg') }}" alt="NEILS Conference">
                     <span class="description">
                         <span class="description-heading">NEILS11 Conference</span>
                     </span>
@@ -312,7 +312,7 @@
             </div>
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
                 <a class="lightbox" href="{{ asset('images/conferences/image15.jpg') }}">
-                    <img class="img-fluid image" src="{{ asset('images/conferences/image15.jpg') }}">
+                    <img class="img-fluid image" src="{{ asset('images/conferences/image15.jpg') }}" alt="NEILS Conference">
                     <span class="description">
                         <span class="description-heading">NEILS11 Conference</span>
                     </span>
@@ -321,7 +321,7 @@
 
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image1.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image1.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image1.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -330,7 +330,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image2.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image2.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image2.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -339,7 +339,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image3.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image3.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image3.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -348,7 +348,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image11.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image11.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image11.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -357,7 +357,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image12.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image12.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image12.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -366,7 +366,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image13.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image13.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image13.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -375,7 +375,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image6.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image6.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image6.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
@@ -384,7 +384,7 @@
               </div>
               <div class="col-md-6 col-lg-4 item zoom-on-hover">
                   <a class="lightbox" href="{{ asset('images/conferences/image5.jpg') }}">
-                      <img class="img-fluid image" src="{{ asset('images/conferences/image5.jpg') }}">
+                      <img class="img-fluid image" src="{{ asset('images/conferences/image5.jpg') }}" alt="NEILS Conference">
                       <span class="description">
                           <span class="description-heading">Previous NEILS Conference</span>
                           {{-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> --}}
