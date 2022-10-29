@@ -45,7 +45,7 @@
             <tr class="cursor-ponter">
               <th class="py-1 px-1 text-right" colspan="2">Total (INR)</th>
               <th class="py-1 px-1 text-right">{{ $payments->sum('amount') }}</th>
-              <th class="py-1 px-1 text-right">{{ $payments->sum('fees') }}</th>
+              <th class="py-1 px-1 text-right"></th>
               <td class="py-1 px-1">&nbsp;</td>
               <td class="py-1 px-1 text-right">&nbsp;</td>
               <td class="py-1 px-1 text-center">&nbsp;</td>
