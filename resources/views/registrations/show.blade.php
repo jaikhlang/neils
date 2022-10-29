@@ -18,7 +18,7 @@
                 <li>3. Login / proceed to registration.</li>
                 <li>4. Fill the registration form.</li>
                 <li>5. Preview/edit application & submit.</li>
-                <li>6. Payment.</li>
+                <li>6. Payment/Payment Details.</li>
                 <li>7. Registration Status.</li>
               </ul>
             </div>
