@@ -18,11 +18,11 @@ class PaymentController extends Controller
 
       $payment = new Payment;
       $payment->paymentId = $request->reference;  //ok
-      $payment->amount = $request->amount;  //ok
-      $payment->buyer_name = $request->name;  //name
+      $payment->amount = $user->calculateFee();  //ok
+      $payment->buyer_name = $user->name;  //name
       $payment->buyer_phone = $user->phone; //ok
       $payment->buyer_email = $user->email; //ok
-      $payment->fees = '0';
+      $payment->fees = 0;
 
 
       if($request->hasFile('document_url')){

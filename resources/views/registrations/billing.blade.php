@@ -68,7 +68,7 @@
 
                         <div class="mb-3">
                           <label for="amount">Registration Fee:</label>
-                          <input type="text" name="amount" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
+                          <input type="text" name="" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
                         </div>
                       </div>
                   </div>
