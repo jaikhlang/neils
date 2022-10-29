@@ -42,6 +42,11 @@
             <div class="mb-3">
               <span class="font-weight-bold h4">NEILS12 CONFERENCE 2023 REGISTRATION</span>
             </div>
+
+            <form class="" action="{{ route('payment.storePaymentDetails') }}" method="POST" enctype="multipart/form-data">
+              {{ csrf_field() }}
+              {{ method_field('POST') }}
+
               <div class="card mb-4">
                   <div class="card-body">
                       @if (session('message'))
@@ -50,33 +55,61 @@
                           </div>
                       @endif
 
-                      <form class="" action="{{ route('payment.pay') }}" method="POST">
-                        {{ csrf_field() }}
-                        {{ method_field('POST') }}
+                      <div class="">
                         <div class="mb-2">
-                          <label for="name">Participant/Presenter/Co-presenter</label>
+                          <label for="name">Participant/Presenter/Co-presenter Name:</label>
                           <input type="text" name="name" class="form-control" value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" readonly>
                         </div>
 
                         <div class="mb-2">
-                          <label for="name">Participant Category</label>
-                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->category->name }}" readonly>
+                          <label for="category">Participant Category:</label>
+                          <input type="text" name="category" class="form-control" value="{{ Auth::user()->category->name }}" readonly>
                         </div>
 
                         <div class="mb-3">
-                          <label for="name">Registration Fee</label>
-                          <input type="text" name="name" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
+                          <label for="amount">Registration Fee:</label>
+                          <input type="text" name="amount" class="form-control" value="{{ Auth::user()->calculateFee() }} INR" readonly>
                         </div>
-                        <div class="">
-                          {{-- <span class="text-danger d-block pb-2">Please login later to proceed with payment.</span> --}}
-                          {{-- <button type="button" disabled class="btn btn-success btn-lg" name="button">Proceed Payment</button> --}}
-                          <input type="submit" name="" class="btn btn-success btn-lg" value="Proceed Payment">
-                        </div>
-                      </form>
+                      </div>
                   </div>
               </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?coprID=867463" class="btn btn-danger btn-lg mr-2" target="_blank">Link for payment</a>
+                    <a href="{{ asset('uploads/Instructions-for-SBI-Collect-Payment.pdf') }}" class="btn btn-primary btn-lg" target="_blank">Instructions for payment</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                        <div class="mb-3">
+                          <label for="reference" class="text-danger">Payment Reference No. <span class="text-danger">*</span> </label>
+                          <input type="text" name="reference" class="form-control" placeholder="Payment Reference No" value="">
+                        </div>
+
+                        <div class="mb-2 pb-2">
+                          <label for="document_url" class="text-danger">Upload Payment Receipt. (File should be in .pdf format only) <span class="text-danger">*</span></label>
+                          <input type="file" name="document_url" class="form-control-file @error('document_url') is-invalid @enderror" value="{{ old('document_url') }}">
+                          @error('document_url')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                        </div>
+                        <div class="mb-3">
+                          <input type="submit" class="btn btn-success btn-lg" value="Submit Payment Details">
+                        </div>
+
+                      <div class="text-danger"> (*) Marked are mandatory.</div>
+                  </div>
+              </div>
+            </form>
               <div class="">
-                <span class="d-block h6 text-black-50">Payments will be processed in Indian Rupees only. Although we do not support payments in alternate currencies, we do support payments from cards issued outside India. Participants outside India will see the amoint in INR.</span>
+                <!--span class="d-block h6 text-black-50">Payments will be processed in Indian Rupees only. Although we do not support payments in alternate currencies, we do support payments from cards issued outside India. Participants outside India will see the amoint in INR.</span-->
+
               </div>
           </div>
       </div>

@@ -103,7 +103,7 @@
                         @if($user->category->code_no == 1)
                         <div class="mb-2">
                           <label for="document_url" class="d-block">Evidence (Letter from the Head of the Department)</label>
-                          <a href="{{ asset($user->document_url) }}" class="btn btn-outline-primary">Attachment</a>
+                          <a href="{{ asset($user->document_url) }}" class="btn btn-outline-primary" target="_blank">Attachment</a>
                         </div>
                         @endif
 

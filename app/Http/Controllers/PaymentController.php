@@ -12,6 +12,36 @@ use Session;
 class PaymentController extends Controller
 {
 
+    public function storePaymentDetails(Request $request){
+
+      $user = Auth::user();
+
+      $payment = new Payment;
+      $payment->paymentId = $request->reference;  //ok
+      $payment->amount = $request->amount;  //ok
+      $payment->buyer_name = $request->name;  //name
+      $payment->buyer_phone = $user->phone; //ok
+      $payment->buyer_email = $user->email; //ok
+      $payment->fees = '0';
+
+
+      if($request->hasFile('document_url')){
+        $file = $request->file('document_url');
+        $filename = strtolower(preg_replace('/\s+/','',trim($user->firstname.'-'.$request->reference))) .'.'.$file->getClientOriginalExtension();
+        $file->move(public_path('uploads/'), $filename);
+        $payment->paymentRequestId = 'uploads/' . $filename;     //paymentRequestId is the file_url name.
+      }
+      $payment->save();
+
+      $user->regno = 1000 + $payment->id;
+      $user->status = 'PAID';
+      $user->payment_id = $payment->id;
+      $user->save();
+
+      Session::flash('message', 'Registration successful.');
+      return redirect()->route('payment.success');
+    }
+
     public function pay(Request $request){
       //dd(Auth::user()->phone);
       if(config('app.payment_status') == 'TEST'){

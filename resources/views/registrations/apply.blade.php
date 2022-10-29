@@ -50,7 +50,7 @@
                             <input type="email" name="email" class="form-control" value="{{ Auth::user()->email }}" readonly>
                           </div>
                           <div class="col-md-6">
-                            <label for="phone">Phone (Please add country code to your phone number. Eg: +91 for Indian phone numbers.)<span class="text-danger">*</span></label>
+                            <label for="phone">Phone <span class="text-danger">(Please prefix country code to your phone number. Eg: +91 for Indian phone numbers.)*</span></label>
                             <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" maxlength="15" required autofocus>
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">

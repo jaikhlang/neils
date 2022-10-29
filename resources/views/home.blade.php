@@ -18,7 +18,11 @@
 
 
                       <span class="d-block my-4">You are logged in!</span>
+                      @if(Auth::user()->status == 'PAID')
+                      <a href="{{ route('apply') }}" class="btn btn-primary btn-lg">You are already registered!! Go to application</a>
+                      @else
                       <a href="{{ route('apply') }}" class="btn btn-primary btn-lg">Proceed to Registration</a>
+                      @endif
                   </div>
               </div>
           </div>

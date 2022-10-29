@@ -16,7 +16,8 @@
                 @endif
 
                 @if(Auth::user()->status == 'PAID')
-                  <a href="{{ route('generate.invoice', Auth::user()->id) }}" class="btn btn-outline-danger" target="_blank">Payment Invoice</a>
+                  <a href="{{ asset(Auth::user()->payment->paymentRequestId) }}" class="btn btn-outline-danger" target="_blank">Payment Invoice</a>
+                  <!-- <a href="{{ route('generate.invoice', Auth::user()->id) }}" class="btn btn-outline-danger" target="_blank">Payment Invoice</a> -->
                   <div class="d-block mt-4">
                     <span class="d-block">PAYMENT DETAILS</span>
                     <table class="table mb-0">
@@ -30,7 +31,7 @@
                           <td class="text-left">{{ $user->payment->amount }} INR</td>
                         </tr>
                         <tr>
-                          <td class="text-right">Amount Paid:</td>
+                          <td class="text-right">Application Submitted:</td>
                           <td class="text-left">{{ $user->created_at->diffForHumans() }}</td>
                         </tr>
                       </tbody>

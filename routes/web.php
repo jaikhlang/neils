@@ -34,7 +34,9 @@ Route::group(['middleware' => ['auth','verified', 'role:participant']], function
   Route::post('/apply/confirm', 'ParticipantController@confirm')->name('participant.confirm');
   Route::get('/application/view', 'ParticipantController@application')->name('application.show');
   Route::get('/apply/billing', 'ParticipantController@billing')->name('participant.billing');
-  Route::post('payment', 'PaymentController@pay')->name('payment.pay');
+  // Route::post('payment', 'PaymentController@pay')->name('payment.pay');
+  Route::post('storepaymentdetails', 'PaymentController@storePaymentDetails')->name('payment.storePaymentDetails');
+
   Route::get('payment/response', 'PaymentController@response')->name('payment.response');
   Route::get('payment/success', 'PaymentController@success')->name('payment.success');
   Route::get('payment/failure', 'PaymentController@failure')->name('payment.failure');

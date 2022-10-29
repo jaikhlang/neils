@@ -155,7 +155,7 @@ class ParticipantController extends Controller
       $user->status = 'UNPAID';
       $user->save();
 
-      Session::flash('message', 'Your application has been successfully submitted!!');
+      Session::flash('message', 'Your application has been successfully submitted!! Please proceed with payment details.');
       return redirect()->route('participant.billing');
     }
 
