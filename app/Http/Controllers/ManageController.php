@@ -44,7 +44,9 @@ class ManageController extends Controller
 
     //Payment Lists.
     public function payments(){
+
       $payments = Payment::orderBy('id', 'desc')->get();
+      dd($payments);
       return view('manages.payments')->withPayments($payments);
     }
 
