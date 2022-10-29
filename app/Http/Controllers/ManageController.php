@@ -46,7 +46,6 @@ class ManageController extends Controller
     public function payments(){
 
       $payments = Payment::orderBy('id', 'desc')->get();
-      dd($payments);
       return view('manages.payments')->withPayments($payments);
     }
 
