@@ -32,7 +32,7 @@
                 <td class="py-1 px-1 text-right">{{ $payment->fees }}</td>
                 <td class="py-1 px-1">{{ $payment->buyer_name }}</td>
                 <td class="py-1 px-1 text-right">{{ $payment->buyer_email }}</td>
-                <td class="py-1 px-1 text-right"> <a href="{{ asset($payment->paymentRequestId) }}">view</a></td>
+                <td class="py-1 px-1 text-right"> <a href="{{ asset($payment->paymentRequestId) }}" target="_blank">view</a></td>
                 <td class="py-1 px-1 text-center">
                   @if(!empty($payment->user->id))
                   <a href="{{ route('manages.participants.view', $payment->user->id) }}" class="" target="_blank">View</a>
@@ -47,6 +47,7 @@
               <th class="py-1 px-1 text-right">{{ $payments->sum('amount') }}</th>
               <th class="py-1 px-1 text-right">{{ $payments->sum('fees') }}</th>
               <td class="py-1 px-1">&nbsp;</td>
+              <td class="py-1 px-1 text-right">&nbsp;</td>
               <td class="py-1 px-1 text-right">&nbsp;</td>
               <td class="py-1 px-1 text-center">&nbsp;</td>
             </tr>
