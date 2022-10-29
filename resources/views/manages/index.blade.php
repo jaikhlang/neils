@@ -39,7 +39,7 @@
       </div>
 
       <div class="">
-        <!-- <span class="d-block">Total Payments Collected: {{ $payments->sum('amount') }} INR (Including Gateway Fees)</span> -->
+        <span class="d-block">Total Payments Collected: {{-- $payments->sum('amount') --}} INR (Including Gateway Fees)</span>
       </div>
     </div>
 
