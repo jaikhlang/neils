@@ -30,6 +30,9 @@
         -->
 
           <div class="mb-4">
+            <div class="mb-3 text-justify">
+              All participants of the 12th International Conference of NEILS are required to register themselves online by paying the relevant fees. The registration fee will cover the lunch and tea/snacks on each day of the conference.
+            </div>
             <h4 class="font-weight-bold">Registration Fees</h4>
             <div class="bg-white rounded-lg border my-3">
               <table class="table text-danger mb-0">
