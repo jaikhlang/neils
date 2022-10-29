@@ -19,7 +19,7 @@ class PaymentController extends Controller
       $payment = new Payment;
       $payment->paymentId = $request->reference;  //ok
       $payment->amount = $user->calculateFee();  //ok
-      $payment->buyer_name = $user->name;  //name
+      $payment->buyer_name = $request->name;  //name
       $payment->buyer_phone = $user->phone; //ok
       $payment->buyer_email = $user->email; //ok
       $payment->fees = 0;
