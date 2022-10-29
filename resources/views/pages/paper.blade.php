@@ -178,7 +178,8 @@
               </table>
 
               <div class="">
-                  Note: We will need to collect registration fees at the time of registration (i.e., by January 15, 2023 at the latest). We are currently setting up payment options. Details will be provided when registration opens on November 1st.
+                All participants of the 12th International Conference of NEILS are required to register themselves online by paying the relevant fees. The registration fee will cover the lunch and tea/snacks on each day of the conference.
+                <!--  Note: We will need to collect registration fees at the time of registration (i.e., by January 15, 2023 at the latest). We are currently setting up payment options. Details will be provided when registration opens on November 1st. -->
               </div>
             </div>
           </div>

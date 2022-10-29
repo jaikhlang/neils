@@ -95,6 +95,33 @@
                     </form>
                 </div>
             </div>
+
+            <div class="card my-5">
+                <div class="card-header">
+                  <div>{{ __('Steps to Register for NEILS12 Conference') }}</div>
+                </div>
+                <div class="card-body">
+                  <div class="border-bottom mb-2">
+                    Step 1. Register at <a href="https://neils.org.in/register" target="_blank" class="text-decoration-none">https://neils.org.in/register</a>
+                  </div>
+
+                  <div class="border-bottom mb-2">
+                    Step 2. Make payment at <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?coprID=867463" target="_blank" class="text-decoration-none">https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?coprID=867463</a>
+                    <div class="">
+                      <i>Instructions for SBI Collect Payment: <a href="{{ asset('uploads/Instructions-for-SBI-Collect-Payment.pdf') }}" class="text-decoration-none" target="_blank">Instructions</a></i>
+                    </div>
+                  </div>
+
+                  <div class="border-bottom mb-2">
+                    Step 3. Enter payment details and upload payment receipt obtained in step 2.
+                  </div>
+
+                  <div class="">
+                    Step 4. Registration done.
+                  </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
