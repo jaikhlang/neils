@@ -10,17 +10,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item {{ Request::is('manages') ? 'active text-danger' : '' }}">
-                <a class="nav-link" href="{{ route('manages.index') }}">Dashboard</a>
-              </li>
-              <li class="nav-item {{ Request::is('participants') ? 'active text-danger' : '' }}">
-                <a class="nav-link" href="{{ route('manages.participants') }}" class="">Participants</a>
+              <li class="nav-item">
+                <a class="nav-link {{ Request::is('manages') ? 'font-bold text-danger' : '' }}" href="{{ route('manages.index') }}">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ Request::is('manages/payments') ? 'text-danger' : '' }}" href="{{ route('manages.payments') }}">Payments</a>
+                <a class="nav-link {{ Request::is('manages/participants') ? 'text-danger font-bold' : '' }}" href="{{ route('manages.participants') }}" class="">Participants</a>
               </li>
-              <li class="nav-item {{ Request::is('registered') ? 'active text-danger' : '' }}">
-                <a class="nav-link" href="{{ route('manages.registered') }}" class="">(Unpaid)Registered</a>
+              <li class="nav-item">
+                <a class="nav-link {{ Request::is('manages/payments') ? 'text-danger font-bold' : '' }}" href="{{ route('manages.payments') }}">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {{ Request::is('manages/registered') ? 'text-danger font-bold' : '' }}" href="{{ route('manages.registered') }}" class="">(Unpaid)Registered</a>
               </li>
             </ul>
 
