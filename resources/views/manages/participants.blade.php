@@ -9,7 +9,7 @@
         <a href="{{ route('users.export') }}" class="btn btn-outline-primary"> <i class="fa fa-file-excel-o"></i>  Export Participants</a>
       </div>
       <div class="card">
-        <div class="card-header h6">NEILS 2020 PARTICIPANTS</div>
+        <div class="card-header h6">NEILS12 PARTICIPANTS</div>
         <table class="table rounded mb-0 card-body">
           <thead>
             <tr class="">

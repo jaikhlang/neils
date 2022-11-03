@@ -9,7 +9,7 @@
         <a href="{{ route('users.exportPayment') }}" class="btn btn-outline-primary"> <i class="fa fa-file-excel-o"></i>  Export Payments</a>
       </div>
       <div class="card">
-        <div class="card-header h6">NEILS 2020 PAYMENTS</div>
+        <div class="card-header h6">NEILS12 PAYMENTS</div>
         <table class="table rounded mb-0 card-body">
           <thead>
             <tr class="">

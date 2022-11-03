@@ -13,7 +13,7 @@
       <div class="row justify-content-center">
           <div class="col-md-8 py-5">
             <div class="mb-3">
-              <span class="font-weight-bold h4 d-block text-body">NEILS CONFERENCE 2020</span>
+              <span class="font-weight-bold h4 d-block text-body">NEILS12 CONFERENCE</span>
               <div class="d-flex justify-content-between align-items-center">
                 <span class="h6 d-block font-weight-bold text-dark">APPLICATION</span>
                 <div class="d-flex">
