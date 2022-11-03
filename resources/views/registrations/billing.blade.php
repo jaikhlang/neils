@@ -87,7 +87,7 @@
                   <div class="card-body">
                         <div class="mb-3">
                           <label for="reference" class="text-danger">Payment Reference No. <span class="text-danger">*</span> </label>
-                          <input type="text" name="reference" class="form-control @error('reference') is-invalid @enderror" placeholder="Payment Reference No" value="">
+                          <input type="text" name="reference" class="form-control @error('reference') is-invalid @enderror" placeholder="Payment Reference No" value="{{ old('reference') }}">
                           @error('reference')
                               <span class="invalid-feedback" role="alert">
                                   <strong>{{ $message }}</strong>
