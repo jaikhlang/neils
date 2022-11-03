@@ -5,6 +5,9 @@
 <section class="overflow-hidden d-block">
   <div class="container">
     <div class="py-5">
+      <div class="mb-2">
+        <a href="{{ route('users.exportUnpaidUsers') }}" class="btn btn-outline-primary"> <i class="fa fa-file-excel-o"></i>  Export</a>
+      </div>
       <span class="d-block h6">Participants with payment process pending.</span>
       <div class="bg-white rounded border-right border-left">
         <table class="table rounded mb-0">
