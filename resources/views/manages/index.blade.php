@@ -33,7 +33,8 @@
             <span class="d-block flex-grow-1 text-left">{{ $category->name }}</span>
             {{-- <span class="d-block text-left mr-2">{{ $category->users->where('participation_category', 'presenter')->count() }} Presenter + </span> --}}
             {{-- <span class="d-block text-left mr-2"> {{ $category->users->where('participation_category', 'nonpresenter')->count() }} Only Participation = </span> --}}
-            <span class="d-block ml-2"> {{ $category->users->where('status', 'PAID')->count() }} Participants</span>
+            <span class="d-block ml-2"> {{ $category->users->where('status', 'UNPAID')->count() }} Participants (UNPAID)</span>
+            <span class="d-block ml-2"> {{ $category->users->where('status', 'PAID')->count() }} Participants (PAID)</span>
           </div>
         @endforeach
       </div>
