@@ -88,6 +88,11 @@
                         <div class="mb-3">
                           <label for="reference" class="text-danger">Payment Reference No. <span class="text-danger">*</span> </label>
                           <input type="text" name="reference" class="form-control" placeholder="Payment Reference No" value="">
+                          @error('reference')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
                         </div>
 
                         <div class="mb-2 pb-2">
