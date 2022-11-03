@@ -2,7 +2,7 @@
 @section('title', 'Register')
 @section('metatags')
   <meta name="keywords" content="register, registration, conference registration, NEILS registration">
-  <meta name="description" content="Register for NEILS Conference 2020. Registration is open from first week of November 2019.">
+  <meta name="description" content="Register for NEILS Conference 2023. Registration is open from first week of November 2022.">
 @endsection
 @section('content')
 <div class="container">
@@ -11,7 +11,7 @@
             <div class="card my-5">
                 <div class="card-header d-flex justify-content-between">
                   <div>{{ __('Register') }}</div>
-                  <div class="text-danger text-right">REGISTRATION WILL BE OPEN FROM 01 NOV 2022</div>
+                  <!-- <div class="text-danger text-right">REGISTRATION WILL BE OPEN FROM 01 NOV 2022</div> -->
                 </div>
                 <div class="card-body">
 

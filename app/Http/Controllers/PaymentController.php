@@ -14,6 +14,11 @@ class PaymentController extends Controller
 
     public function storePaymentDetails(Request $request){
 
+      $this->validate($request,[
+        'reference' => 'required',
+        'document_url' => 'required|file',
+      ]);
+
       $user = Auth::user();
 
       $payment = new Payment;
