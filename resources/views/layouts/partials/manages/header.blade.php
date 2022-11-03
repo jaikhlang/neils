@@ -16,8 +16,8 @@
               <li class="nav-item {{ Request::is('participants') ? 'active text-danger' : '' }}">
                 <a class="nav-link" href="{{ route('manages.participants') }}" class="">Participants</a>
               </li>
-              <li class="nav-item {{ Request::is('manages/payments') ? 'active text-danger' : '' }}">
-                <a class="nav-link" href="{{ route('manages.payments') }}" class="">Payments</a>
+              <li class="nav-item">
+                <a class="nav-link {{ Request::is('manages/payments') ? 'text-danger' : '' }}" href="{{ route('manages.payments') }}">Payments</a>
               </li>
               <li class="nav-item {{ Request::is('registered') ? 'active text-danger' : '' }}">
                 <a class="nav-link" href="{{ route('manages.registered') }}" class="">(Unpaid)Registered</a>
