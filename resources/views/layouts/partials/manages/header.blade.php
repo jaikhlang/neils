@@ -10,16 +10,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item {{ Request::is('manages') ? 'active' : '' }}">
+              <li class="nav-item {{ Request::is('manages') ? 'active text-danger' : '' }}">
                 <a class="nav-link" href="{{ route('manages.index') }}">Dashboard</a>
               </li>
-              <li class="nav-item {{ Request::is('participants') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('manages.participants') }}" class="text-danger">Participants</a>
+              <li class="nav-item {{ Request::is('participants') ? 'active text-danger' : '' }}">
+                <a class="nav-link" href="{{ route('manages.participants') }}" class="">Participants</a>
               </li>
-              <li class="nav-item {{ Request::is('payments') ? 'active' : '' }}">
+              <li class="nav-item {{ Request::is('payments') ? 'active text-danger' : '' }}">
                 <a class="nav-link" href="{{ route('manages.payments') }}" class="">Payments</a>
               </li>
-              <li class="nav-item {{ Request::is('registered') ? 'active' : '' }}">
+              <li class="nav-item {{ Request::is('registered') ? 'active text-danger' : '' }}">
                 <a class="nav-link" href="{{ route('manages.registered') }}" class="">(Unpaid)Registered</a>
               </li>
             </ul>

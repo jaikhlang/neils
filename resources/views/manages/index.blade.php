@@ -8,22 +8,22 @@
       <div class="mb-4 d-md-flex justify-content-between">
         <a href="{{ route('manages.registered') }}" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
           <span class="d-block text-dark h4">{{ $unpaid }} <span class="">Participant</span></span>
-          <span class="d-block text-dark">Applied (Unpaid)</span>
+          <span class="d-block text-dark">APPLIED (UNPAID)</span>
         </a>
 
         <a href="{{ route('manages.participants') }}" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
           <span class="d-block text-dark h4">{{ $paid }} <span class="">Total Participants</span></span>
-          <span class="d-block text-dark">Registered (Paid)</span>
+          <span class="d-block text-dark">REGISTERED (PAID)</span>
         </a>
 
         <a href="" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
           <span class="d-block text-dark h4">{{ $presenter }} <span class="">Presenters/Co-Presenters</span></span>
-          <span class="d-block text-dark">Registered (Paid)</span>
+          <span class="d-block text-dark">REGISTERED (PAID)</span>
         </a>
 
         <a href="" class="d-inline-block bg-white rounded px-4 py-4 border text-decoration-none text-right mb-2">
-          <span class="d-block text-dark h4">{{ $participant }} <span class="">Only Participation</span></span>
-          <span class="d-block text-dark">Registered (Paid)</span>
+          <span class="d-block text-dark h4">{{ $participant }} <span class="">Non-Presenters</span></span>
+          <span class="d-block text-dark">REGISTERED (PAID)</span>
         </a>
       </div>
 
