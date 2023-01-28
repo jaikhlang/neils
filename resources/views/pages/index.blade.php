@@ -87,7 +87,7 @@
              <div class="d-md-flex justify-content-center">
                <a href="{{ route('pages.neils') }}" class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Explore NEILS12</a>
                <a href="{{ route('pages.paper') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS12 Call for Paper</a>
-               <a href="{{ route('register') }}"    class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none">Registration</a>
+               <a href="{{ asset('uploads/NEILS12_schedule_February2023_withoutchairs.pdf') }}"    class="d-inline-block mb-2 btn btn-danger btn-lg px-4 py-2 mx-2 text-decoration-none" target="_blank">Programme Schedule</a>
                <a href="{{ asset('uploads/NEILS11-Abstracts.pdf') }}" class="d-inline-block mb-2 btn btn-primary btn-lg px-4 py-2 mx-2 text-decoration-none">NEILS11 Abstracts</a>
              </div>
            </div>

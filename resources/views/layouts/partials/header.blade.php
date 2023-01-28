@@ -19,9 +19,9 @@
               <li class="nav-item {{ Request::is('paper') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages.paper') }}">CALL FOR PAPER</a>
               </li>
-              <li class="nav-item {{ Request::is('register') ? 'active' : '' }}">
+              <!--li class="nav-item {{ Request::is('register') ? 'active' : '' }}">
                 <a class="nav-link text-danger" href="{{ route('register') }}">REGISTER</a>
-              </li>
+              </li-->
               <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages.about') }}">ABOUT</a>
               </li>

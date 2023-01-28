@@ -15,9 +15,9 @@
                 </div>
                 <div class="card-body">
 
-                  <!-- <div class="text-danger text-center py-5">
-                    Registration Closed!!
-                  </div> -->
+                  <div class="text-danger text-center py-5">
+                  REGISTRATION IS CLOSED!!
+                  </div>
                   <form method="POST" class="" action="{{ route('register') }}">
                         @csrf
 
@@ -87,7 +87,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="button" disabled class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
                             </div>

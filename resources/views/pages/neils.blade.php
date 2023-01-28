@@ -62,7 +62,7 @@
           </div>
 
           <div class="mb-4">
-            <a href="{{ route('register') }}" class="d-inline-block btn btn-danger btn-lg mb-2 mr-2">Register for NEILS12</a>
+            <a href="{{ asset('uploads/NEILS12_schedule_February2023_withoutchairs.pdf') }}" class="d-inline-block btn btn-danger btn-lg mb-2 mr-2" target="_blank">Programme Schedule</a>
             <a href="{{ route('pages.paper') }}" class="d-inline-block btn btn-outline-danger btn-lg mb-2">Call for Paper</a>
           </div>
         </div>
